@@ -23,16 +23,16 @@ test("server-renders the Topic Pick classroom tool", async () => {
   const html = await response.text();
   assert.match(html, /<title>Topic Pick \| 과학·사회·수학 10분 탐구, 1분 설명<\/title>/i);
   assert.match(html, /TOPIC PICK/);
-  assert.match(html, /탐구와 수학을/);
-  assert.match(html, /과목 \+ 주제 한 번에 뽑기/);
+  assert.match(html, /배운 개념을/);
+  assert.match(html, /전체 과목에서 무작위로 뽑기/);
   assert.match(html, /중학교/);
   assert.match(html, /고등학교/);
   assert.match(html, /통합과학1/);
   assert.match(html, /과학·사회·수학/);
   assert.doesNotMatch(html, /공통국어1/);
-  assert.match(html, /키워드 먼저 뽑기/);
-  assert.match(html, /내용 요소 키워드/);
-  assert.match(html, /공식 지식·이해/);
+  assert.match(html, /키워드 뽑기/);
+  assert.match(html, /10분 조사 시작/);
+  assert.match(html, /파트/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 

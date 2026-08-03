@@ -13,16 +13,11 @@ type Phase = "ready" | "research" | "present" | "done";
 type Keyword = {
   name: string;
   category: string;
-  question: string;
-  anchors: string[];
+  sourceLabel: string;
 };
 
-const PALETTE = ["#ff6b3d", "#08a37a", "#7957e8", "#2374d8", "#d94874", "#8a6b00"];
-
-const colorFor = (value: string) => {
-  const score = Array.from(value).reduce((sum, char) => sum + (char.codePointAt(0) ?? 0), 0);
-  return PALETTE[score % PALETTE.length];
-};
+const RESEARCH_SECONDS = 600;
+const PRESENT_SECONDS = 60;
 
 const formatTime = (seconds: number) => {
   const minutes = Math.floor(seconds / 60).toString().padStart(2, "0");
@@ -30,14 +25,12 @@ const formatTime = (seconds: number) => {
   return `${minutes}:${secs}`;
 };
 
-const keywordsForCourse = (course: CurriculumCourse): Keyword[] => {
-  return course.topics.map((topic) => ({
+const keywordsForCourse = (course: CurriculumCourse): Keyword[] =>
+  course.topics.map((topic) => ({
     name: topic.name,
     category: topic.domain,
-    question: `‘${topic.name}’의 뜻과 핵심 원리 또는 특징을 예시 하나와 함께 설명해 보세요.`,
-    anchors: [topic.sourceLabel, topic.domain, "예시 1개"],
+    sourceLabel: topic.sourceLabel,
   }));
-};
 
 const defaultCourse = (level: CurriculumLevel) =>
   CURRICULUM_COURSES.find((course) =>
@@ -54,11 +47,13 @@ export default function Home() {
   const [topicCategory, setTopicCategory] = useState("전체");
   const [keyword, setKeyword] = useState<Keyword | null>(null);
   const [phase, setPhase] = useState<Phase>("ready");
-  const [seconds, setSeconds] = useState(600);
+  const [seconds, setSeconds] = useState(RESEARCH_SECONDS);
   const [running, setRunning] = useState(false);
   const [endAt, setEndAt] = useState<number | null>(null);
   const [round, setRound] = useState(1);
+  const [spinning, setSpinning] = useState(false);
   const previousName = useRef<string | null>(null);
+  const spinTimers = useRef<number[]>([]);
 
   const coursesAtLevel = useMemo(
     () => CURRICULUM_COURSES.filter((course) => course.level === level),
@@ -73,8 +68,6 @@ export default function Home() {
     [coursesAtLevel, subjectGroup],
   );
   const selectedCourse = CURRICULUM_COURSES.find((course) => course.id === courseId) ?? initialCourse;
-  const middleCourseCount = useMemo(() => CURRICULUM_COURSES.filter((course) => course.level === "middle").length, []);
-  const highCourseCount = CURRICULUM_COURSES.length - middleCourseCount;
   const keywords = useMemo(() => keywordsForCourse(selectedCourse), [selectedCourse]);
   const topicCategories = useMemo(
     () => Array.from(new Set(keywords.map((item) => item.category))),
@@ -85,16 +78,24 @@ export default function Home() {
     [keywords, topicCategory],
   );
 
+  const clearSpinTimers = useCallback(() => {
+    spinTimers.current.forEach((timer) => window.clearTimeout(timer));
+    spinTimers.current = [];
+  }, []);
+
+  useEffect(() => clearSpinTimers, [clearSpinTimers]);
+
   const resetActivity = useCallback(() => {
+    clearSpinTimers();
     previousName.current = null;
     setTopicCategory("전체");
     setKeyword(null);
     setPhase("ready");
-    setSeconds(600);
+    setSeconds(RESEARCH_SECONDS);
     setRunning(false);
     setEndAt(null);
-    setRound(1);
-  }, []);
+    setSpinning(false);
+  }, [clearSpinTimers]);
 
   const changeLevel = (nextLevel: CurriculumLevel) => {
     const next = defaultCourse(nextLevel);
@@ -125,58 +126,77 @@ export default function Home() {
       const oscillator = context.createOscillator();
       const gain = context.createGain();
       oscillator.frequency.value = frequency;
-      gain.gain.setValueAtTime(0.08, context.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + 0.35);
+      gain.gain.setValueAtTime(0.07, context.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + 0.32);
       oscillator.connect(gain).connect(context.destination);
       oscillator.start();
-      oscillator.stop(context.currentTime + 0.35);
+      oscillator.stop(context.currentTime + 0.32);
     } catch {
-      // Sound is an enhancement; timers continue when browser audio is unavailable.
+      // Timers continue when browser audio is unavailable.
     }
   }, []);
 
+  const pickCandidate = useCallback((pool: Keyword[]) => {
+    const candidates = pool.length > 1
+      ? pool.filter((item) => item.name !== previousName.current)
+      : pool;
+    return candidates[Math.floor(Math.random() * candidates.length)];
+  }, []);
+
   const drawKeyword = useCallback(() => {
-    if (filtered.length === 0) return;
-    const candidates = filtered.length > 1
-      ? filtered.filter((item) => item.name !== previousName.current)
-      : filtered;
-    const next = candidates[Math.floor(Math.random() * candidates.length)];
-    previousName.current = next.name;
-    setKeyword(next);
+    if (filtered.length === 0 || spinning) return;
+    clearSpinTimers();
     setPhase("ready");
-    setSeconds(600);
+    setSeconds(RESEARCH_SECONDS);
     setRunning(false);
     setEndAt(null);
-  }, [filtered]);
+    setSpinning(true);
+
+    const finalKeyword = pickCandidate(filtered);
+    const steps = 13;
+    for (let step = 0; step < steps; step += 1) {
+      const delay = step * 58 + step * step * 4;
+      const timer = window.setTimeout(() => {
+        if (step === steps - 1) {
+          previousName.current = finalKeyword.name;
+          setKeyword(finalKeyword);
+          setSpinning(false);
+          playCue(760);
+          return;
+        }
+        setKeyword(filtered[Math.floor(Math.random() * filtered.length)]);
+      }, delay);
+      spinTimers.current.push(timer);
+    }
+  }, [clearSpinTimers, filtered, pickCandidate, playCue, spinning]);
 
   const drawFromAllCourses = useCallback(() => {
+    if (spinning) return;
     const nextCourse = CURRICULUM_COURSES[Math.floor(Math.random() * CURRICULUM_COURSES.length)];
-    const nextKeywords = keywordsForCourse(nextCourse);
-    const nextKeyword = nextKeywords[Math.floor(Math.random() * nextKeywords.length)];
+    const nextKeyword = pickCandidate(keywordsForCourse(nextCourse));
     setLevel(nextCourse.level);
     setSubjectGroup(nextCourse.subjectGroup);
     setCourseId(nextCourse.id);
-    previousName.current = nextKeyword.name;
     setTopicCategory("전체");
+    previousName.current = nextKeyword.name;
     setKeyword(nextKeyword);
     setPhase("ready");
-    setSeconds(600);
-    setRunning(false);
-    setEndAt(null);
-  }, []);
+    setSeconds(RESEARCH_SECONDS);
+    playCue(760);
+  }, [pickCandidate, playCue, spinning]);
 
   const startResearch = useCallback(() => {
-    if (!keyword) return;
+    if (!keyword || spinning) return;
     setPhase("research");
-    setSeconds(600);
-    setEndAt(Date.now() + 600_000);
+    setSeconds(RESEARCH_SECONDS);
+    setEndAt(Date.now() + RESEARCH_SECONDS * 1000);
     setRunning(true);
-  }, [keyword]);
+  }, [keyword, spinning]);
 
   const startPresentation = useCallback(() => {
     setPhase("present");
-    setSeconds(60);
-    setEndAt(Date.now() + 60_000);
+    setSeconds(PRESENT_SECONDS);
+    setEndAt(Date.now() + PRESENT_SECONDS * 1000);
     setRunning(true);
     playCue(740);
   }, [playCue]);
@@ -213,10 +233,22 @@ export default function Home() {
     }
   }, [endAt, phase, running, seconds]);
 
-  const nextRound = useCallback(() => {
+  const returnToPicker = useCallback((nextRound = false) => {
+    if (nextRound) setRound((value) => value + 1);
+    setPhase("ready");
+    setSeconds(RESEARCH_SECONDS);
+    setRunning(false);
+    setEndAt(null);
+  }, []);
+
+  const nextKeyword = useCallback(() => {
     setRound((value) => value + 1);
-    drawKeyword();
-  }, [drawKeyword]);
+    setPhase("ready");
+    setKeyword(null);
+    setSeconds(RESEARCH_SECONDS);
+    setRunning(false);
+    setEndAt(null);
+  }, []);
 
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
@@ -224,171 +256,137 @@ export default function Home() {
         event.preventDefault();
         toggleTimer();
       }
-      if (event.key.toLowerCase() === "r" && !running) drawKeyword();
+      if (event.key.toLowerCase() === "r" && phase === "ready") drawKeyword();
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [drawKeyword, phase, running, toggleTimer]);
+  }, [drawKeyword, phase, toggleTimer]);
 
-  const total = phase === "present" ? 60 : 600;
-  const progress = phase === "done" ? 100 : ((total - seconds) / total) * 100;
-  const phaseLabel = phase === "research" ? "자료 조사" : phase === "present" ? "1분 설명" : phase === "done" ? "발표 완료" : "준비";
-  const badgeColor = colorFor(keyword?.category ?? selectedCourse.subjectGroup);
+  if (phase === "research" || phase === "present") {
+    const isResearch = phase === "research";
+    return (
+      <main className={`focus-screen ${isResearch ? "focus-research" : "focus-present"}`}>
+        <div className="ambient-glow" aria-hidden="true" />
+        <header className="focus-header">
+          <button type="button" className="text-button" onClick={() => returnToPicker()}>← 주제 선택</button>
+          <span>ROUND {round.toString().padStart(2, "0")}</span>
+        </header>
+
+        <section className="focus-content" aria-live="polite">
+          <p className="eyebrow">{isResearch ? "RESEARCH · 자료 조사 중" : "SPEAK · 설명하는 시간"}</p>
+          <p className="focus-course">{selectedCourse.name} · {keyword?.category}</p>
+          <h1 className="focus-topic">{keyword?.name}</h1>
+          <div className="timer-center">
+            <strong className="big-timer">{formatTime(seconds)}</strong>
+          </div>
+          <p className="focus-hint">
+            {running
+              ? isResearch ? "뜻 · 원리 · 예시를 찾아 나만의 말로 정리하세요." : "친구에게 가르치듯 또박또박 설명해 보세요."
+              : "잠시 멈췄습니다. 준비되면 계속하세요."}
+          </p>
+          <div className="focus-actions">
+            <button type="button" className="primary-button" onClick={toggleTimer}>{running ? "Ⅱ  일시정지" : "▶  계속하기"}</button>
+            {isResearch && <button type="button" className="secondary-button" onClick={startPresentation}>조사 끝, 1분 설명 시작</button>}
+          </div>
+          <p className="shortcut"><kbd>SPACE</kbd> 시작 · 일시정지</p>
+        </section>
+      </main>
+    );
+  }
+
+  if (phase === "done") {
+    return (
+      <main className="focus-screen focus-done">
+        <div className="ambient-glow" aria-hidden="true" />
+        <section className="done-content">
+          <p className="eyebrow">ROUND COMPLETE</p>
+          <span className="done-mark" aria-hidden="true">✓</span>
+          <p className="focus-course">{selectedCourse.name}</p>
+          <h1 className="focus-topic">{keyword?.name}</h1>
+          <p className="done-copy">1분 설명을 마쳤어요.<br />방금 설명에서 가장 중요한 문장 하나를 떠올려 보세요.</p>
+          <div className="focus-actions">
+            <button type="button" className="primary-button" onClick={nextKeyword}>다음 키워드</button>
+            <button type="button" className="secondary-button" onClick={() => returnToPicker(true)}>같은 키워드 다시 도전</button>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   return (
-    <main className="site-shell">
-      <header className="topbar">
-        <a className="brand" href="#top" aria-label="토픽 픽 처음으로">
-          <span className="brand-mark" aria-hidden="true">T!</span>
-          <span>TOPIC PICK</span>
-        </a>
-        <div className="curriculum-tag">2022 개정 교육과정 · 중학교 & 고등학교</div>
-        <div className="round-chip">ROUND {round.toString().padStart(2, "0")}</div>
+    <main className="picker-screen" id="top">
+      <div className="ambient-glow" aria-hidden="true" />
+      <header className="picker-header">
+        <a href="#top" className="wordmark">TOPIC PICK</a>
+        <span>ROUND {round.toString().padStart(2, "0")}</span>
       </header>
 
-      <section className="hero" id="top">
-        <div>
-          <p className="eyebrow"><span /> 과학·사회·수학 교육과정에서 무작위 개념 뽑기</p>
-          <h1>탐구와 수학을,<br /><em>딱 1분</em>으로.</h1>
+      <section className="picker-content">
+        <div className="intro">
+          <p className="eyebrow">2022 개정 교육과정</p>
+          <h1>배운 개념을<br />설명해보세요</h1>
+          <p>과학·사회·수학의 키워드를 뽑아<br />10분 조사하고, 1분 동안 말해보세요.</p>
         </div>
-        <p className="hero-copy">과학·사회·수학의 핵심 개념을 골라<br />배운 것을 나만의 말로 설명해 보세요.</p>
-      </section>
 
-      <section className="workspace" aria-label="교육과정 주제 활동">
-        <div className="pick-panel">
-          <div className="panel-heading">
-            <div>
-              <span className="step-number">01</span>
-              <h2>내용 요소 키워드</h2>
-            </div>
-            <span className="count-label">공식 지식·이해 · {filtered.length}개</span>
-          </div>
+        <div className="level-toggle" aria-label="학교급 선택">
+          <button type="button" className={level === "middle" ? "active" : ""} onClick={() => changeLevel("middle")} aria-pressed={level === "middle"}>중학교</button>
+          <button type="button" className={level === "high" ? "active" : ""} onClick={() => changeLevel("high")} aria-pressed={level === "high"}>고등학교</button>
+        </div>
 
-          <div className="course-picker">
-            <div className="all-subjects-banner">
-              <div>
-                <span>2022 개정 과학·사회·수학 교육과정</span>
-                <strong>{CURRICULUM_COURSES.length}개 과목</strong>
-                <small>중학교 {middleCourseCount} · 고등학교 {highCourseCount}</small>
-              </div>
-              <button onClick={drawFromAllCourses} disabled={running}>과목 + 주제 한 번에 뽑기 <span aria-hidden="true">↗</span></button>
-            </div>
-            <div className="level-switch" aria-label="학교급 선택">
-              <button className={level === "middle" ? "active" : ""} onClick={() => changeLevel("middle")} disabled={running} aria-pressed={level === "middle"}>중학교</button>
-              <button className={level === "high" ? "active" : ""} onClick={() => changeLevel("high")} disabled={running} aria-pressed={level === "high"}>고등학교</button>
-            </div>
-            <div className="select-grid">
-              <label>
-                <span>교과군</span>
-                <select value={subjectGroup} onChange={(event) => changeSubjectGroup(event.target.value)} disabled={running}>
-                  {subjectGroups.map((group) => <option key={group} value={group}>{group}</option>)}
-                </select>
-              </label>
-              <label>
-                <span>과목</span>
-                <select value={courseId} onChange={(event) => changeCourse(event.target.value)} disabled={running}>
-                  {coursesInGroup.map((course) => <option key={course.id} value={course.id}>{course.name}</option>)}
-                </select>
-              </label>
-            </div>
-            <div className="course-summary">
-              <span style={{ background: colorFor(selectedCourse.subjectGroup) }}>{selectedCourse.category}</span>
-              <strong>{selectedCourse.name}</strong>
-              <small>{level === "middle" ? "중학교" : "고등학교"} · {selectedCourse.subjectGroup}</small>
-            </div>
-          </div>
+        <div className="curriculum-selectors">
+          <label>
+            <span>교과군</span>
+            <select value={subjectGroup} onChange={(event) => changeSubjectGroup(event.target.value)} disabled={spinning}>
+              {subjectGroups.map((group) => <option key={group} value={group}>{group}</option>)}
+            </select>
+          </label>
+          <label>
+            <span>과목</span>
+            <select value={courseId} onChange={(event) => changeCourse(event.target.value)} disabled={spinning}>
+              {coursesInGroup.map((course) => <option key={course.id} value={course.id}>{course.name}</option>)}
+            </select>
+          </label>
+          <label className="wide-selector">
+            <span>파트</span>
+            <select value={topicCategory} onChange={(event) => { setTopicCategory(event.target.value); setKeyword(null); }} disabled={spinning}>
+              <option value="전체">전체 파트 · {keywords.length}개 키워드</option>
+              {topicCategories.map((category) => <option key={category} value={category}>{category}</option>)}
+            </select>
+          </label>
+        </div>
 
-          {topicCategories.length > 1 && (
-            <div className="filters" aria-label="영역 선택">
-              {["전체", ...topicCategories].map((item) => (
-                <button key={item} className={topicCategory === item ? "filter active" : "filter"} onClick={() => setTopicCategory(item)} aria-pressed={topicCategory === item}>{item}</button>
-              ))}
-            </div>
+        <div className="topic-zone" aria-live="polite">
+          {keyword ? (
+            <>
+              <p className="topic-meta">{selectedCourse.name} · {keyword.category}</p>
+              <h2 className={spinning ? "topic-display spinning" : "topic-display landed"}>{keyword.name}</h2>
+              {!spinning && <p className="topic-guide">뜻 · 핵심 원리 · 구체적인 예시 하나</p>}
+            </>
+          ) : (
+            <>
+              <p className="topic-meta">{selectedCourse.category} · {filtered.length}개 키워드</p>
+              <h2 className="topic-placeholder">과목을 고르고<br />키워드를 뽑아보세요</h2>
+            </>
           )}
-
-          <div className={keyword ? "keyword-card selected" : "keyword-card"} aria-live="polite">
-            {keyword ? (
-              <>
-                <span className="category-pill" style={{ backgroundColor: badgeColor }}>{keyword.category}</span>
-                <div className="keyword-index">TOPIC {String(keywords.indexOf(keyword) + 1).padStart(2, "0")}</div>
-                <h3>{keyword.name}</h3>
-                <p>{keyword.question}</p>
-                <div className="anchor-row" aria-label="설명에 포함할 핵심어">
-                  {keyword.anchors.map((anchor) => <span key={anchor}>#{anchor}</span>)}
-                </div>
-              </>
-            ) : (
-              <div className="empty-card">
-                <div className="orbit" aria-hidden="true"><i /><b /></div>
-                <p>{selectedCourse.name} 내용 요소에서 뽑아볼까요?</p>
-                <span>아래 버튼을 눌러 시작하세요.</span>
-              </div>
-            )}
-          </div>
-
-          <div className="pick-actions">
-            <button className="draw-button" onClick={drawKeyword} disabled={running}>
-              <span aria-hidden="true">↻</span> {keyword ? "다시 뽑기" : "내용 요소 키워드 뽑기"}
-            </button>
-            {keyword && phase === "ready" && <button className="start-button" onClick={startResearch}>10분 조사 시작 <span aria-hidden="true">→</span></button>}
-          </div>
-          <p className="shortcut-hint">키보드 <kbd>R</kbd> 다시 뽑기</p>
         </div>
 
-        <div className={`timer-panel phase-${phase}`}>
-          <div className="panel-heading timer-heading">
-            <div><span className="step-number">02</span><h2>타이머</h2></div>
-            <span className="live-status"><i className={running ? "is-live" : ""} /> {phaseLabel}</span>
-          </div>
+        <div className="picker-actions">
+          <button type="button" className="primary-button" onClick={drawKeyword} disabled={spinning}>{spinning ? "고르는 중…" : keyword ? "다시 뽑기" : "키워드 뽑기"}</button>
+          <button type="button" className="secondary-button" onClick={startResearch} disabled={!keyword || spinning}>10분 조사 시작</button>
+        </div>
 
-          <div className="current-course-line"><span>{level === "middle" ? "중" : "고"}</span> {selectedCourse.name}</div>
+        <button type="button" className="random-link" onClick={drawFromAllCourses} disabled={spinning}>🎲 전체 과목에서 무작위로 뽑기</button>
 
-          <div className="stage-track" aria-label="진행 단계">
-            <div className={phase === "research" ? "stage current" : phase !== "ready" ? "stage passed" : "stage"}><span>1</span><div><b>자료 조사</b><small>10:00</small></div></div>
-            <i />
-            <div className={phase === "present" ? "stage current" : phase === "done" ? "stage passed" : "stage"}><span>2</span><div><b>1분 설명</b><small>01:00</small></div></div>
-          </div>
-
-          <div className="timer-wrap">
-            <div className="timer-ring" style={{ "--progress": `${progress * 3.6}deg` } as React.CSSProperties}>
-              <div className="timer-face">
-                <span>{phaseLabel}</span>
-                <strong>{phase === "done" ? "00:00" : formatTime(seconds)}</strong>
-                <small>{phase === "ready" ? "주제를 먼저 뽑아주세요" : running ? "집중해서 핵심을 정리해요" : phase === "done" ? "멋진 설명이었어요!" : "잠시 멈춤"}</small>
-              </div>
-            </div>
-          </div>
-
-          <div className="timer-actions">
-            {phase === "ready" && <button className="primary-timer" onClick={keyword ? startResearch : drawKeyword}>{keyword ? "10분 조사 시작" : "키워드 먼저 뽑기"} <span aria-hidden="true">→</span></button>}
-            {(phase === "research" || phase === "present") && (
-              <>
-                <button className="primary-timer" onClick={toggleTimer}>{running ? "Ⅱ  일시정지" : "▶  계속하기"}</button>
-                {phase === "research" && <button className="secondary-timer" onClick={startPresentation}>1분 설명으로 건너뛰기</button>}
-              </>
-            )}
-            {phase === "done" && <button className="primary-timer" onClick={nextRound}>다음 주제 <span aria-hidden="true">→</span></button>}
-          </div>
-          {(phase === "research" || phase === "present") && <p className="space-hint"><kbd>SPACE</kbd> 시작 · 일시정지</p>}
+        <div className="flow-note" aria-label="활동 흐름">
+          <span><b>01</b> 키워드 뽑기</span><i />
+          <span><b>02</b> 10분 조사</span><i />
+          <span><b>03</b> 1분 설명</span>
         </div>
       </section>
 
-      <section className="howto" aria-labelledby="howto-title">
-        <div><p className="eyebrow"><span /> 수업 활용법</p><h2 id="howto-title">네 단계면<br />충분해요.</h2></div>
-        <ol>
-          <li><span>01</span><div><b>고르기</b><p>학교급과 교과군,<br />오늘 공부할 과목을 골라요.</p></div></li>
-          <li><span>02</span><div><b>뽑기</b><p>교육과정 내용 체계의 지식·이해에서<br />짧은 개념 하나를 선택해요.</p></div></li>
-          <li><span>03</span><div><b>조사하기</b><p>10분 동안 뜻·특징·예시를<br />찾아 핵심만 정리해요.</p></div></li>
-          <li><span>04</span><div><b>설명하기</b><p>1분 동안 친구에게 가르치듯<br />나만의 말로 설명해요.</p></div></li>
-        </ol>
-      </section>
-
-      <footer>
-        <span>TOPIC PICK</span>
-        <p>
-          2022 개정 과학과·사회과·수학과 교육과정 내용 요소 · 출처: <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">DECK6/korean-secondary-learning-map</a>
-          <br />공식 승인 제품이 아니며 과목 개설·진로 적합성을 판단하지 않습니다.
-        </p>
+      <footer className="picker-footer">
+        <p>과학·사회·수학 {CURRICULUM_COURSES.length}개 과목 · 확정 키워드 우선</p>
+        <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">교육과정 데이터 출처 ↗</a>
       </footer>
     </main>
   );

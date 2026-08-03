@@ -10,13 +10,13 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const metadataBase = new URL(`${protocol}://${host}`);
-  const image = new URL("/og.png", metadataBase).toString();
+  const image = new URL("/og-v2.png", metadataBase).toString();
 
   return {
     metadataBase,
     title,
     description,
-    openGraph: { title, description, type: "website", locale: "ko_KR", images: [{ url: image, width: 1536, height: 1024, alt: "Topic Pick — 과학·사회·수학을, 딱 1분으로." }] },
+    openGraph: { title, description, type: "website", locale: "ko_KR", images: [{ url: image, width: 1536, height: 1024, alt: "Topic Pick — 배운 개념을 설명해보세요. 10분 조사, 1분 설명." }] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
