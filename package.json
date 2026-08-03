@@ -12,7 +12,8 @@
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "sync:curriculum": "node scripts/sync-curriculum.mjs"
+    "sync:curriculum": "node scripts/sync-curriculum.mjs",
+    "collect:ncic": "node scripts/collect-ncic-pdfs.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
