@@ -20,13 +20,15 @@ test("server-renders the Topic Pick classroom tool", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Topic Pick \| 10분 탐구, 1분 설명<\/title>/i);
+  assert.match(html, /<title>Topic Pick \| 전 과목 10분 탐구, 1분 설명<\/title>/i);
   assert.match(html, /TOPIC PICK/);
-  assert.match(html, /오늘의 개념/);
+  assert.match(html, /모든 과목을/);
+  assert.match(html, /과목 \+ 주제 한 번에 뽑기/);
   assert.match(html, /중학교/);
   assert.match(html, /고등학교/);
-  assert.match(html, /물리학/);
-  assert.match(html, /주제 먼저 뽑기/);
+  assert.match(html, /공통국어1/);
+  assert.match(html, /키워드 먼저 뽑기/);
+  assert.match(html, /성취기준 키워드/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -39,7 +41,7 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   ]);
 
   assert.match(page, /CURRICULUM_COURSES/);
-  assert.match(page, /PHYSICS_KEYWORDS/);
+  assert.match(page, /standardSummary/);
   assert.match(data, /DECK6\/korean-secondary-learning-map/);
   assert.match(data, /68e62283cfc337e2de643a3cd1b0334e411acf54/);
   assert.match(data, /kr-2022-middle-v0\.5\.0-candidate/);
@@ -49,5 +51,7 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.match(packageJson, /"sync:curriculum"/);
 
   const courseCount = (data.match(/"id": "kr\.course\.2022\./g) ?? []).length;
-  assert.equal(courseCount, 255);
+  assert.equal(courseCount, 783);
+  assert.match(data, /"standardCode": "\[/);
+  assert.match(data, /"standardSummary":/);
 });
