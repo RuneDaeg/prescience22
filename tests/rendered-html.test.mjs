@@ -48,9 +48,10 @@ test("splits official content elements into one-minute concept keywords", () => 
 });
 
 test("keeps curriculum provenance and the generated course catalog", async () => {
-  const [page, data, notice, packageJson] = await Promise.all([
+  const [page, data, curatedText, notice, packageJson] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/curriculum-data.ts", import.meta.url), "utf8"),
+    readFile(new URL("../sources/curated-keywords.json", import.meta.url), "utf8"),
     readFile(new URL("../THIRD_PARTY_NOTICES.md", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
@@ -72,4 +73,14 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.match(data, /"domain": "교육과정 영역"/);
   assert.doesNotMatch(data, /"standardSummary":/);
   assert.doesNotMatch(data, /비교하여 공통점과 차이점을/);
+
+  const curated = JSON.parse(curatedText);
+  const physics = curated.courses.find((course) => course.course === "물리학");
+  const keywords = physics.sections.flatMap((section) => section.keywords);
+  assert.ok(keywords.includes("충격량과 운동량의 관계"));
+  assert.ok(keywords.includes("전자기 유도"));
+  assert.ok(keywords.includes("시간 팽창"));
+  assert.ok(!keywords.includes("전기 안전"));
+  assert.ok(!keywords.includes("전기 신호 입력 장치"));
+  assert.ok(!keywords.includes("열역학 제2법칙"));
 });
