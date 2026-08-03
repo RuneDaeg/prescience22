@@ -83,4 +83,16 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.ok(!keywords.includes("전기 안전"));
   assert.ok(!keywords.includes("전기 신호 입력 장치"));
   assert.ok(!keywords.includes("열역학 제2법칙"));
+
+  const chemistry = curated.courses.find((course) => course.course === "화학");
+  const chemistryKeywords = chemistry.sections.flatMap((section) => section.keywords);
+  assert.ok(chemistryKeywords.includes("르샤틀리에 원리"));
+  assert.ok(chemistryKeywords.includes("중화 적정"));
+  assert.ok(!chemistryKeywords.includes("용액의 희석"));
+  assert.ok(!chemistryKeywords.includes("용액 제조"));
+  assert.ok(!chemistryKeywords.includes("미지 용액"));
+  assert.ok(!chemistryKeywords.includes("미지 용액의 농도"));
+  assert.ok(!chemistryKeywords.includes("뷰렛"));
+  assert.ok(!chemistryKeywords.includes("피펫"));
+  assert.ok(!chemistryKeywords.includes("부피 플라스크"));
 });
