@@ -34,8 +34,8 @@ const keywordsForCourse = (course: CurriculumCourse): Keyword[] => {
   return course.topics.map((topic) => ({
     name: topic.name,
     category: topic.domain,
-    question: `성취기준 ‘${topic.standardSummary}’을 바탕으로 핵심 개념과 판단·수행 과정을 설명해 보세요.`,
-    anchors: [topic.standardCode, topic.domain, "구체적 예시"],
+    question: `‘${topic.name}’의 뜻과 핵심 원리 또는 특징을 예시 하나와 함께 설명해 보세요.`,
+    anchors: [topic.sourceLabel, topic.domain, "예시 1개"],
   }));
 };
 
@@ -259,9 +259,9 @@ export default function Home() {
           <div className="panel-heading">
             <div>
               <span className="step-number">01</span>
-              <h2>성취기준 키워드</h2>
+              <h2>내용 요소 키워드</h2>
             </div>
-            <span className="count-label">성취기준 기반 {filtered.length}개</span>
+            <span className="count-label">공식 지식·이해 · {filtered.length}개</span>
           </div>
 
           <div className="course-picker">
@@ -320,7 +320,7 @@ export default function Home() {
             ) : (
               <div className="empty-card">
                 <div className="orbit" aria-hidden="true"><i /><b /></div>
-                <p>{selectedCourse.name} 성취기준에서 뽑아볼까요?</p>
+                <p>{selectedCourse.name} 내용 요소에서 뽑아볼까요?</p>
                 <span>아래 버튼을 눌러 시작하세요.</span>
               </div>
             )}
@@ -328,7 +328,7 @@ export default function Home() {
 
           <div className="pick-actions">
             <button className="draw-button" onClick={drawKeyword} disabled={running}>
-              <span aria-hidden="true">↻</span> {keyword ? "다시 뽑기" : "성취기준 키워드 뽑기"}
+              <span aria-hidden="true">↻</span> {keyword ? "다시 뽑기" : "내용 요소 키워드 뽑기"}
             </button>
             {keyword && phase === "ready" && <button className="start-button" onClick={startResearch}>10분 조사 시작 <span aria-hidden="true">→</span></button>}
           </div>
@@ -377,7 +377,7 @@ export default function Home() {
         <div><p className="eyebrow"><span /> 수업 활용법</p><h2 id="howto-title">네 단계면<br />충분해요.</h2></div>
         <ol>
           <li><span>01</span><div><b>고르기</b><p>학교급과 교과군,<br />오늘 공부할 과목을 골라요.</p></div></li>
-          <li><span>02</span><div><b>뽑기</b><p>성취기준에서 만든 핵심 과제를<br />하나 무작위로 선택해요.</p></div></li>
+          <li><span>02</span><div><b>뽑기</b><p>교육과정 내용 체계의 지식·이해에서<br />짧은 개념 하나를 선택해요.</p></div></li>
           <li><span>03</span><div><b>조사하기</b><p>10분 동안 뜻·특징·예시를<br />찾아 핵심만 정리해요.</p></div></li>
           <li><span>04</span><div><b>설명하기</b><p>1분 동안 친구에게 가르치듯<br />나만의 말로 설명해요.</p></div></li>
         </ol>
@@ -386,7 +386,7 @@ export default function Home() {
       <footer>
         <span>TOPIC PICK</span>
         <p>
-          2022 개정 교육과정 후보 데이터 · 출처: <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">DECK6/korean-secondary-learning-map</a>
+          2022 개정 교육과정 과목 구조 및 NCIC 교과별 교육과정 내용 요소 · 출처: <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">DECK6/korean-secondary-learning-map</a>
           <br />공식 승인 제품이 아니며 과목 개설·진로 적합성을 판단하지 않습니다.
         </p>
       </footer>

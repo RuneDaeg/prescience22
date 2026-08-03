@@ -28,7 +28,8 @@ test("server-renders the Topic Pick classroom tool", async () => {
   assert.match(html, /고등학교/);
   assert.match(html, /공통국어1/);
   assert.match(html, /키워드 먼저 뽑기/);
-  assert.match(html, /성취기준 키워드/);
+  assert.match(html, /내용 요소 키워드/);
+  assert.match(html, /공식 지식·이해/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -41,7 +42,7 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   ]);
 
   assert.match(page, /CURRICULUM_COURSES/);
-  assert.match(page, /standardSummary/);
+  assert.match(page, /topic\.name/);
   assert.match(data, /DECK6\/korean-secondary-learning-map/);
   assert.match(data, /68e62283cfc337e2de643a3cd1b0334e411acf54/);
   assert.match(data, /kr-2022-middle-v0\.5\.0-candidate/);
@@ -52,6 +53,9 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
 
   const courseCount = (data.match(/"id": "kr\.course\.2022\./g) ?? []).length;
   assert.equal(courseCount, 783);
-  assert.match(data, /"standardCode": "\[/);
-  assert.match(data, /"standardSummary":/);
+  assert.match(data, /"sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p\.82"/);
+  assert.match(data, /"name": "원소 형성"/);
+  assert.match(data, /"domain": "교육과정 영역"/);
+  assert.doesNotMatch(data, /"standardSummary":/);
+  assert.doesNotMatch(data, /비교하여 공통점과 차이점을/);
 });
