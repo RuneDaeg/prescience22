@@ -95,4 +95,14 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.ok(!chemistryKeywords.includes("뷰렛"));
   assert.ok(!chemistryKeywords.includes("피펫"));
   assert.ok(!chemistryKeywords.includes("부피 플라스크"));
+
+  const biology = curated.courses.find((course) => course.course === "생명과학");
+  const biologyKeywords = biology.sections.flatMap((section) => section.keywords);
+  assert.ok(biologyKeywords.includes("유전자 재조합"));
+  assert.ok(biologyKeywords.includes("3역 분류 체계"));
+  assert.ok(biologyKeywords.includes("계통수의 가지점"));
+  assert.ok(!biologyKeywords.includes("유전적 재조합"));
+  assert.ok(!biologyKeywords.includes("역"));
+  assert.ok(!biologyKeywords.includes("계"));
+  assert.ok(!biologyKeywords.includes("문"));
 });
