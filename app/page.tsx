@@ -42,7 +42,7 @@ const keywordsForCourse = (course: CurriculumCourse): Keyword[] => {
 const defaultCourse = (level: CurriculumLevel) =>
   CURRICULUM_COURSES.find((course) =>
     level === "high"
-      ? course.level === "high" && course.name === "공통국어1"
+      ? course.level === "high" && course.name === "통합과학1"
       : course.level === "middle" && course.name === "과학",
   ) ?? CURRICULUM_COURSES.find((course) => course.level === level)!;
 
@@ -248,10 +248,10 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div>
-          <p className="eyebrow"><span /> 중·고등학교 전 과목에서 무작위 주제 뽑기</p>
-          <h1>모든 과목을,<br /><em>딱 1분</em>으로.</h1>
+          <p className="eyebrow"><span /> 과학·사회·수학 교육과정에서 무작위 개념 뽑기</p>
+          <h1>탐구와 수학을,<br /><em>딱 1분</em>으로.</h1>
         </div>
-        <p className="hero-copy">국어·수학·과학·예술부터 직업계열까지.<br />배운 것을 나만의 말로 설명해 보세요.</p>
+        <p className="hero-copy">과학·사회·수학의 핵심 개념을 골라<br />배운 것을 나만의 말로 설명해 보세요.</p>
       </section>
 
       <section className="workspace" aria-label="교육과정 주제 활동">
@@ -267,7 +267,7 @@ export default function Home() {
           <div className="course-picker">
             <div className="all-subjects-banner">
               <div>
-                <span>2022 개정 교육과정 전체</span>
+                <span>2022 개정 과학·사회·수학 교육과정</span>
                 <strong>{CURRICULUM_COURSES.length}개 과목</strong>
                 <small>중학교 {middleCourseCount} · 고등학교 {highCourseCount}</small>
               </div>
@@ -386,7 +386,7 @@ export default function Home() {
       <footer>
         <span>TOPIC PICK</span>
         <p>
-          2022 개정 교육과정 과목 구조 및 NCIC 교과별 교육과정 내용 요소 · 출처: <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">DECK6/korean-secondary-learning-map</a>
+          2022 개정 과학과·사회과·수학과 교육과정 내용 요소 · 출처: <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">DECK6/korean-secondary-learning-map</a>
           <br />공식 승인 제품이 아니며 과목 개설·진로 적합성을 판단하지 않습니다.
         </p>
       </footer>

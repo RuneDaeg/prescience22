@@ -29,6 +29,12 @@ const releases = {};
 const courses = [];
 const officialContent = JSON.parse(readFileSync(resolve("sources", "ncic", "content-elements.json"), "utf8"));
 const officialByCourse = new Map(officialContent.courses.map((course) => [course.id, course.elements]));
+const allowedSubjectGroups = new Set(["과학", "과학 계열", "사회(역사 포함)", "수학"]);
+
+const sanitizeOfficialName = (name) => name
+  .replace(/\s+(?:와|과|한|화|을|를|의|사|출|전한)$/u, "")
+  .replace(/\s+/g, " ")
+  .trim();
 
 const usableContentElement = (name) => {
   const value = name.replace(/\s+/g, " ").trim();
@@ -41,7 +47,7 @@ const usableContentElement = (name) => {
 const officialTopics = (courseId) => {
   const seen = new Set();
   return (officialByCourse.get(courseId) ?? [])
-    .flatMap((item) => conceptsFromContentElement(item.name).map((name) => ({ ...item, name })))
+    .flatMap((item) => conceptsFromContentElement(sanitizeOfficialName(item.name)).map((name) => ({ ...item, name })))
     .filter((item) => usableContentElement(item.name))
     .filter((item) => {
       const key = item.name.replace(/\s+/g, "");
@@ -76,6 +82,8 @@ for (const level of ["middle", "high"]) {
   }
 
   for (const course of courseCollection.records) {
+    const subjectGroup = groups.get(course.subjectGroupId) ?? "기타";
+    if (!allowedSubjectGroups.has(subjectGroup)) continue;
     const standards = standardsByCourse.get(course.id) ?? [];
     if (standards.length === 0) continue;
     const official = officialTopics(course.id);
@@ -84,7 +92,7 @@ for (const level of ["middle", "high"]) {
     courses.push({
       id: course.id,
       level,
-      subjectGroup: groups.get(course.subjectGroupId) ?? "기타",
+      subjectGroup,
       name: course.labelKorean,
       category: categoryLabels[course.courseCategory] ?? course.courseCategory,
       topics: official.length > 0 ? official : fallbackDomains,

@@ -98,6 +98,35 @@ def crop_middle_knowledge(page):
     return clean_items(split_bullets(text))
 
 
+def crop_social_knowledge(page):
+    """Extract the knowledge/understanding row from the social-studies tables.
+
+    These PDFs print the category label vertically, so the generic line-based
+    parser never sees `지식·이해` as one continuous line.
+    """
+    words = page.extract_words()
+    content_words = [word for word in words if word["text"] == "내용" and word["top"] > 250]
+    element_words = [word for word in words if word["text"] == "요소" and word["top"] > 250]
+    process_words = [word for word in words if "과정" in word["text"] and "기능" in word["text"]]
+    if not content_words or not element_words or not process_words:
+        return [], False
+
+    header_top = min(
+        word["top"]
+        for word in content_words
+        if any(abs(word["top"] - element["top"]) < 3 for element in element_words)
+    )
+    process_top = min((word["top"] for word in process_words if word["top"] > header_top), default=None)
+    if process_top is None:
+        return [], False
+
+    middle_headers = [word for word in words if word["text"] == "중학교" and abs(word["top"] - header_top) < 40]
+    is_middle = bool(middle_headers)
+    x0 = min(word["x0"] for word in middle_headers) - 55 if is_middle else 160
+    text = page.crop((max(0, x0), header_top + 20, page.width - 10, process_top - 2)).extract_text(layout=True)
+    return clean_items(split_bullets(text)), is_middle
+
+
 def extract_pdf(pdf_path, source_id, candidate_ids, courses):
     by_course = defaultdict(list)
     middle_candidates = [course_id for course_id in candidate_ids if courses[course_id]["level"] == "middle"]
@@ -127,6 +156,16 @@ def extract_pdf(pdf_path, source_id, candidate_ids, courses):
                 if resolved:
                     current_course = resolved
                     knowledge_active = False
+
+            if source_id.endswith("annex7"):
+                social_items, is_middle_table = crop_social_knowledge(page)
+                if social_items:
+                    eligible = middle_candidates if is_middle_table else [course_id for course_id in candidate_ids if courses[course_id]["level"] == "high"]
+                    target = current_course if current_course in eligible else (eligible[0] if len(eligible) == 1 else None)
+                    if target:
+                        for item in social_items:
+                            by_course[target].append({"name": item, "category": "지식·이해", "page": page_number, "sourceId": source_id})
+                    continue
 
             middle_items = crop_middle_knowledge(page)
             if middle_items and middle_candidates:

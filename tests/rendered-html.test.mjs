@@ -21,13 +21,15 @@ test("server-renders the Topic Pick classroom tool", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Topic Pick \| 전 과목 10분 탐구, 1분 설명<\/title>/i);
+  assert.match(html, /<title>Topic Pick \| 과학·사회·수학 10분 탐구, 1분 설명<\/title>/i);
   assert.match(html, /TOPIC PICK/);
-  assert.match(html, /모든 과목을/);
+  assert.match(html, /탐구와 수학을/);
   assert.match(html, /과목 \+ 주제 한 번에 뽑기/);
   assert.match(html, /중학교/);
   assert.match(html, /고등학교/);
-  assert.match(html, /공통국어1/);
+  assert.match(html, /통합과학1/);
+  assert.match(html, /과학·사회·수학/);
+  assert.doesNotMatch(html, /공통국어1/);
   assert.match(html, /키워드 먼저 뽑기/);
   assert.match(html, /내용 요소 키워드/);
   assert.match(html, /공식 지식·이해/);
@@ -64,7 +66,7 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.match(packageJson, /"sync:curriculum"/);
 
   const courseCount = (data.match(/"id": "kr\.course\.2022\./g) ?? []).length;
-  assert.equal(courseCount, 783);
+  assert.equal(courseCount, 72);
   assert.match(data, /"sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p\.82"/);
   assert.match(data, /"name": "원소 형성"/);
   assert.match(data, /"domain": "교육과정 영역"/);
