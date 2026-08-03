@@ -2785,19 +2785,79 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "과학과 문명의 탄생과 통합",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "감염병",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
       },
       {
-        "name": "변화하는 과학과 세계",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "백신",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
       },
       {
-        "name": "과학과 인류의 미래",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "교통수단 속의 과학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "산업혁명 이후 과학기술의 명암",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "과학기술 기반 문화 콘텐츠",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "미디어 속 과학의 언어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "과학기술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "음악",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "인간",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "사물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "사물의 대화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "증강 현실",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "가상 현실",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "가상 현실의 세계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
+      },
+      {
+        "name": "시민 참여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
       }
     ]
   },
@@ -2819,7 +2879,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.99"
       },
       {
-        "name": "탐구 과정과 절차",
+        "name": "탐구 과정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.99"
+      },
+      {
+        "name": "절차",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.99"
       }
@@ -2851,7 +2916,85 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "연구 윤리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.102"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.35811985f46abf91",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "기후변화와 환경생태",
+    "category": "융합 선택",
+    "topics": [
+      {
+        "name": "육상생태계의 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
       },
+      {
+        "name": "수생태계의 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "기후변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "감염병",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "해양생태계의 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "복원",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "급격한 환경생태 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "대응 노력",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "탄소 저감 과학기술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "환경생태 보전을 위한 국제적 노력",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "시민참여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      },
+      {
+        "name": "융합적 사고",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.a3e0712414844bb3",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "물리학",
+    "category": "일반 선택",
+    "topics": [
       {
         "name": "전류의 자기 작용",
         "domain": "지식·이해",
@@ -2863,7 +3006,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
       },
       {
-        "name": "중첩과 간섭",
+        "name": "중첩",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
+      },
+      {
+        "name": "간섭",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
       },
@@ -2873,12 +3021,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
       },
       {
-        "name": "빛과 물질의 이중성",
+        "name": "물질",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
       },
       {
-        "name": "에너지띠와 반도체",
+        "name": "물질의 이중성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
+      },
+      {
+        "name": "에너지띠",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
+      },
+      {
+        "name": "반도체",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
       },
@@ -2886,37 +3044,75 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "광속 불변",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.115"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.ccdce9a9cbfbe8be",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "물질과 에너지",
+    "category": "진로 선택",
+    "topics": [
+      {
+        "name": "엔탈피",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "가역 반응과 동적 평형",
+        "name": "열화학 반응식",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "평형 상수",
+        "name": "헤스 법칙",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "평형의 이동",
+        "name": "엔트로피",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "몰 농도",
+        "name": "반응 속도의 표현",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "물의 자동 이온화와 pH",
+        "name": "의미",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
       {
-        "name": "중화 반응의 양적 관계",
+        "name": "반응 속도식",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
       },
+      {
+        "name": "1차 반응의 반감기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+      },
+      {
+        "name": "활성화 에너지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+      },
+      {
+        "name": "반응 속도에 영향을 미치는 요인",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.e4000a151f61fc2d",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "생명과학",
+    "category": "일반 선택",
+    "topics": [
       {
         "name": "내분비계의 특성",
         "domain": "지식·이해",
@@ -2928,7 +3124,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
       {
-        "name": "선천적",
+        "name": "선천적 면역",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
@@ -2938,12 +3134,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
       {
-        "name": "항원",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
-      },
-      {
-        "name": "항체 반응",
+        "name": "항원⋅항체 반응",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
@@ -2958,7 +3149,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
       {
-        "name": "DNA와 유전자",
+        "name": "DNA",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
+      },
+      {
+        "name": "유전자",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
+      },
+      {
+        "name": "생식 세포의 형성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
@@ -2973,7 +3174,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
       {
-        "name": "동물과 식물의 다양성과 계통수",
+        "name": "동물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
+      },
+      {
+        "name": "식물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
+      },
+      {
+        "name": "식물의 다양성과 계통수",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
       },
@@ -2981,62 +3192,169 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "생명과학 탐구 설계",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.139"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.92ec69a3474b6737",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "생물의 유전",
+    "category": "진로 선택",
+    "topics": [
+      {
+        "name": "진핵생물의 유전자 발현 조절",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "지사 해석 방법",
+        "name": "발생",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "상대연령과 절대연령",
+        "name": "세포 분화에서의 유전자 발현 조절",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "지질시대의 환경과 생물",
+        "name": "생명공학기술의 발달",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "국가지질공원",
+        "name": "생명공학기술 관련 분야",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "태양계 모형",
+        "name": "유전자 변형 생물체의 개발",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "행성의 겉보기 운동",
+        "name": "이용",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "일식과 월식",
+        "name": "생명공학기술의 활용",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "별의 물리량",
+        "name": "생명윤리",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
       },
       {
-        "name": "별의 진화와 H-R도",
+        "name": "생명과학 탐구 설계",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.9259e0722898177b",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "세포와 물질대사",
+    "category": "진로 선택",
+    "topics": [
+      {
+        "name": "효소의 작용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
       },
       {
-        "name": "은하의 구성과 분류",
+        "name": "효소의 종류",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
       },
       {
-        "name": "우주의 팽창",
+        "name": "효소의 이용",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
       },
+      {
+        "name": "미토콘드리아",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "미토콘드리아의 구조",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "미토콘드리아의 기능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "세포호흡 과정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "발효",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "엽록체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "엽록체의 구조",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "엽록체의 기능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "명반응",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "탄소 고정반응",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "전자전달계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "광합성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "세포호흡",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      },
+      {
+        "name": "생명과학 탐구 설계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.4c5c974f5e3449db",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "역학과 에너지",
+    "category": "진로 선택",
+    "topics": [
       {
         "name": "열의 이동",
         "domain": "지식·이해",
@@ -3068,12 +3386,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.167"
       },
       {
-        "name": "투과와 반사",
+        "name": "반사",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.167"
       },
       {
-        "name": "간섭과 소음 제어",
+        "name": "간섭",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.167"
+      },
+      {
+        "name": "소음 제어",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.167"
       },
@@ -3081,14 +3404,107 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "정상파",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.167"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.adc674b93d6653ed",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "융합과학 탐구",
+    "category": "융합 선택",
+    "topics": [
+      {
+        "name": "디지털 탐구 도구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
       },
       {
-        "name": "렌즈와 수차",
+        "name": "데이터 수집",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "데이터의 시각화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "결론 도출 및 과학적 의사소통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "미래 사회",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "융합과학기술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "사회적 난제 해결",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "융합과학 탐구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "사회 문제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "시민참여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "컴퓨터",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      },
+      {
+        "name": "융합적 사고",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.47cd1defd30f5bd7",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "전자기와 양자",
+    "category": "진로 선택",
+    "topics": [
+      {
+        "name": "렌즈",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.179"
       },
       {
-        "name": "간섭과 회절",
+        "name": "수차",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.179"
+      },
+      {
+        "name": "간섭",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.179"
+      },
+      {
+        "name": "회절",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.179"
       },
@@ -3126,162 +3542,100 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "핵융합",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.179"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.9587081f2a5eebb2",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "지구과학",
+    "category": "일반 선택",
+    "topics": [
+      {
+        "name": "지사 해석 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "엔탈피와 열화학 반응식",
+        "name": "상대연령",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "헤스 법칙",
+        "name": "절대연령",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "엔트로피",
+        "name": "지질시대의 환경",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "반응 속도의 표현과 의미",
+        "name": "생물",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "반응 속도식",
+        "name": "국가지질공원",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "1차 반응의 반감기",
+        "name": "태양계 모형",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "활성화 에너지",
+        "name": "행성의 겉보기 운동",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "반응 속도에 영향을 미치는 요인",
+        "name": "일식",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.191"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "표준 환원 전위",
+        "name": "월식",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "화학 전지",
+        "name": "별의 물리량",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "전기 분해",
+        "name": "별의 진화",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "화학 전지의 유용성",
+        "name": "H-R도",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "작용기와 반응",
+        "name": "은하의 구성",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
       },
       {
-        "name": "고분자 물질",
+        "name": "우주의 팽창",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
-      },
-      {
-        "name": "신물질 개발",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
-      },
-      {
-        "name": "효소의 작용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "효소의 종류",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "효소의 이용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "미토콘드리아의 구조와 기능",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "세포호흡 과정",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "발효",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "엽록체의 구조와 기능",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "명반응과 탄소 고정반응",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "전자전달계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "광합성과 세포호흡의 관계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.214"
-      },
-      {
-        "name": "진핵생물의 유전자 발현 조절",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
-      {
-        "name": "발생과 세포 분화에서의 유전자 발현 조절",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
-      {
-        "name": "생명공학기술의 발달",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
-      {
-        "name": "생명공학기술 관련 분야",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
-      {
-        "name": "유전자 변형 생물체의 개발과 이용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
-      {
-        "name": "생명공학기술의 활용과 생명윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.226"
-      },
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.151"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.8a1581742b2c86f6",
+    "level": "high",
+    "subjectGroup": "과학",
+    "name": "지구시스템과학",
+    "category": "진로 선택",
+    "topics": [
       {
         "name": "쓰나미",
         "domain": "지식·이해",
@@ -3293,7 +3647,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.237"
       },
       {
-        "name": "조석과 기조력",
+        "name": "조석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.237"
+      },
+      {
+        "name": "기조력",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.237"
       },
@@ -3346,450 +3705,6 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "제트류",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.237"
-      },
-      {
-        "name": "쌍성계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "질량-광도 관계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "변광성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "초신성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "성간 티끌",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "성간 소광",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "세페이드 변광성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "은하의 회전과 질량",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "암흑 물질",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "전천 탐사",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "우주 거대 구조",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
-      },
-      {
-        "name": "감염병과 백신",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "교통수단 속의 과학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "산업혁명 이후 과학기술의 명암",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "과학기술 기반 문화 콘텐츠",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "미디어 속 과학의 언어",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "과학기술과 음악",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "인간과 사물의 대화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "증강 현실과 가상 현실의 세계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "과학기술과 시민 참여",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.263"
-      },
-      {
-        "name": "육상생태계의 변화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "수생태계의 변화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "기후변화와 감염병",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "해양생태계의 변화와 복원",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "급격한 환경생태 변화와 대응 노력",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "탄소 저감 과학기술",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "환경생태 보전을 위한 국제적 노력과 시민참여",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "융합적 사고",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.274"
-      },
-      {
-        "name": "디지털 탐구 도구와 데이터 수집",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "결론 도출 및 과학적 의사소통",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "미래 사회와 융합과학기술",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "융합과학기술과 사회적 난제 해결",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "융합과학 탐구와 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "사회 문제와 시민참여",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      },
-      {
-        "name": "컴퓨터",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.284"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.35811985f46abf91",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "기후변화와 환경생태",
-    "category": "융합 선택",
-    "topics": [
-      {
-        "name": "기후와 환경생태의 특성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "기후위기와 환경생태 변화",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "기후위기에 대응하는 우리의 노력",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.a3e0712414844bb3",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "물리학",
-    "category": "일반 선택",
-    "topics": [
-      {
-        "name": "힘과 에너지",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "전기와 자기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "빛과 물질",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.ccdce9a9cbfbe8be",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "물질과 에너지",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "물질의 세 가지 상태",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "용액의 성질",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "화학 변화의 자발성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "반응 속도",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.e4000a151f61fc2d",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "생명과학",
-    "category": "일반 선택",
-    "topics": [
-      {
-        "name": "생명 시스템의 구성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "항상성과 몸의 조절",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "생명의 연속성과 다양성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.92ec69a3474b6737",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "생물의 유전",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "유전자와 유전물질",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "유전자의 발현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "생명공학기술",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.9259e0722898177b",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "세포와 물질대사",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "세포",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "물질대사와 에너지",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "세포호흡과 광합성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.4c5c974f5e3449db",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "역학과 에너지",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "시공간과 운동",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "열과 에너지",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "탄성파와 소리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.adc674b93d6653ed",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "융합과학 탐구",
-    "category": "융합 선택",
-    "topics": [
-      {
-        "name": "융합과학 탐구의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "융합과학 탐구의 과정",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "융합과학 탐구의 전망",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.47cd1defd30f5bd7",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "전자기와 양자",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "전자기적 상호작용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "빛과 정보 통신",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "양자와 미시세계",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.9587081f2a5eebb2",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "지구과학",
-    "category": "일반 선택",
-    "topics": [
-      {
-        "name": "대기와 해양의 상호작용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "지구의 역사와 한반도의 암석",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "태양계 천체와 별과 우주의 진화",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.8a1581742b2c86f6",
-    "level": "high",
-    "subjectGroup": "과학",
-    "name": "지구시스템과학",
-    "category": "진로 선택",
-    "topics": [
-      {
-        "name": "지구 탄생과 생동하는 지구",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "해수의 운동",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      },
-      {
-        "name": "강수 과정과 대기의 운동",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
       }
     ]
   },
@@ -3826,7 +3741,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.82"
       },
       {
-        "name": "지각과 생명체 구성 물질의 규칙성",
+        "name": "지각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.82"
+      },
+      {
+        "name": "생명체 구성 물질",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.82"
+      },
+      {
+        "name": "생명체 구성 물질의 규칙성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.82"
       },
@@ -3836,12 +3761,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.82"
       },
       {
-        "name": "지구시스템의 구성과 상호작용",
+        "name": "지구시스템의 구성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       },
       {
-        "name": "판구조론과 지각 변동",
+        "name": "상호작용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
+      },
+      {
+        "name": "판구조론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
+      },
+      {
+        "name": "지각 변동",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       },
@@ -3851,7 +3786,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       },
       {
-        "name": "충격량과 운동량",
+        "name": "충격량",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
+      },
+      {
+        "name": "운동량",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       },
@@ -3866,7 +3806,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       },
       {
-        "name": "유전자와 단백질",
+        "name": "유전자",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
+      },
+      {
+        "name": "단백질",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.83"
       }
@@ -3880,12 +3825,27 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "대기와 해양의 상호작용",
+        "name": "대기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
       {
-        "name": "온실기체와 지구온난화",
+        "name": "해양",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "해양의 상호작용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "온실기체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "지구온난화",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
@@ -3900,17 +3860,32 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
       {
-        "name": "에너지 전환과 효율",
+        "name": "에너지 전환",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
       {
-        "name": "감염병과 병원체",
+        "name": "효율",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
       {
-        "name": "인공지능과 과학 탐구",
+        "name": "감염병",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "병원체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "인공지능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "과학 탐구",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
@@ -3920,7 +3895,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       },
       {
-        "name": "과학기술과 윤리",
+        "name": "과학기술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
+      },
+      {
+        "name": "윤리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.88"
       }
@@ -3934,19 +3914,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "우주탐사와 행성계",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "쌍성계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
       },
       {
-        "name": "태양과 별의 관측",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "질량-광도 관계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
       },
       {
-        "name": "은하와 우주",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "변광성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "초신성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "성간 티끌",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "성간 소광",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "세페이드 변광성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "은하의 회전",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "질량",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "암흑 물질",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "전천 탐사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
+      },
+      {
+        "name": "우주 거대 구조",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.249"
       }
     ]
   },
@@ -3958,24 +3983,44 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "화학의 언어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "가역 반응",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
       },
       {
-        "name": "물질의 구조와 성질",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "동적 평형",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
       },
       {
-        "name": "화학 평형",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "평형 상수",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
       },
       {
-        "name": "역동적인 화학 반응",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "평형의 이동",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+      },
+      {
+        "name": "몰 농도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+      },
+      {
+        "name": "물의 자동 이온화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+      },
+      {
+        "name": "pH",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
+      },
+      {
+        "name": "중화 반응의 양적 관계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.127"
       }
     ]
   },
@@ -3987,19 +4032,44 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "산 염기 평형",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "표준 환원 전위",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
       },
       {
-        "name": "산화⋅환원 반응",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "화학 전지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
       },
       {
-        "name": "탄소 화합물과 반응",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "전기 분해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+      },
+      {
+        "name": "화학 전지의 유용성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+      },
+      {
+        "name": "작용기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+      },
+      {
+        "name": "반응",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+      },
+      {
+        "name": "고분자 물질",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
+      },
+      {
+        "name": "신물질 개발",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.203"
       }
     ]
   },
@@ -5401,34 +5471,79 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "듣기⋅말하기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "대화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.82"
       },
       {
-        "name": "읽기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "토론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.82"
       },
       {
-        "name": "쓰기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "생각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
       },
       {
-        "name": "문법",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "감정이 함축적이고 복합적으로 제시된 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
       },
       {
-        "name": "문학",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사회적 쟁점에 대한 자신의 견해를 나타내는 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
       },
       {
-        "name": "매체",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "개성이 드러나는 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
+      },
+      {
+        "name": "음운 변동",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "담화에 나타난 문법 요소 및 어휘",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "담화에 나타난 문법 요소 및 어휘의 특성과 사용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "작가 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "독자 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "사회⋅문화적 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "문학사적 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "문학 소통의 특성을 고려하며 읽기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
+      },
+      {
+        "name": "다양한 유형의 매체 자료",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.85"
       }
     ]
   },
@@ -5440,34 +5555,79 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "듣기⋅말하기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "발표",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
       },
       {
-        "name": "읽기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "협상",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
       },
       {
-        "name": "쓰기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "생각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
       },
       {
-        "name": "문법",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "감정이 함축적이고 복합적으로 제시된 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
       },
       {
-        "name": "문학",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "복합양식으로 구성된 글이나 자료의 관점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
       },
       {
-        "name": "매체",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "의도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
+      },
+      {
+        "name": "공동 보고서",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
+      },
+      {
+        "name": "논증이 효과적으로 나타나는 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
+      },
+      {
+        "name": "한글 맞춤법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
+      },
+      {
+        "name": "국어 문제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
+      },
+      {
+        "name": "작가 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
+      },
+      {
+        "name": "독자 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
+      },
+      {
+        "name": "사회⋅문화적 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
+      },
+      {
+        "name": "문학사적 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
+      },
+      {
+        "name": "매체 비평 자료",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
       }
     ]
   },
@@ -5479,9 +5639,24 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "책을 바탕으로 삶을 탐구하고 성찰하며 자신과 공동체의 문제를 적극적으로 해결한다.",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "독서 토론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.190"
+      },
+      {
+        "name": "글쓰기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.190"
+      },
+      {
+        "name": "글쓰기의 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.190"
+      },
+      {
+        "name": "대화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.190"
       }
     ]
   },
@@ -5493,9 +5668,19 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "평생 독자 및 평생 필자로서의 주도성과 책임감을 가지고 문어 의사소통을 실천하고, 이를",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "문어 의사소통의 구성 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.130"
+      },
+      {
+        "name": "표현 전략을 고려한 표현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.130"
+      },
+      {
+        "name": "작문 맥락을 고려한 고쳐쓰기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.130"
       }
     ]
   },
@@ -5507,9 +5692,24 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "실제 삶에서 경험하는 매체 의사소통 현상에 주도적이고 협력적인 태도로 참여하여 바람직한",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "디지털 기술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
+      },
+      {
+        "name": "매체 환경 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
+      },
+      {
+        "name": "매체 자료의 사회⋅문화적 구성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
+      },
+      {
+        "name": "재현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
       }
     ]
   },
@@ -5521,9 +5721,24 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "문학을 통해 자아를 성찰하고 타자를 이해하며 공동체의 문제에 공감하고 참여하는 태도를",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "한국 문학의 성격",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
+      },
+      {
+        "name": "역사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
+      },
+      {
+        "name": "한국 문학의 보편성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
+      },
+      {
+        "name": "특수성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
       }
     ]
   },
@@ -5535,9 +5750,19 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "문학과 영상을 통해 자신을 성찰하고 세계와 소통하는 태도를 기르며 관련 분야의 학업과",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "영상의 형상화 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.167"
+      },
+      {
+        "name": "문학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.167"
+      },
+      {
+        "name": "영상 관련 문화적 소양",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.167"
       }
     ]
   },
@@ -5549,9 +5774,14 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "언어의 힘과 가치를 이해하고 바람직한 언어문화 실천에 능동적으로 참여한다.",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "담화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.213"
+      },
+      {
+        "name": "담화의 맥락과 언어적 특성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.213"
       }
     ]
   },
@@ -5563,9 +5793,19 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "주제를 탐구하는 독서를 통해 학업과 진로를 적극적으로 탐색하며 자신의 삶을 성찰하고",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "분야에 따른 책",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.156"
+      },
+      {
+        "name": "자료",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.156"
+      },
+      {
+        "name": "자료의 특성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.156"
       }
     ]
   },
@@ -5577,9 +5817,29 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "직무 환경 변화에 대응하여 지속적으로 자기를 계발하고 직무 공동체의 성장을 촉진하며",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "목적",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
+      },
+      {
+        "name": "맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
+      },
+      {
+        "name": "참여자 특성에 적합한 소통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
+      },
+      {
+        "name": "직무 의사소통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
+      },
+      {
+        "name": "매체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
       }
     ]
   },
@@ -5591,9 +5851,24 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "화법과 언어에 대한 성찰을 통하여 자신의 국어생활을 개선하고 바람직한 의사소통 문화",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "기호를 활용한 사회적 행위로서의 의사소통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
+      },
+      {
+        "name": "맥락에 따른 언어 선택",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
+      },
+      {
+        "name": "담화 관습",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
+      },
+      {
+        "name": "품사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
       }
     ]
   },
@@ -9121,24 +9396,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "데이터 과학의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "데이터의 형태",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
       },
       {
-        "name": "데이터 준비와 분석",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "속성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
       },
       {
-        "name": "데이터 모델링과 평가",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "데이터셋",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
       },
       {
-        "name": "데이터 과학 프로젝트",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "데이터베이스",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
+      },
+      {
+        "name": "데이터 분석 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
+      },
+      {
+        "name": "군집 분석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
+      },
+      {
+        "name": "연관 분석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
+      },
+      {
+        "name": "탐색적 데이터 분석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
+      },
+      {
+        "name": "결과의 의미 해석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
       }
     ]
   },
@@ -9150,19 +9450,54 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "로봇의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "생활 속의 로봇 종류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
       },
       {
-        "name": "공학세계의 탐색과 로봇의 활용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "활용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
       },
       {
-        "name": "로봇공학 프로젝트",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "로봇 윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
+      },
+      {
+        "name": "에너지⋅수송 분야 공학 세계의 이해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
+      },
+      {
+        "name": "정보통신 및 인공지능 기술 분야 공학 세계의 이해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
+      },
+      {
+        "name": "기타 공학 분야의 로봇 활용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
+      },
+      {
+        "name": "로봇의 활용 분야에 따른 진로 이해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
+      },
+      {
+        "name": "로봇을 제어하는 소프트웨어 및 인공지능 기술 이해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
+      },
+      {
+        "name": "로봇공학 문제해결",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
+      },
+      {
+        "name": "정보 수집",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
       }
     ]
   },
@@ -9174,19 +9509,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "사회⋅정서적 자립",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "만남",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
       },
       {
-        "name": "경제적 자립",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이별",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
       },
       {
-        "name": "일상생활 자립",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "대인 관계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
+      },
+      {
+        "name": "관련된 이슈",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
+      },
+      {
+        "name": "협력적 소비",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.136"
+      },
+      {
+        "name": "금융거래",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.136"
+      },
+      {
+        "name": "청년 주거복지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.137"
+      },
+      {
+        "name": "정보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.137"
+      },
+      {
+        "name": "독립적 생활설계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.137"
       }
     ]
   },
@@ -9198,19 +9563,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "인간행동과 생활과학",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "가족복지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.85"
       },
       {
-        "name": "생활환경과 생활과학",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "소비자",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.85"
       },
       {
-        "name": "생활과학과 진로",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "소비 행동 심리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.85"
+      },
+      {
+        "name": "의류직물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "의복디자인",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "패션산업",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "머천다이징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "주거",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "실내디자인",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
+      },
+      {
+        "name": "리빙 크리에이티브",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.87"
+      },
+      {
+        "name": "창업",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.87"
+      },
+      {
+        "name": "지역사회에 기여하는 생활과학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.87"
       }
     ]
   },
@@ -9222,29 +9632,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "세상을 변화시키는 소프트웨어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "소프트웨어 융합",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
       },
       {
-        "name": "창작을 지원하는 소프트웨어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "문제 해결",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
       },
       {
-        "name": "현상을 분석하는 소프트웨어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "미디어 아트",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
       },
       {
-        "name": "모의 실험하는 소프트웨어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "웨어러블 장치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
       },
       {
-        "name": "가치를 창출하는 소프트웨어",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "데이터 시각화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
+      },
+      {
+        "name": "분석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
+      },
+      {
+        "name": "시뮬레이션 활용 분야",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
+      },
+      {
+        "name": "시뮬레이션 모델",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
+      },
+      {
+        "name": "소프트웨어 스타트업 프로젝트",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.215"
       }
     ]
   },
@@ -9256,14 +9686,69 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "부모됨의 준비",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "부모됨의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
       },
       {
-        "name": "아동발달과 돌봄",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "임신",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
+      },
+      {
+        "name": "출산",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
+      },
+      {
+        "name": "부모",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
+      },
+      {
+        "name": "개인으로서",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
+      },
+      {
+        "name": "개인으로서의 삶의 균형",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
+      },
+      {
+        "name": "아동의 발달 단계에 따른 돌봄",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "자녀 간",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "자녀 간의 긍정적 관계의 형성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "아동의 안전한 돌봄 환경",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "사회적 부모",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "지역사회 돌봄",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
+      },
+      {
+        "name": "지역사회 돌봄의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
       }
     ]
   },
@@ -9275,24 +9760,54 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "인공지능의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "인공지능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
       },
       {
-        "name": "인공지능과 학습",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "탐색",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
       },
       {
-        "name": "인공지능의 사회적 영향",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "지식의 표현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
       },
       {
-        "name": "인공지능 프로젝트",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "추론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
+      },
+      {
+        "name": "기계학습 알고리즘",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
+      },
+      {
+        "name": "인공신경망",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
+      },
+      {
+        "name": "딥러닝",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
+      },
+      {
+        "name": "진로",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
+      },
+      {
+        "name": "윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
+      },
+      {
+        "name": "인공지능 문제 해결 절차",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
       }
     ]
   },
@@ -9338,19 +9853,84 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "지식재산의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "신지식재산권의 종류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
       },
       {
-        "name": "지식재산권의 보호와 활용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
       },
       {
-        "name": "지식재산권 창출 프로젝트",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "산업재산권(특허권",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "상표권",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "디자인권)의 등록 요건",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "저작물의 분류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "성립요건",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "지식재산권의 사회",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "경제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
+      },
+      {
+        "name": "기술 사업화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
+      },
+      {
+        "name": "기술 창업",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
+      },
+      {
+        "name": "기업가 정신",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
+      },
+      {
+        "name": "직무 발명 제도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
+      },
+      {
+        "name": "특허 명세서",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
+      },
+      {
+        "name": "특허 도면",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
+      },
+      {
+        "name": "특허 출원",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
       }
     ]
   },
@@ -9362,14 +9942,54 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "창의 공학 설계의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "공학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
       },
       {
-        "name": "창의 공학 설계 프로젝트",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "창의성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
+      },
+      {
+        "name": "팀워크",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
+      },
+      {
+        "name": "창의 공학 설계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
+      },
+      {
+        "name": "문제 해결 과정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
+      },
+      {
+        "name": "최적의 대안 선정 및 평가 기법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
+      },
+      {
+        "name": "제도의 기본 규칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
+      },
+      {
+        "name": "디지털 기반 공학 설계 도구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
+      },
+      {
+        "name": "시제품 제작 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
+      },
+      {
+        "name": "시제품 평가 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
       }
     ]
   },
@@ -12959,29 +13579,124 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "윤리문제 탐구의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "윤리문제 탐구의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.82"
       },
       {
-        "name": "시민의 삶과 윤리적 탐구",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "중요성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.82"
       },
       {
-        "name": "인공지능 시대의 삶과 윤리적 탐구",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "윤리문제 탐구 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.82"
       },
       {
-        "name": "생태적 삶과 윤리적 탐구",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사회적 차별 표현을 바라보는 다양한 관점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
       },
       {
-        "name": "윤리문제 탐구의 적용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사회적 차별 표현 문제의 해결 방안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "배타적 민족주의의 확산",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "난민 문제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "난민 문제의 해결 방안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "빅데이터",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "알고리즘",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "알고리즘의 편향성 문제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "사회적 책임",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "공정성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "공정성의 확보 방안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "인공지능 활용의 윤리적 딜레마",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "인공지능의 바람직한 활용 방안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
+      },
+      {
+        "name": "기후위기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "인류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "인류의 책임",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "에너지 전환",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "탄소 중립을 둘러싼 논쟁과 실천",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "윤리문제 탐구 활동",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "탐구 결과의 정리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+      },
+      {
+        "name": "발표",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
       }
     ]
   },
@@ -12993,24 +13708,219 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "동양 윤리사상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "다투지 않음",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
       },
       {
-        "name": "한국 윤리사상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "자연 그대로",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
       },
       {
-        "name": "서양 윤리사상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "자연 그대로의 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
       },
       {
-        "name": "사회사상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "분별을 잊음",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "자유롭게 노니는 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "상호의존적인 세계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "실체가 없는 존재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "깨달음을 향한 수행",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "자비",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "자비의 실천",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
+      },
+      {
+        "name": "순수한 도덕본성의 발현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "일상적 감정의 도덕적 조절",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "내적 깨어있음",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "외적 실천",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "마음의 생동성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "활동적 이치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "본성의 확충",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "마음",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "마음의 주체성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "그리스도교",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "사랑",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "사랑의 윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "자연법 윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "프로테스탄티즘 윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "의무론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "선의지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "결과론",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "공리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "주체적 결단",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "문제 해결",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "문제 해결의 유용성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "도덕의 기원",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "판단에 대한 과학적 설명",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "책임⋅배려",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "윤리적 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
+      },
+      {
+        "name": "민주주의의 지향",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "참여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "심의를 통한 민주주",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "심의를 통한 민주주의 구현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "자본주의의 원리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "현실",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "자본주의의 윤리적 개선",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
+      },
+      {
+        "name": "대안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
       }
     ]
   },
@@ -13022,34 +13932,99 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "성찰 대상으로서 나",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "삶의 주체로서의 나",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
       },
       {
-        "name": "타인과 관계 맺기",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "고통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
       },
       {
-        "name": "자유와 평등",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "쾌락을 대하는 자세",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
       },
       {
-        "name": "다양성과 포용성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "의미 있는 타자로서의 친구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
       },
       {
-        "name": "공존과 지속가능성",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사랑",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
       },
       {
-        "name": "삶의 의미에 대한 물음",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "배려",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
+      },
+      {
+        "name": "배려의 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
+      },
+      {
+        "name": "능력에 따른 분배",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "한계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "자유롭고 평등한 삶을 위한 정의의 원칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "가상세계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "현실세계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "현실세계의 상호성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
+      },
+      {
+        "name": "기후위기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
+      },
+      {
+        "name": "지속가능한 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
+      },
+      {
+        "name": "상생을 위한 실천원칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
+      },
+      {
+        "name": "인생의 유한성 자각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
+      },
+      {
+        "name": "삶의 의미를 찾는 과정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
+      },
+      {
+        "name": "방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
       }
     ]
   },
@@ -13061,34 +14036,154 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "현대 생활과 윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "동양 윤리의 접근",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.38"
       },
       {
-        "name": "생명윤리와 생태윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "서양 윤리의 접근",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.38"
       },
       {
-        "name": "과학과 디지털 학습 환경 윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사랑",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
       },
       {
-        "name": "민주시민과 윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "결혼",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
       },
       {
-        "name": "문화와 경제생활의 윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "가족",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
       },
       {
-        "name": "평화와 공존의 윤리",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "가족의 윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "자연을 바라보는 동⋅서양의 관점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "환경 문제에 대한 윤리적 쟁점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "정보사회의 특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "윤리적 쟁점들",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "뉴미디어 사회의 특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "인공지능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "인간",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "인공지능의 윤리적 쟁점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+      },
+      {
+        "name": "시민",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "시민의 참여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "시민불복종",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "분배 정의의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "교정적 정의의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "의식주 생활",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "윤리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "경제생활에서 발생하는 윤리적 갈등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "문화 다양성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "존중",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "다문화 윤리의 실천",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "노력",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
+      },
+      {
+        "name": "국제 분쟁의 해결",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
+      },
+      {
+        "name": "방안",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
+      },
+      {
+        "name": "국제 사회에 대한 책임",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
+      },
+      {
+        "name": "기여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
       }
     ]
   },
@@ -15104,14 +16199,39 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "미술 감상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "작품",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
       },
       {
-        "name": "미술 비평",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "작품의 특징과 맥락적 이해",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
+      },
+      {
+        "name": "미술사적 관점을 활용한 작품의 역사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
+      },
+      {
+        "name": "정치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
+      },
+      {
+        "name": "경제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
+      },
+      {
+        "name": "비평 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
+      },
+      {
+        "name": "관점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
       }
     ]
   },
@@ -15123,14 +16243,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "설계와 창작",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "아이디어를 발상하는 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
       },
       {
-        "name": "창작의 확장",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "표현 기법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
+      },
+      {
+        "name": "매체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
+      },
+      {
+        "name": "매체의 종류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
+      },
+      {
+        "name": "작품 내용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
+      },
+      {
+        "name": "형식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
+      },
+      {
+        "name": "형식의 심화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
+      },
+      {
+        "name": "전시 목적",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
+      },
+      {
+        "name": "방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
       }
     ]
   },
@@ -15142,14 +16297,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "매체의 이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "시대별",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
       },
       {
-        "name": "매체의 활용",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "지역별 매체의 변화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "매체의 특성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "표현 원리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "지역별 미술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "매체 관련짓기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "디지털 매체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "작품의 정교한 표현",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
+      },
+      {
+        "name": "보존 방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
       }
     ]
   },
@@ -20469,7 +21659,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "행렬과 경제 현상",
+        "name": "행렬",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.177"
+      },
+      {
+        "name": "경제 현상",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.177"
       },
@@ -20479,7 +21674,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.177"
       },
       {
-        "name": "미분과 경제 현상",
+        "name": "미분",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.177"
       },
@@ -20533,51 +21728,42 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "다항식",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "여러 가지 방정식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
-        "name": "방정식과 부등식",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "부등식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
-        "name": "경우의 수",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "합의 법칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
+      },
+      {
+        "name": "곱의 법칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
+      },
+      {
+        "name": "순열",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
+      },
+      {
+        "name": "조합",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
         "name": "행렬",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.f699e06d5f857844",
-    "level": "high",
-    "subjectGroup": "수학",
-    "name": "공통수학2",
-    "category": "공통",
-    "topics": [
-      {
-        "name": "여러 가지 방정식과 부등식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
-        "name": "합의 법칙과 곱의 법칙",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
-      },
-      {
-        "name": "순열과 조합",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
-      },
-      {
-        "name": "행렬과 그 연산",
+        "name": "그 연산",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
@@ -20587,7 +21773,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
-        "name": "방정식과 부등식",
+        "name": "방정식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
@@ -20607,6 +21793,20 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
       },
       {
+        "name": "법칙이나 자신의 수학적 사고",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.65"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.f699e06d5f857844",
+    "level": "high",
+    "subjectGroup": "수학",
+    "name": "공통수학2",
+    "category": "공통",
+    "topics": [
+      {
         "name": "집합",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
@@ -20622,7 +21822,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
       {
-        "name": "유리함수와 무리함수",
+        "name": "유리함수",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
+      },
+      {
+        "name": "무리함수",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
@@ -20632,17 +21837,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
       {
-        "name": "집합과 명제",
+        "name": "그래프",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
       {
-        "name": "함수와 그래프의 개념",
+        "name": "그래프의 개념",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
       {
-        "name": "식과 그래프",
+        "name": "원리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.70"
       },
@@ -20661,46 +21866,32 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "다항식",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "합의 법칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
-        "name": "방정식과 부등식",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "곱의 법칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
-        "name": "경우의 수",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "순열",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
+      },
+      {
+        "name": "조합",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
         "name": "행렬",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
-      }
-    ]
-  },
-  {
-    "id": "kr.course.2022.high.8fda79d3e68f95aa",
-    "level": "high",
-    "subjectGroup": "수학",
-    "name": "기본수학2",
-    "category": "공통",
-    "topics": [
-      {
-        "name": "합의 법칙과 곱의 법칙",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
-        "name": "순열과 조합",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
-      },
-      {
-        "name": "행렬과 그 연산",
+        "name": "그 연산",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
@@ -20710,7 +21901,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
-        "name": "방정식과 부등식",
+        "name": "방정식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
+      },
+      {
+        "name": "부등식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
@@ -20730,6 +21926,20 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
       },
       {
+        "name": "법칙이나 자신의 수학적 사고",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.84"
+      }
+    ]
+  },
+  {
+    "id": "kr.course.2022.high.8fda79d3e68f95aa",
+    "level": "high",
+    "subjectGroup": "수학",
+    "name": "기본수학2",
+    "category": "공통",
+    "topics": [
+      {
         "name": "집합",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
@@ -20745,7 +21955,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
       {
-        "name": "유리함수와 무리함수",
+        "name": "유리함수",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
+      },
+      {
+        "name": "무리함수",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
@@ -20755,17 +21970,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
       {
-        "name": "집합과 명제",
+        "name": "그래프",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
       {
-        "name": "함수와 그래프의 개념",
+        "name": "그래프의 개념",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
       {
-        "name": "식과 그래프",
+        "name": "원리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.89"
       },
@@ -20789,7 +22004,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.163"
       },
       {
-        "name": "벡터의 성분과 내적",
+        "name": "벡터의 성분",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.163"
+      },
+      {
+        "name": "내적",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.163"
       },
@@ -20808,12 +22028,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "사인법칙과 코사인법칙",
+        "name": "사인법칙",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
       },
       {
-        "name": "등차수열과 등비수열",
+        "name": "코사인법칙",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
+      },
+      {
+        "name": "등차수열",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
+      },
+      {
+        "name": "등비수열",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
       },
@@ -20838,7 +22068,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
       },
       {
-        "name": "식과 그래프",
+        "name": "그래프",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.105"
       }
@@ -21015,37 +22245,42 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "점자표와 수학",
+        "name": "점자표",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "대중매체와 수학",
+        "name": "수학",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "가치소비와 수학",
+        "name": "대중매체",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "식생활과 수학",
+        "name": "가치소비",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "대기 오염과 수학",
+        "name": "식생활",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "사막화와 수학",
+        "name": "대기 오염",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
       {
-        "name": "생명권과 수학",
+        "name": "사막화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
+      },
+      {
+        "name": "생명권",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.223"
       },
@@ -21084,12 +22319,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.252"
       },
       {
-        "name": "탐구 결과 정리 및 발표",
+        "name": "탐구 결",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.252"
       },
       {
-        "name": "토론을 통해 수학과제 탐구",
+        "name": "정리 및 발표",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.252"
+      },
+      {
+        "name": "토의⋅토론을 통해 수학과제 탐구",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.252"
       },
@@ -21152,7 +22392,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
       },
       {
-        "name": "경향성과 예측",
+        "name": "경향성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
+      },
+      {
+        "name": "예측",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
       },
@@ -21167,12 +22412,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
       },
       {
-        "name": "인공지능과 수학 탐구",
+        "name": "인공지능",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
       },
       {
-        "name": "인공지능과 관련된 수학의 개념",
+        "name": "수학 탐구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
+      },
+      {
+        "name": "관련된 수학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
+      },
+      {
+        "name": "관련된 수학의 개념",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.191"
       },
@@ -21196,7 +22451,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "도형의 관찰과 표현",
+        "name": "도형의 관찰",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
+      },
+      {
+        "name": "표현",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
       },
@@ -21206,12 +22466,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
       },
       {
-        "name": "경우의 수와 가능성",
+        "name": "경우의 수",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
       },
       {
-        "name": "자료의 정리와 해석",
+        "name": "가능성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
+      },
+      {
+        "name": "자료의 정리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
+      },
+      {
+        "name": "해석",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.206"
       },
@@ -21265,7 +22535,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.133"
       },
       {
-        "name": "확률과 통계의 개념",
+        "name": "통계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.133"
+      },
+      {
+        "name": "통계의 개념",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.133"
       },
@@ -23044,14 +24319,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "우리 문화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "타 문화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "타 문화의 생활 양식이나 문화 예술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+      },
+      {
+        "name": "실물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
       }
     ]
   },
@@ -23063,14 +24388,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "우리 문화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "타 문화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "타 문화의 생활 양식이나 문화 예술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.53"
+      },
+      {
+        "name": "실물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.54"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.54"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.54"
       }
     ]
   },
@@ -23082,14 +24457,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "실생활 관련 친숙한 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "우리 문화나 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
+      },
+      {
+        "name": "실물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.68"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.68"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.68"
       }
     ]
   },
@@ -23101,14 +24526,64 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "실생활 관련 친숙한 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "우리 문화나 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.73"
+      },
+      {
+        "name": "실물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.74"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.74"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.74"
       }
     ]
   },
@@ -23120,9 +24595,129 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "영역 01",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "방송",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "드라마",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "영화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "팝송",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "인터넷",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "소셜 미디어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "원격 플랫폼",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "동영상 플랫폼",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "게임",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "웹툰",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "가상⋅증강⋅혼합 현실 미디어 등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "사회 전반의 다양한 주제(정치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "경제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "사회",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "과학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "문화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "예술 등)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "다양한 유형의 미디어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "영어 미디어 활용 방식(영어 이모티콘",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "글로벌 검색 엔진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "워드 클라우드",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "사회 관계망",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "미디어상의 영어로 표현된 정보를 검색",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
+      },
+      {
+        "name": "선정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
       }
     ]
   },
@@ -23134,9 +24729,179 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "영역 01",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "인쇄물: 책",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "신문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "잡지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "만화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "광고",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "문서나 기록물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "전단지나 안내 책자",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "대본 등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "공연물: 라디오나 텔레비전 프로그램",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "영화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "뮤지컬",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "노래 등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "인터넷 자료: 이메일",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "웹사이트",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "사회 관계망 서비스(SNS)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "동영상 플랫폼",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "웹툰 등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "세계 문화에 관한 다양한 주제(의식주",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "명절",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "축제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "종교",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "언어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "문학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "음악",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "예술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "다양한 문화권의 관습",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "규범",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "가치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "행동 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "다양한 장르",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "매체",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+      },
+      {
+        "name": "매체의 문화 정보와 문화적 산물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
       }
     ]
   },
@@ -23148,9 +24913,54 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "영역 01",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "실생활 관련 이야기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "대인 관계 유지 목적의 담화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "사실이나 정보 전달⋅교환 목적의 담화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "실생활 관련 친숙한 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "대인 관계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "사회생활에 관한 일반적 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "언어 예절",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "상대방의 말을 듣고 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
+      },
+      {
+        "name": "요지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
       }
     ]
   },
@@ -23162,14 +24972,74 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "다양한 주제 및 기초 학문 분야 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "심정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "의도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
+      },
+      {
+        "name": "내용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.163"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.163"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.163"
       }
     ]
   },
@@ -23181,14 +25051,79 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "독해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
       },
       {
-        "name": "작문",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "정보 전달⋅교환 목적의 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "다양한 분야의 기초 학문 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "심정",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "어조",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "분위기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "의도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
+      },
+      {
+        "name": "내용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.188"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.188"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.188"
       }
     ]
   },
@@ -23200,9 +25135,79 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "영역 01",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "[별표 4] 고등학교 권장 언어 형식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "시(동요",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "동시 등)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "희곡(동극)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "이야기(동화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "우화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "신화 등)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "소설",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "수필",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "다양한 문학 장르",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
       }
     ]
   },
@@ -23214,14 +25219,69 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "독해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
       },
       {
-        "name": "작문",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "사회생활이나 학업 관련 등 다양한 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
+      },
+      {
+        "name": "경험",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
+      },
+      {
+        "name": "계획",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
       }
     ]
   },
@@ -23234,13 +25294,83 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "topics": [
       {
         "name": "발표",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "관련된 담화",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "기초 학문 분야 주제 및 사회적 이슈",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "다양한 문화권에 속한 사람들의 언어적 의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "비언어적 의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "정보 수집",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "발표 개요 작성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "사물",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "개념",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "방법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
+      },
+      {
+        "name": "절차",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
       },
       {
         "name": "토론",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
+      },
+      {
+        "name": "토론 개요 작성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
+      },
+      {
+        "name": "학술 자료",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
+      },
+      {
+        "name": "통계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
       }
     ]
   },
@@ -23252,14 +25382,59 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "사회생활이나 학업 관련 등 일반적 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.91"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.91"
       }
     ]
   },
@@ -23271,14 +25446,54 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "이해",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "이야기나 서사 및 운문",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
       },
       {
-        "name": "표현",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "친교나 사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "정보 전달⋅교환 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
+      },
+      {
+        "name": "그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.107"
+      },
+      {
+        "name": "사진",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.107"
       }
     ]
   },
@@ -23290,9 +25505,49 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "영역 01",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "사회적 목적의 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "진로 탐색",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "관련된 말이나 글",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "직무 수행",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "[별표 1] 소재",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "다양한 진로 및 직무 관련 주제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "우리 문화 및 타 문화의 생활 양식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "사고방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
+      },
+      {
+        "name": "의사소통 방식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
       }
     ]
   },
@@ -24709,204 +26964,19 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "일반 선택",
     "topics": [
       {
-        "name": "자세와 주법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+        "name": "연주",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "주법과 표현 기법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+        "name": "감상",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "다양한 주법과 표현 기법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "느낌",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "여러 소리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "어울림",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "여러 악기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "소리의 상호작용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "기초적인 음악 요소",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "음악 요소",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "음악적 특징",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "음악의 간단한 구성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "음악의 구성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "분위기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "쓰임",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "배경",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "활용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "감성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "다양성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "역할",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "반응하며 듣기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "감지하며 듣기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "집중하여 듣기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
-      },
-      {
-        "name": "기초적인 기보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "기보법(오선보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "정간보 등)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "간단한 악보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "상상",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "아이디어",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "의도",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
-      },
-      {
-        "name": "다양한 매체의 음악",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "연주 상황과 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "다양한 음악적 특징과 음악",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "기능",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "기여",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
-      },
-      {
-        "name": "다양한 형식의 음악",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
-      },
-      {
-        "name": "다양한 기보법(오선보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
-      },
-      {
-        "name": "정간보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
-      },
-      {
-        "name": "창작에서의 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
+        "name": "창작",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       }
     ]
   },
@@ -24953,7 +27023,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.73"
       },
       {
-        "name": "시대적 의미",
+        "name": "사회⋅문화⋅시대적 의미",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.73"
       },
@@ -24997,12 +27067,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "진로 선택",
     "topics": [
       {
-        "name": "발성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
-      },
-      {
-        "name": "주법",
+        "name": "발성⋅주법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
@@ -25022,7 +27087,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "악곡의 구조와 특징",
+        "name": "악곡의 구조",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
+      },
+      {
+        "name": "특징",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
@@ -25032,27 +27102,42 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "다양한 소리와 매체",
+        "name": "다양한 소리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "음악적 아이디어의 상호작용과 활용",
+        "name": "매체",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "음악의 가치와 역할",
+        "name": "음악적 아이디어의 상호작용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "사회",
+        "name": "활용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       },
       {
-        "name": "문화적 역할과 공헌",
+        "name": "음악의 가치",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
+      },
+      {
+        "name": "역할",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
+      },
+      {
+        "name": "사회⋅문화적 역할",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
+      },
+      {
+        "name": "공헌",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.61"
       }
@@ -25066,32 +27151,47 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "융합 선택",
     "topics": [
       {
-        "name": "음악에서 미디어의 종류와 특징",
+        "name": "음악에서 미디어의 종류",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
       {
-        "name": "변화와 발전",
+        "name": "특징",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
       {
-        "name": "미디어 음악과 음악 산업",
+        "name": "변화",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
       {
-        "name": "다양한 소리",
+        "name": "발전",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
       {
-        "name": "악기",
+        "name": "미디어 음악",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
       {
-        "name": "아이디어와 미디어의 상호작용",
+        "name": "음악 산업",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
+      },
+      {
+        "name": "다양한 소리⋅악기⋅아이디어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
+      },
+      {
+        "name": "미디어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
+      },
+      {
+        "name": "미디어의 상호작용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.87"
       },
@@ -34228,6 +36328,11 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.12"
       },
       {
+        "name": "자석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.12"
+      },
+      {
         "name": "전기력",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.12"
@@ -34358,12 +36463,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "시각과 상",
+        "name": "시각",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "반사와 굴절",
+        "name": "반사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "굴절",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
@@ -34373,17 +36483,27 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "거울과 렌즈",
+        "name": "거울",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "빛의 합성과 색",
+        "name": "렌즈",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "파동의 발생과 전달",
+        "name": "빛의 합성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "파동의 발생",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "전달",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
@@ -34398,7 +36518,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "파동의 요소와 소리의 특성",
+        "name": "파동의 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "소리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "소리의 특성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
@@ -34408,7 +36538,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
       {
-        "name": "자연과 일상생활에서 운동과 에너지 관련 문제",
+        "name": "자연",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "일상생활에서 운동과 에너지 관련 문제",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
+      },
+      {
+        "name": "운동",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.13"
       },
@@ -34428,6 +36568,11 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.14"
       },
       {
+        "name": "주기율표 에서 물질",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.14"
+      },
+      {
         "name": "동물의 발생 과정",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
@@ -34438,17 +36583,27 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "유전 형질과 유전 원리",
+        "name": "유전 형질",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "변이와 생물다양성",
+        "name": "유전 원리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "종의 개념과 분류 체계",
+        "name": "생물다양성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
+      },
+      {
+        "name": "종의 개념",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
+      },
+      {
+        "name": "분류 체계",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
@@ -34468,12 +36623,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "생물 요소와 비생물 요소",
+        "name": "생물 요소",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "먹이사슬과 먹이그물",
+        "name": "비생물 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
+      },
+      {
+        "name": "먹이사슬",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
+      },
+      {
+        "name": "먹이그물",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
@@ -34488,12 +36653,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "생명과학과 우리 생활",
+        "name": "생명과학",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
       {
-        "name": "자연과 일상생활에서 생명 현상 관련 문제",
+        "name": "우리 생활",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
+      },
+      {
+        "name": "일상생활에서 생명 현상 관련 문제",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.15"
       },
@@ -34523,17 +36693,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.17"
       },
       {
-        "name": "과학과 지속가능한 사회",
+        "name": "과학",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.17"
       },
       {
-        "name": "진로와 과학의 관련성",
+        "name": "지속가능한 사회",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.17"
       },
       {
-        "name": "과학 관련 진로와 직업",
+        "name": "진로",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.17"
+      },
+      {
+        "name": "과학의 관련성⋅과학 관련 진로와 직업",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-nec-2024-3-annex9 · p.17"
       },
@@ -34557,209 +36732,34 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "대화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.82"
+        "name": "듣기⋅말하기",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "토론",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.82"
+        "name": "읽기",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "생각과 감정이 함축적이고 복합적으로 제시된 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
+        "name": "쓰기",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "사회적 쟁점에 대한 자신의 견해를 나타내는 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
+        "name": "문법",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "개성이 드러나는 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.83"
+        "name": "문학",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "음운 변동",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "글과 담화에 나타난 문법 요소 및 어휘의 특성과 사용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "작가 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "독자 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "사회",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "문화적 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "문학사적 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "문학 소통의 특성을 고려하며 읽기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.84"
-      },
-      {
-        "name": "다양한 유형의 매체 자료",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.85"
-      },
-      {
-        "name": "발표",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
-      },
-      {
-        "name": "협상",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
-      },
-      {
-        "name": "복합양식으로 구성된 글이나 자료의 관점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
-      },
-      {
-        "name": "의도",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.93"
-      },
-      {
-        "name": "공동 보고서",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
-      },
-      {
-        "name": "논증이 효과적으로 나타나는 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
-      },
-      {
-        "name": "한글 맞춤법과 국어 문제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.94"
-      },
-      {
-        "name": "매체 비평 자료",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.95"
-      },
-      {
-        "name": "기호를 활용한 사회적 행위로서의 의사소통",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
-      },
-      {
-        "name": "맥락에 따른 언어 선택과 담화 관습",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
-      },
-      {
-        "name": "품사",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.118"
-      },
-      {
-        "name": "문어 의사소통의 구성 요소",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.130"
-      },
-      {
-        "name": "표현 전략을 고려한 표현과 작문 맥락을 고려한 고쳐쓰기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.130"
-      },
-      {
-        "name": "한국 문학의 성격과 역사",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
-      },
-      {
-        "name": "한국 문학의 보편성과 특수성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.142"
-      },
-      {
-        "name": "분야에 따른 책과 자료의 특성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.156"
-      },
-      {
-        "name": "영상의 형상화 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.167"
-      },
-      {
-        "name": "문학과 영상 관련 문화적 소양",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.167"
-      },
-      {
-        "name": "목적",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
-      },
-      {
-        "name": "맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
-      },
-      {
-        "name": "참여자 특성에 적합한 소통",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
-      },
-      {
-        "name": "직무 의사소통과 매체",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.178"
-      },
-      {
-        "name": "독서 토론과 글쓰기의 맥락",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.190"
-      },
-      {
-        "name": "디지털 기술과 매체 환경 변화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
-      },
-      {
-        "name": "매체 자료의 사회",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
-      },
-      {
-        "name": "문화적 구성과 재현",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.201"
-      },
-      {
-        "name": "글과 담화의 맥락과 언어적 특성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex5 · p.213"
+        "name": "매체",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       }
     ]
   },
@@ -34771,24 +36771,154 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "인간 발달과 주도적 삶",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "미래 식생활",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
       },
       {
-        "name": "생활환경과 지속가능한 선택",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "푸드 테크",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
       },
       {
-        "name": "기술적 문제해결과 혁신",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "스마트 의류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
       },
       {
-        "name": "지속가능한 기술과 융합",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "메타패션",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
+      },
+      {
+        "name": "유비쿼터스 주거",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
+      },
+      {
+        "name": "가상공간",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
+      },
+      {
+        "name": "소비자 안전",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
+      },
+      {
+        "name": "소비자 시민성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
+      },
+      {
+        "name": "생활복지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
+      },
+      {
+        "name": "빅데이터",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
+      },
+      {
+        "name": "맞춤형 스마트복지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
+      },
+      {
+        "name": "중년기 부모",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "청소년기 자녀",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "노년기 생활",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "유니버설 디자인",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "디지털 시대의 관계 형성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "회복탄력성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "성장",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
+      },
+      {
+        "name": "공학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
+      },
+      {
+        "name": "융합",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
+      },
+      {
+        "name": "공학 소양",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
+      },
+      {
+        "name": "다양한 공학 분야",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
+      },
+      {
+        "name": "진로",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
+      },
+      {
+        "name": "친환경 에너지",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
+      },
+      {
+        "name": "에너지 전환",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
+      },
+      {
+        "name": "첨단 수송수단",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
+      },
+      {
+        "name": "항공우주",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
+      },
+      {
+        "name": "생명공학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.55"
+      },
+      {
+        "name": "의공학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.55"
+      },
+      {
+        "name": "첨단 융합공학",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.55"
       }
     ]
   },
@@ -34800,27 +36930,52 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "옷의 기능과 옷차림",
+        "name": "옷의 기능",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "가족의 다양성과 변화",
+        "name": "옷차림",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "가정생활과 가정일",
+        "name": "가족의 다양성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "가족 간의 갈등과 소통",
+        "name": "변화",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "진로 발달과 직업",
+        "name": "가정생활",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "가정일",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "가족 간의 갈등",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "소통",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "진로 발달",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "직업",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
@@ -34830,12 +36985,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "또래와 세대 관계",
+        "name": "또래",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "상호 존중 관계의 형성과 역할수용",
+        "name": "세대 관계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "상호 존중 관계의 형성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
+      },
+      {
+        "name": "역할수용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
@@ -34845,12 +37010,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.13"
       },
       {
-        "name": "음식의 마련과 섭취",
+        "name": "음식의 마련",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "의복 마련계획과 업사이클링",
+        "name": "섭취",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "의복 마련계획",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "업사이클링",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
@@ -34860,17 +37035,32 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "주거환경과 주거문화",
+        "name": "주거환경",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "생활공간과 정리정돈",
+        "name": "주거문화",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "주거 공간 구성과 계획",
+        "name": "생활공간",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "정리정돈",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "주거 공간 구성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "계획",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
@@ -34880,17 +37070,32 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "소비자 의사 결정과 책임",
+        "name": "소비자 의사 결정",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "디지털 생활환경과 자원관리",
+        "name": "책임",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
       {
-        "name": "자신의 선택이 공동체의 삶과 환경에 미치는 영향",
+        "name": "디지털 생활환경",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "자원관리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "자신의 선택이 공동체의 삶",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
+      },
+      {
+        "name": "환경에 미치는 영향",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.14"
       },
@@ -34900,17 +37105,37 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
       {
-        "name": "재료의 종류와 활용",
+        "name": "재료의 종류",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
       {
-        "name": "수송의 의미와 수송 수단의 발달",
+        "name": "활용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
       {
-        "name": "제품의 설계와 제작",
+        "name": "수송의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
+      },
+      {
+        "name": "수송 수단",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
+      },
+      {
+        "name": "수송 수단의 발달",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
+      },
+      {
+        "name": "제품의 설계",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
+      },
+      {
+        "name": "제작",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
@@ -34925,7 +37150,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
       {
-        "name": "수송 수단과 물류",
+        "name": "물류",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.15"
       },
@@ -34935,7 +37160,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "기계요소와 운동",
+        "name": "기계요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "운동",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
@@ -34945,7 +37175,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "로봇과 제어",
+        "name": "로봇",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "제어",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
@@ -34955,27 +37190,57 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "생명기술과 지속가능",
+        "name": "생명기술",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "미래생활과 연관된 농업활동",
+        "name": "지속가능",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "기술의 융합과 미래",
+        "name": "미래생활",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "농업과 농촌의 다원적인 역할",
+        "name": "연관된 농업활동",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
       {
-        "name": "간단한 로봇의 조립과 작동시키기",
+        "name": "기술의 융합",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "미래",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "농업",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "농촌",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "농촌의 다원적인 역할",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "간단한 로봇의 조립",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
+      },
+      {
+        "name": "작동시키기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.16"
       },
@@ -34985,7 +37250,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.17"
       },
       {
-        "name": "데이터의 종류와 표현",
+        "name": "데이터의 종류",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.17"
+      },
+      {
+        "name": "표현",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.17"
       },
@@ -34995,7 +37265,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.17"
       },
       {
-        "name": "전자 부품과 회로",
+        "name": "전자 부품",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.36"
+      },
+      {
+        "name": "회로",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.36"
       },
@@ -35010,341 +37285,6 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.36"
       },
       {
-        "name": "미래 식생활과 푸드 테크",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
-      },
-      {
-        "name": "스마트 의류와 메타패션",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
-      },
-      {
-        "name": "유비쿼터스 주거와 가상공간",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.50"
-      },
-      {
-        "name": "소비자 안전과 소비자 시민성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
-      },
-      {
-        "name": "생활복지와 빅데이터",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
-      },
-      {
-        "name": "맞춤형 스마트복지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.51"
-      },
-      {
-        "name": "중년기 부모와 청소년기 자녀",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
-      },
-      {
-        "name": "노년기 생활과 유니버설 디자인",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
-      },
-      {
-        "name": "디지털 시대의 관계 형성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
-      },
-      {
-        "name": "회복탄력성과 성장",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.52"
-      },
-      {
-        "name": "공학과 융합",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
-      },
-      {
-        "name": "공학 소양",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
-      },
-      {
-        "name": "다양한 공학 분야와 진로",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.53"
-      },
-      {
-        "name": "친환경 에너지와 에너지 전환",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
-      },
-      {
-        "name": "첨단 수송수단과 항공우주",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.54"
-      },
-      {
-        "name": "생명공학과 의공학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.55"
-      },
-      {
-        "name": "첨단 융합공학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.55"
-      },
-      {
-        "name": "생활 속의 로봇 종류와 활용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "로봇 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "에너지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "수송 분야 공학 세계의 이해",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "정보통신 및 인공지능 기술 분야 공학 세계의 이해",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "기타 공학 분야의 로봇 활용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "로봇의 활용 분야에 따른 진로 이해",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.73"
-      },
-      {
-        "name": "로봇을 제어하는 소프트웨어 및 인공지능 기술 이해",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
-      },
-      {
-        "name": "로봇공학 문제해결",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
-      },
-      {
-        "name": "정보 수집",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.74"
-      },
-      {
-        "name": "가족복지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.85"
-      },
-      {
-        "name": "소비자와 소비 행동 심리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.85"
-      },
-      {
-        "name": "의류직물과 의복디자인",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
-      },
-      {
-        "name": "패션산업과 머천다이징",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
-      },
-      {
-        "name": "주거와 실내디자인",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.86"
-      },
-      {
-        "name": "리빙 크리에이티브와 창업",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.87"
-      },
-      {
-        "name": "지역사회에 기여하는 생활과학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.87"
-      },
-      {
-        "name": "공학과 창의성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
-      },
-      {
-        "name": "공학과 팀워크",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
-      },
-      {
-        "name": "창의 공학 설계와 문제 해결 과정",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.99"
-      },
-      {
-        "name": "최적의 대안 선정 및 평가 기법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
-      },
-      {
-        "name": "제도의 기본 규칙",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
-      },
-      {
-        "name": "디지털 기반 공학 설계 도구",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
-      },
-      {
-        "name": "시제품 제작 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
-      },
-      {
-        "name": "시제품 평가 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.100"
-      },
-      {
-        "name": "신지식재산권의 종류와 특징",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "산업재산권(특허권",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "상표권",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "디자인권)의 등록 요건",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "저작물의 분류와 성립요건",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "지식재산권의 사회",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "경제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.110"
-      },
-      {
-        "name": "기술 창업과 기업가 정신",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
-      },
-      {
-        "name": "직무 발명 제도",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.111"
-      },
-      {
-        "name": "특허 명세서",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
-      },
-      {
-        "name": "특허 도면",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
-      },
-      {
-        "name": "특허 출원",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.112"
-      },
-      {
-        "name": "부모됨의 의미",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
-      },
-      {
-        "name": "임신과 출산",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
-      },
-      {
-        "name": "부모와 개인으로서의 삶의 균형",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.123"
-      },
-      {
-        "name": "아동의 발달 단계에 따른 돌봄",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
-      },
-      {
-        "name": "부모와 자녀 간의 긍정적 관계의 형성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
-      },
-      {
-        "name": "아동의 안전한 돌봄 환경",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
-      },
-      {
-        "name": "사회적 부모와 지역사회 돌봄의 의미",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.124"
-      },
-      {
-        "name": "만남과 이별",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
-      },
-      {
-        "name": "대인 관계와 관련된 이슈",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.135"
-      },
-      {
-        "name": "협력적 소비",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.136"
-      },
-      {
-        "name": "금융거래와 관련된 이슈",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.136"
-      },
-      {
-        "name": "청년 주거복지와 정보",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.137"
-      },
-      {
-        "name": "독립적 생활설계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.137"
-      },
-      {
         "name": "운영 체제의 기능",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
@@ -35355,12 +37295,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
       },
       {
-        "name": "동작 원리를 운영 체제와 관계짓기",
+        "name": "동작 원리를 운영 체제",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
       },
       {
-        "name": "데이터 수집과 관리",
+        "name": "관계짓기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
+      },
+      {
+        "name": "데이터 수집",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
+      },
+      {
+        "name": "관리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.155"
       },
@@ -35380,7 +37330,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.156"
       },
       {
-        "name": "함수와 디버깅",
+        "name": "함수",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.156"
+      },
+      {
+        "name": "디버깅",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.156"
       },
@@ -35405,7 +37360,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.157"
       },
       {
-        "name": "개인 정보와 저작권",
+        "name": "개인 정보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.157"
+      },
+      {
+        "name": "저작권",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.157"
       },
@@ -35415,12 +37375,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.175"
       },
       {
-        "name": "빅데이터 개념과 분석",
+        "name": "빅데이터 개념",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.175"
       },
       {
-        "name": "표준입출력과 파일입출력",
+        "name": "분석",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.175"
+      },
+      {
+        "name": "표준입출력",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
+      },
+      {
+        "name": "파일입출력",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
       },
@@ -35435,124 +37405,34 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
       },
       {
-        "name": "클래스와 인스턴스",
+        "name": "클래스",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
       },
       {
-        "name": "기계학습의 개념과 유형",
+        "name": "인스턴스",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
       },
       {
-        "name": "정보 보호와 보안",
+        "name": "기계학습의 개념",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
+      },
+      {
+        "name": "유형",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.176"
+      },
+      {
+        "name": "정보 보호",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.177"
       },
       {
-        "name": "인공지능과 탐색",
+        "name": "보안",
         "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
-      },
-      {
-        "name": "지식의 표현과 추론",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
-      },
-      {
-        "name": "기계학습 알고리즘",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
-      },
-      {
-        "name": "인공신경망과 딥러닝",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.189"
-      },
-      {
-        "name": "인공지능과 진로",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
-      },
-      {
-        "name": "인공지능과 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
-      },
-      {
-        "name": "인공지능 문제 해결 절차",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.190"
-      },
-      {
-        "name": "데이터의 형태와 속성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
-      },
-      {
-        "name": "데이터셋과 데이터베이스",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
-      },
-      {
-        "name": "데이터 분석 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.200"
-      },
-      {
-        "name": "군집 분석",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
-      },
-      {
-        "name": "연관 분석",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
-      },
-      {
-        "name": "탐색적 데이터 분석",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
-      },
-      {
-        "name": "결과의 의미 해석",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.201"
-      },
-      {
-        "name": "소프트웨어 융합과 문제 해결",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
-      },
-      {
-        "name": "미디어 아트",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
-      },
-      {
-        "name": "웨어러블 장치",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.213"
-      },
-      {
-        "name": "데이터 시각화와 분석",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
-      },
-      {
-        "name": "시뮬레이션 활용 분야",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
-      },
-      {
-        "name": "시뮬레이션 모델",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.214"
-      },
-      {
-        "name": "소프트웨어 스타트업 프로젝트",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.215"
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex10 · p.177"
       }
     ]
   },
@@ -35564,334 +37444,24 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "동양 윤리의 접근",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.38"
+        "name": "자신과의 관계",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "서양 윤리의 접근",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.38"
+        "name": "타인과의 관계",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "사랑과 성의 관계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
+        "name": "사회⋅공동체와의 관계",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "결혼과 가족의 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "자연을 바라보는 동",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "서양의 관점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "환경 문제에 대한 윤리적 쟁점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "정보사회의 특징과 윤리적 쟁점들",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "뉴미디어 사회의 특징과 윤리적 쟁점들",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "인공지능과 인간의 관계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "인공지능의 윤리적 쟁점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.39"
-      },
-      {
-        "name": "시민과 국가의 관계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "시민의 참여와 시민불복종",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "분배 정의의 의미와 윤리적 쟁점들",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "교정적 정의의 의미와 윤리적 쟁점들",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "의식주 생활과 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "경제생활에서 발생하는 윤리적 갈등",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "문화 다양성과 존중",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "다문화 윤리의 실천과 노력",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.40"
-      },
-      {
-        "name": "국제 분쟁의 해결과 방안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
-      },
-      {
-        "name": "국제 사회에 대한 책임과 기여",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.41"
-      },
-      {
-        "name": "다투지 않음과 자연 그대로의 삶",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
-      },
-      {
-        "name": "분별을 잊음과 자유롭게 노니는 삶",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
-      },
-      {
-        "name": "상호의존적인 세계와 실체가 없는 존재",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
-      },
-      {
-        "name": "깨달음을 향한 수행과 자비의 실천",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.54"
-      },
-      {
-        "name": "순수한 도덕본성의 발현",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "일상적 감정의 도덕적 조절",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "내적 깨어있음과 외적 실천",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "마음의 생동성과 활동적 이치",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "본성의 확충과 마음의 주체성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "그리스도교와 사랑의 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "자연법 윤리와 프로테스탄티즘 윤리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "의무론과 선의지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "결과론과 공리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "주체적 결단과 문제 해결의 유용성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "도덕의 기원과 판단에 대한 과학적 설명",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "책임",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "배려와 윤리적 삶",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.55"
-      },
-      {
-        "name": "참여와 심의를 통한 민주주의 구현",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
-      },
-      {
-        "name": "자본주의의 원리와 현실",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
-      },
-      {
-        "name": "자본주의의 윤리적 개선과 대안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.56"
-      },
-      {
-        "name": "삶의 주체로서의 나",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
-      },
-      {
-        "name": "고통과 쾌락을 대하는 자세",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
-      },
-      {
-        "name": "의미 있는 타자로서의 친구",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
-      },
-      {
-        "name": "사랑과 배려의 삶",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.66"
-      },
-      {
-        "name": "능력에 따른 분배와 한계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
-      },
-      {
-        "name": "자유롭고 평등한 삶을 위한 정의의 원칙",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
-      },
-      {
-        "name": "가상세계와 현실세계의 상호성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.67"
-      },
-      {
-        "name": "기후위기와 지속가능한 삶",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
-      },
-      {
-        "name": "상생을 위한 실천원칙",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
-      },
-      {
-        "name": "인생의 유한성 자각",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
-      },
-      {
-        "name": "삶의 의미를 찾는 과정과 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.68"
-      },
-      {
-        "name": "윤리문제 탐구의 의미와 중요성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.82"
-      },
-      {
-        "name": "윤리문제 탐구 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.82"
-      },
-      {
-        "name": "사회적 차별 표현을 바라보는 다양한 관점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "사회적 차별 표현 문제의 해결 방안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "배타적 민족주의의 확산과 난민 문제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "난민 문제의 해결 방안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "빅데이터와 알고리즘의 편향성 문제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "사회적 책임과 공정성의 확보 방안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "인공지능 활용의 윤리적 딜레마",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "인공지능의 바람직한 활용 방안",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.83"
-      },
-      {
-        "name": "기후위기와 인류의 책임",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
-      },
-      {
-        "name": "에너지 전환과 탄소 중립을 둘러싼 논쟁과 실천",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
-      },
-      {
-        "name": "윤리문제 탐구 활동",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
-      },
-      {
-        "name": "탐구 결과의 정리와 발표",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex6 · p.84"
+        "name": "자연과의 관계",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       }
     ]
   },
@@ -35908,12 +37478,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "자신과 환경의 관계",
+        "name": "자신",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "시각 문화의 의미와 역할",
+        "name": "환경",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
+      },
+      {
+        "name": "시각 문화의 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
+      },
+      {
+        "name": "역할",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
@@ -35923,27 +37503,47 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "이미지와 의미",
+        "name": "이미지",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "삶과 미술의 관계",
+        "name": "의미",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "대상과 상호 작용하며 의미",
+        "name": "미술",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
       },
       {
-        "name": "기본적인 표현 재료와 용구",
+        "name": "대상에 반응하여 느낌",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
+      },
+      {
+        "name": "대상",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
+      },
+      {
+        "name": "상호 작용하며 의미",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.12"
+      },
+      {
+        "name": "기본적인 표현 재료",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "표현 재료와 용구",
+        "name": "용구",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "표현 재료",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
@@ -35953,7 +37553,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "다양한 표현 재료와 방법",
+        "name": "다양한 표현 재료",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "방법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
@@ -35963,7 +37568,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "조형 요소와 원리의 관계",
+        "name": "조형 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "원리",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
@@ -35978,12 +37588,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "미술 작품의 내용과 형식",
+        "name": "미술 작품의 내용",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "미술 용어와 지식",
+        "name": "형식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "미술 용어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "지식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
@@ -35998,22 +37618,42 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "다양한 감상 방법과 관점",
+        "name": "다양한 감상 방법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
       },
       {
-        "name": "시각 문화의 다양성과 의미 전달 방식",
+        "name": "관점",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "미술 작품에 관한 느낌",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.13"
+      },
+      {
+        "name": "시각 문화의 다양성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.40"
       },
       {
-        "name": "삶과 연결된 미술",
+        "name": "의미 전달 방식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.40"
       },
       {
-        "name": "적용과 융합을 위한 표현 방법",
+        "name": "연결된 미술",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.40"
+      },
+      {
+        "name": "적용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
+      },
+      {
+        "name": "융합을 위한 표현 방법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
       },
@@ -36023,17 +37663,27 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
       },
       {
-        "name": "미술 감상과 비평을 위한 관점과 방법",
+        "name": "미술 감상",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
       },
       {
-        "name": "전시의 목적과 유형",
+        "name": "비평을 위한 관점과 방법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
       },
       {
-        "name": "미술과 시대",
+        "name": "전시의 목적",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
+      },
+      {
+        "name": "유형",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
+      },
+      {
+        "name": "시대",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
       },
@@ -36041,76 +37691,6 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "사회",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.41"
-      },
-      {
-        "name": "아이디어를 발상하는 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
-      },
-      {
-        "name": "표현 기법과 매체의 종류",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.52"
-      },
-      {
-        "name": "작품 내용과 형식의 심화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
-      },
-      {
-        "name": "전시 목적과 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.53"
-      },
-      {
-        "name": "작가와 작품의 특징과 맥락적 이해",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
-      },
-      {
-        "name": "미술사적 관점을 활용한 작품의 역사",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
-      },
-      {
-        "name": "정치",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
-      },
-      {
-        "name": "경제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
-      },
-      {
-        "name": "비평 방법과 관점",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.60"
-      },
-      {
-        "name": "시대별",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
-      },
-      {
-        "name": "지역별 매체의 변화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
-      },
-      {
-        "name": "매체의 특성과 표현 원리",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
-      },
-      {
-        "name": "지역별 미술과 매체 관련짓기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
-      },
-      {
-        "name": "작품의 정교한 표현과 보존 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex13 · p.70"
       }
     ]
   },
@@ -36360,7 +37940,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.13"
       },
       {
-        "name": "수 감각과 연산 감각 기르기",
+        "name": "수 감각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.13"
+      },
+      {
+        "name": "연산 감각 기르기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.13"
       },
@@ -36385,17 +37970,17 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.14"
       },
       {
-        "name": "방정식과 부등식 풀기",
+        "name": "방정식",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.14"
+      },
+      {
+        "name": "부등식 풀기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.14"
       },
       {
         "name": "두 양의 관계를 비나 비율로 나타내기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.14"
-      },
-      {
-        "name": "방정식",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.14"
       },
@@ -36415,12 +38000,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
       },
       {
+        "name": "시각",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
+      },
+      {
         "name": "길이(mm",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
       },
       {
         "name": "km)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
+      },
+      {
+        "name": "원주율",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
       },
@@ -36455,7 +38050,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
       },
       {
-        "name": "평면도형이나 입체도형 그리기와 만들기",
+        "name": "평면도형이나 입체도형 그리기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
+      },
+      {
+        "name": "만들기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
       },
@@ -36473,6 +38073,11 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "name": "공간 감각 기르기",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.15"
+      },
+      {
+        "name": "상자그림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex8 · p.16"
       }
     ]
   },
@@ -36484,609 +38089,14 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "이야기나 서사 및 운문",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
+        "name": "이해",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       },
       {
-        "name": "친교나 사회적 목적의 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "정보 전달",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "교환 목적의 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "의견 전달",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "교환이나 주장 목적의 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "[별표 1] 소재",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "우리 문화와 타 문화의 생활 양식이나 문화 예술",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.46"
-      },
-      {
-        "name": "실물",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
-      },
-      {
-        "name": "그림",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
-      },
-      {
-        "name": "사진",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.47"
-      },
-      {
-        "name": "실생활 관련 친숙한 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
-      },
-      {
-        "name": "우리 문화나 타 문화의 생활 양식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
-      },
-      {
-        "name": "사고방식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
-      },
-      {
-        "name": "의사소통 방식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.67"
-      },
-      {
-        "name": "사회생활이나 학업 관련 등 일반적 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
-      },
-      {
-        "name": "우리 문화 및 타 문화의 생활 양식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.90"
-      },
-      {
-        "name": "사회생활이나 학업 및 지역",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
-      },
-      {
-        "name": "세계 공동체 관련 등 다양한 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.106"
-      },
-      {
-        "name": "친교나 사회적 목적의 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
-      },
-      {
-        "name": "교환 목적의 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
-      },
-      {
-        "name": "교환이나 주장 목적의 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
-      },
-      {
-        "name": "사회생활이나 학업 관련 등 다양한 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.121"
-      },
-      {
-        "name": "경험",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
-      },
-      {
-        "name": "계획",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.122"
-      },
-      {
-        "name": "사회적 목적의 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
-      },
-      {
-        "name": "진로 탐색과 관련된 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
-      },
-      {
-        "name": "직무 수행과 관련된 말이나 글",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
-      },
-      {
-        "name": "다양한 진로 및 직무 관련 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.136"
-      },
-      {
-        "name": "발표와 관련된 담화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "기초 학문 분야 주제 및 사회적 이슈",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "다양한 문화권에 속한 사람들의 언어적",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "비언어적 의사소통 방식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "정보 수집",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "발표 개요 작성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "사물",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "개념",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "절차",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.148"
-      },
-      {
-        "name": "토론과 관련된 담화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
-      },
-      {
-        "name": "토론 개요 작성",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
-      },
-      {
-        "name": "학술 자료",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
-      },
-      {
-        "name": "통계",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.149"
-      },
-      {
-        "name": "다양한 주제 및 기초 학문 분야 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
-      },
-      {
-        "name": "심정",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
-      },
-      {
-        "name": "의도",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.162"
-      },
-      {
-        "name": "내용",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.163"
-      },
-      {
-        "name": "[별표 4] 고등학교 권장 언어 형식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "시(동요",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "동시 등)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "희곡(동극)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "이야기(동화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "우화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "신화 등)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "소설",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "수필",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "다양한 문학 장르와 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.176"
-      },
-      {
-        "name": "다양한 분야의 기초 학문 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
-      },
-      {
-        "name": "어조",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
-      },
-      {
-        "name": "분위기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.187"
-      },
-      {
-        "name": "실생활 관련 이야기",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "대인 관계 유지 목적의 담화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "사실이나 정보 전달",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "교환 목적의 담화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "대인 관계와 사회생활에 관한 일반적 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "언어 예절",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "상대방의 말을 듣고 주제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "요지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.204"
-      },
-      {
-        "name": "방송",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "드라마",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "영화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "팝송",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "인터넷",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "소셜 미디어",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "원격 플랫폼",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "동영상 플랫폼",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "게임과 웹툰",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "가상",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "증강",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "혼합 현실 미디어 등",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "사회 전반의 다양한 주제(정치",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "경제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "사회",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "과학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "문화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "예술 등)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "다양한 유형의 미디어",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "영어 미디어 활용 방식(영어 이모티콘",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "글로벌 검색 엔진",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "워드 클라우드",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "사회 관계망",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "미디어상의 영어로 표현된 정보를 검색",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "선정",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.216"
-      },
-      {
-        "name": "인쇄물: 책",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "신문",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "잡지",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "만화",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "광고",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "문서나 기록물",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "전단지나 안내 책자",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "대본 등",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "공연물: 라디오나 텔레비전 프로그램",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "뮤지컬",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "노래 등",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "인터넷 자료: 이메일",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "웹사이트",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "사회 관계망 서비스(SNS)",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "웹툰 등",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "세계 문화에 관한 다양한 주제(의식주",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "명절과 축제",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "종교",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "언어",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "문학",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "음악",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "예술",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "다양한 문화권의 관습",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "규범",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "가치",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "행동 양식",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
-      },
-      {
-        "name": "다양한 장르와 매체의 문화 정보와 문화적 산물",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-nec-2024-3-annex14 · p.229"
+        "name": "표현",
+        "domain": "교육과정 영역",
+        "sourceLabel": "교육과정 영역"
       }
     ]
   },
@@ -37098,19 +38108,214 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "연주",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "자세",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
       },
       {
-        "name": "감상",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "주법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
       },
       {
-        "name": "창작",
-        "domain": "교육과정 영역",
-        "sourceLabel": "교육과정 영역"
+        "name": "표현 기법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "다양한 주법",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "느낌",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "여러 소리",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "어울림",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "여러 악기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "소리의 상호작용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "기초적인 음악 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "음악 요소",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "음악적 특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "음악의 간단한 구성⋅음악적 특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "음악의 구성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "분위기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "쓰임",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "배경",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "활용",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "감성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "다양성",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "역할",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "반응하며 듣기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "감지하며 듣기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "집중하여 듣기",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.14"
+      },
+      {
+        "name": "기초적인 기보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "기보법(오선보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "정간보 등)",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "간단한 악보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "상상",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "아이디어",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "의도",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.15"
+      },
+      {
+        "name": "다양한 매체의 음악",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "연주 상황",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "다양한 음악적 특징",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "음악",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "기능",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "기여",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.43"
+      },
+      {
+        "name": "다양한 형식의 음악",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
+      },
+      {
+        "name": "다양한 기보법(오선보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
+      },
+      {
+        "name": "정간보",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
+      },
+      {
+        "name": "창작에서의 맥락",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-nec-2024-3-annex12 · p.44"
       }
     ]
   },
@@ -37486,12 +38691,7 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
     "category": "공통",
     "topics": [
       {
-        "name": "정신 건강의 특성 방법",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.13"
-      },
-      {
-        "name": "정신 건강 활동",
+        "name": "정신 건강의 특성 방법⋅정신 건강 활동",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.13"
       },
@@ -37501,27 +38701,22 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.13"
       },
       {
-        "name": "기술형",
+        "name": "기술형⋅전략형⋅생태형",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.14"
       },
       {
-        "name": "전략형",
+        "name": "기술형⋅전략형⋅생태형 스포츠의 경기 방법",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.14"
       },
       {
-        "name": "생태형",
+        "name": "전략",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.14"
       },
       {
-        "name": "생태형 스포츠의 경기 방법과 전략",
-        "domain": "지식·이해",
-        "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.14"
-      },
-      {
-        "name": "생태형 스포츠",
+        "name": "기술형⋅전략형⋅생태형 스포츠",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.14"
       },
@@ -37536,7 +38731,12 @@ export const CURRICULUM_COURSES: CurriculumCourse[] = [
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.15"
       },
       {
-        "name": "표현 활동의 유형별 역사와 특성",
+        "name": "표현 활동의 유형별 역사",
+        "domain": "지식·이해",
+        "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.15"
+      },
+      {
+        "name": "특성",
         "domain": "지식·이해",
         "sourceLabel": "NCIC · kr-moe-2022-33-annex11 · p.15"
       },

@@ -1,8 +1,8 @@
 {
   "kind": "official-curriculum-content-elements",
   "scope": "knowledge-understanding",
-  "courseCount": 29,
-  "elementCount": 950,
+  "courseCount": 86,
+  "elementCount": 1062,
   "courses": [
     {
       "id": "kr.course.2022.middle.aaaae5ae7d8548a8",
@@ -516,670 +516,111 @@
       ]
     },
     {
-      "id": "kr.course.2022.middle.a0f8efae1e2bd119",
-      "name": "국어",
+      "id": "kr.course.2022.middle.92c889afa560b9d8",
+      "name": "기술·가정",
       "level": "middle",
       "elements": [
         {
-          "name": "대화",
+          "name": "미래 식생활과 푸드 테크",
           "category": "지식·이해",
-          "page": 82,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 50,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "토론",
+          "name": "스마트 의류와 메타패션",
           "category": "지식·이해",
-          "page": 82,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 50,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "다양한 설명 방법을 활용하여 주제를 제시한 글",
+          "name": "유비쿼터스 주거와 가상공간",
           "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 50,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "다양한 논증 방법을 활용하여 주장을 제시한 글",
+          "name": "소비자 안전과 소비자 시민성",
           "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 51,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "생각과 감정이 함축적이고 복합적으로 제시된 글",
+          "name": "생활복지와 빅데이터",
           "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 51,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "사회적 쟁점에 대한 자신의 견해를 나타내는 글",
+          "name": "맞춤형 스마트복지",
           "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 51,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "개성이 드러나는 글",
+          "name": "중년기 부모와 청소년기 자녀",
           "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "음운 변동",
+          "name": "노년기 생활과 유니버설 디자인",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "글과 담화에 나타난 문법 요소 및 어휘의 특성과 사용",
+          "name": "디지털 시대의 관계 형성",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "작가 맥락",
+          "name": "회복탄력성과 성장",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "독자 맥락",
+          "name": "공학과 융합",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 53,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "사회⋅문화적 맥락",
+          "name": "공학 소양",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 53,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "문학사적 맥락",
+          "name": "다양한 공학 분야와 진로",
           "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
+          "page": 53,
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "문학 소통의 특성을 고려하며 읽기",
-          "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "다양한 유형의 매체 자료",
-          "category": "지식·이해",
-          "page": 85,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "발표",
-          "category": "지식·이해",
-          "page": 93,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "협상",
-          "category": "지식·이해",
-          "page": 93,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "복합양식으로 구성된 글이나 자료의 관점",
-          "category": "지식·이해",
-          "page": 93,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "의도",
-          "category": "지식·이해",
-          "page": 93,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "공동 보고서",
-          "category": "지식·이해",
-          "page": 94,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "논증이 효과적으로 나타나는 글",
-          "category": "지식·이해",
-          "page": 94,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "한글 맞춤법과 국어 문제",
-          "category": "지식·이해",
-          "page": 94,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "매체 비평 자료",
-          "category": "지식·이해",
-          "page": 95,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "기호를 활용한 사회적 행위로서의 의사소통",
-          "category": "지식·이해",
-          "page": 118,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "맥락에 따른 언어 선택과 담화 관습",
-          "category": "지식·이해",
-          "page": 118,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "품사",
-          "category": "지식·이해",
-          "page": 118,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "문어 의사소통의 구성 요소",
-          "category": "지식·이해",
-          "page": 130,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "표현 전략을 고려한 표현과 작문 맥락을 고려한 고쳐쓰기",
-          "category": "지식·이해",
-          "page": 130,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "한국 문학의 성격과 역사",
-          "category": "지식·이해",
-          "page": 142,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "한국 문학의 보편성과 특수성",
-          "category": "지식·이해",
-          "page": 142,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "분야에 따른 책과 자료의 특성",
-          "category": "지식·이해",
-          "page": 156,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "영상의 형상화 방법",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "문학과 영상 관련 문화적 소양",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "목적",
-          "category": "지식·이해",
-          "page": 178,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "맥락",
-          "category": "지식·이해",
-          "page": 178,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "참여자 특성에 적합한 소통",
-          "category": "지식·이해",
-          "page": 178,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "직무 의사소통과 매체",
-          "category": "지식·이해",
-          "page": 178,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "독서 토론과 글쓰기의 맥락",
-          "category": "지식·이해",
-          "page": 190,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "토의",
-          "category": "지식·이해",
-          "page": 190,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "디지털 기술과 매체 환경 변화",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "매체 자료의 사회⋅문화적 구성과 재현",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex5"
-        },
-        {
-          "name": "글과 담화의 맥락과 언어적 특성",
-          "category": "지식·이해",
-          "page": 213,
-          "sourceId": "kr-moe-2022-33-annex5"
-        }
-      ]
-    },
-    {
-      "id": "kr.course.2022.middle.07f3bfc5942e5a74",
-      "name": "도덕",
-      "level": "middle",
-      "elements": [
-        {
-          "name": "동양 윤리의 접근",
-          "category": "지식·이해",
-          "page": 38,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "서양 윤리의 접근",
-          "category": "지식·이해",
-          "page": 38,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "사랑과 성의 관계",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "결혼과 가족의 윤리",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "자연을 바라보는 동⋅서양의 관점",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "환경 문제에 대한 윤리적 쟁점",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "정보사회의 특징과 윤리적 쟁점들",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "뉴미디어 사회의 특징과 윤리적 쟁점들",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "인공지능과 인간의 관계",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "인공지능의 윤리적 쟁점",
-          "category": "지식·이해",
-          "page": 39,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "시민과 국가의 관계",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "시민의 참여와 시민불복종",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "분배 정의의 의미와 윤리적 쟁점들",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "교정적 정의의 의미와 윤리적 쟁점들",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "의식주 생활과 윤리",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "경제생활에서 발생하는 윤리적 갈등",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "문화 다양성과 존중",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "다문화 윤리의 실천과 노력",
-          "category": "지식·이해",
-          "page": 40,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "통일 문제를 둘러싼 쟁점",
-          "category": "지식·이해",
-          "page": 41,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "평화를 실현하기 위한 윤리적 가치",
-          "category": "지식·이해",
-          "page": 41,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "국제 분쟁의 해결과 방안",
-          "category": "지식·이해",
-          "page": 41,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "국제 사회에 대한 책임과 기여",
-          "category": "지식·이해",
-          "page": 41,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "다투지 않음과 자연 그대로의 삶",
+          "name": "친환경 에너지와 에너지 전환",
           "category": "지식·이해",
           "page": 54,
-          "sourceId": "kr-moe-2022-33-annex6"
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "분별을 잊음과 자유롭게 노니는 삶",
+          "name": "첨단 수송수단과 항공우주",
           "category": "지식·이해",
           "page": 54,
-          "sourceId": "kr-moe-2022-33-annex6"
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "상호의존적인 세계와 실체가 없는 존재",
-          "category": "지식·이해",
-          "page": 54,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "깨달음을 향한 수행과 자비의 실천",
-          "category": "지식·이해",
-          "page": 54,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "순수한 도덕본성의 발현",
+          "name": "생명공학과 의공학",
           "category": "지식·이해",
           "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
+          "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "일상적 감정의 도덕적 조절",
+          "name": "첨단 융합공학",
           "category": "지식·이해",
           "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "내적 깨어있음과 외적 실천",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "마음의 생동성과 활동적 이치",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "본성의 확충과 마음의 주체성",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "그리스도교와 사랑의 윤리",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "자연법 윤리와 프로테스탄티즘 윤리",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "의무론과 선의지",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "결과론과 공리",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "주체적 결단과 문제 해결의 유용성",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "도덕의 기원과 판단에 대한 과학적 설명",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "책임⋅배려와 윤리적 삶",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "민주주의의 지향과 대의민주주의",
-          "category": "지식·이해",
-          "page": 56,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "참여와 심의를 통한 민주주의 구현",
-          "category": "지식·이해",
-          "page": 56,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "자본주의의 원리와 현실",
-          "category": "지식·이해",
-          "page": 56,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "자본주의의 윤리적 개선과 대안",
-          "category": "지식·이해",
-          "page": 56,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "삶의 주체로서의 나",
-          "category": "지식·이해",
-          "page": 66,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "고통과 쾌락을 대하는 자세",
-          "category": "지식·이해",
-          "page": 66,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "의미 있는 타자로서의 친구",
-          "category": "지식·이해",
-          "page": 66,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "사랑과 배려의 삶",
-          "category": "지식·이해",
-          "page": 66,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "능력에 따른 분배와 한계",
-          "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "자유롭고 평등한 삶을 위한 정의의 원칙",
-          "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "가상세계와 현실세계의 상호성",
-          "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "기후위기와 지속가능한 삶",
-          "category": "지식·이해",
-          "page": 68,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "상생을 위한 실천원칙",
-          "category": "지식·이해",
-          "page": 68,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "인생의 유한성 자각",
-          "category": "지식·이해",
-          "page": 68,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "삶의 의미를 찾는 과정과 방법",
-          "category": "지식·이해",
-          "page": 68,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "윤리문제 탐구의 의미와 중요성",
-          "category": "지식·이해",
-          "page": 82,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "윤리문제 탐구 방법",
-          "category": "지식·이해",
-          "page": 82,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "사회적 차별 표현을 바라보는 다양한 관점",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "사회적 차별 표현 문제의 해결 방안",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "배타적 민족주의의 확산과 난민 문제",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "난민 문제의 해결 방안",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "빅데이터와 알고리즘의 편향성 문제",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "사회적 책임과 공정성의 확보 방안",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "인공지능 활용의 윤리적 딜레마",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "인공지능의 바람직한 활용 방안",
-          "category": "지식·이해",
-          "page": 83,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "기후위기와 인류의 책임",
-          "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "에너지 전환과 탄소 중립을 둘러싼 논쟁과 실천",
-          "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "윤리문제 탐구 활동",
-          "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex6"
-        },
-        {
-          "name": "탐구 결과의 정리와 발표",
-          "category": "지식·이해",
-          "page": 84,
-          "sourceId": "kr-moe-2022-33-annex6"
+          "sourceId": "kr-moe-2022-33-annex10"
         }
       ]
     },
@@ -1384,90 +825,6 @@
           "name": "사회",
           "category": "지식·이해",
           "page": 41,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "아이디어를 발상하는 방법",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "표현 기법과 매체의 종류",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "작품 내용과 형식의 심화",
-          "category": "지식·이해",
-          "page": 53,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "전시 목적과 방법",
-          "category": "지식·이해",
-          "page": 53,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "작가와 작품의 특징과 맥락적 이해",
-          "category": "지식·이해",
-          "page": 60,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "미술사적 관점을 활용한 작품의 역사",
-          "category": "지식·이해",
-          "page": 60,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "정치",
-          "category": "지식·이해",
-          "page": 60,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "경제",
-          "category": "지식·이해",
-          "page": 60,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "비평 방법과 관점",
-          "category": "지식·이해",
-          "page": 60,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "시대별",
-          "category": "지식·이해",
-          "page": 70,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "지역별 매체의 변화",
-          "category": "지식·이해",
-          "page": 70,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "매체의 특성과 표현 원리",
-          "category": "지식·이해",
-          "page": 70,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "지역별 미술과 매체 관련짓기",
-          "category": "지식·이해",
-          "page": 70,
-          "sourceId": "kr-moe-2022-33-annex13"
-        },
-        {
-          "name": "작품의 정교한 표현과 보존 방법",
-          "category": "지식·이해",
-          "page": 70,
           "sourceId": "kr-moe-2022-33-annex13"
         }
       ]
@@ -1810,699 +1167,249 @@
       ]
     },
     {
-      "id": "kr.course.2022.middle.fb948cdadbdc5da1",
-      "name": "영어",
+      "id": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "name": "음악",
       "level": "middle",
       "elements": [
         {
-          "name": "이야기나 서사 및 운문",
+          "name": "자세와 주법",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "친교나 사회적 목적의 말이나 글",
+          "name": "주법과 표현 기법",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "name": "다양한 주법과 표현 기법",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "name": "느낌",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "[별표 1] 소재",
+          "name": "여러 소리",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
+          "name": "어울림",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "우리 문화와 타 문화의 생활 양식이나 문화 예술",
+          "name": "여러 악기",
           "category": "지식·이해",
-          "page": 46,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "일상생활 및 기본적인 지식이나 정보 등의 친숙한 일반적 주제",
+          "name": "소리의 상호작용",
           "category": "지식·이해",
-          "page": 47,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "실물",
+          "name": "기초적인 음악 요소",
           "category": "지식·이해",
-          "page": 47,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "그림",
+          "name": "음악 요소",
           "category": "지식·이해",
-          "page": 47,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "사진",
+          "name": "음악적 특징",
           "category": "지식·이해",
-          "page": 47,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "실생활 관련 친숙한 주제",
+          "name": "음악의 간단한 구성⋅음악적 특징",
           "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "우리 문화나 타 문화의 생활 양식",
+          "name": "음악의 구성",
           "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사고방식",
-          "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "의사소통 방식",
-          "category": "지식·이해",
-          "page": 67,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회생활이나 학업 관련 등 일반적 주제",
-          "category": "지식·이해",
-          "page": 90,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "우리 문화 및 타 문화의 생활 양식",
-          "category": "지식·이해",
-          "page": 90,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회생활이나 학업 및 지역⋅세계 공동체 관련 등 다양한 주제",
-          "category": "지식·이해",
-          "page": 106,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "친교나 사회적 목적의 글",
-          "category": "지식·이해",
-          "page": 121,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "정보 전달⋅교환 목적의 글",
-          "category": "지식·이해",
-          "page": 121,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "의견 전달⋅교환이나 주장 목적의 글",
-          "category": "지식·이해",
-          "page": 121,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회생활이나 학업 관련 등 다양한 주제",
-          "category": "지식·이해",
-          "page": 121,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "경험",
-          "category": "지식·이해",
-          "page": 122,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "계획",
-          "category": "지식·이해",
-          "page": 122,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회적 목적의 말이나 글",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "진로 탐색과 관련된 말이나 글",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "직무 수행과 관련된 말이나 글",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 진로 및 직무 관련 주제",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "발표와 관련된 담화",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "기초 학문 분야 주제 및 사회적 이슈",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 문화권에 속한 사람들의 언어적⋅비언어적 의사소통 방식",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "정보 수집",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "발표 개요 작성",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사물",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "개념",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "방법",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "절차",
-          "category": "지식·이해",
-          "page": 148,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "토론과 관련된 담화",
-          "category": "지식·이해",
-          "page": 149,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "토론 개요 작성",
-          "category": "지식·이해",
-          "page": 149,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "학술 자료",
-          "category": "지식·이해",
-          "page": 149,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "통계",
-          "category": "지식·이해",
-          "page": 149,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 주제 및 기초 학문 분야 주제",
-          "category": "지식·이해",
-          "page": 162,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "심정",
-          "category": "지식·이해",
-          "page": 162,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "의도",
-          "category": "지식·이해",
-          "page": 162,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "내용",
-          "category": "지식·이해",
-          "page": 163,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "[별표 4] 고등학교 권장 언어 형식",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "시(동요",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "동시 등)",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "희곡(동극)",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "이야기(동화",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "우화",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "신화 등)",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "소설",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "수필",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 문학 장르와 주제",
-          "category": "지식·이해",
-          "page": 176,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 분야의 기초 학문 주제",
-          "category": "지식·이해",
-          "page": 187,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "어조",
-          "category": "지식·이해",
-          "page": 187,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
           "name": "분위기",
           "category": "지식·이해",
-          "page": 187,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "실생활 관련 이야기",
+          "name": "쓰임",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "대인 관계 유지 목적의 담화",
+          "name": "배경",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "사실이나 정보 전달⋅교환 목적의 담화",
+          "name": "활용",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "대인 관계와 사회생활에 관한 일반적 주제",
+          "name": "감성",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "언어 예절",
+          "name": "다양성",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "상대방의 말을 듣고 주제",
+          "name": "역할",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "요지",
+          "name": "반응하며 듣기",
           "category": "지식·이해",
-          "page": 204,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "방송",
+          "name": "감지하며 듣기",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "드라마",
+          "name": "집중하여 듣기",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 14,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "영화",
+          "name": "기초적인 기보",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "팝송",
+          "name": "기보법(오선보",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "인터넷",
+          "name": "정간보 등)",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "소셜 미디어",
+          "name": "간단한 악보",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "원격 플랫폼",
+          "name": "상상",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "동영상 플랫폼",
+          "name": "아이디어",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "게임과 웹툰",
+          "name": "의도",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 15,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "가상⋅증강⋅혼합 현실 미디어 등",
+          "name": "다양한 매체의 음악",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "사회 전반의 다양한 주제(정치",
+          "name": "연주 상황과 맥락",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "경제",
+          "name": "다양한 음악적 특징과 음악",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "사회",
+          "name": "맥락",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "과학",
+          "name": "기능",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "문화",
+          "name": "기여",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 43,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "예술 등)",
+          "name": "다양한 형식의 음악",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 44,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "다양한 유형의 미디어",
+          "name": "다양한 기보법(오선보",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 44,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "영어 미디어 활용 방식(영어 이모티콘",
+          "name": "정간보",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 44,
+          "sourceId": "kr-nec-2024-3-annex12"
         },
         {
-          "name": "글로벌 검색 엔진",
+          "name": "창작에서의 맥락",
           "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "워드 클라우드",
-          "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회 관계망",
-          "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "미디어상의 영어로 표현된 정보를 검색",
-          "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "선정",
-          "category": "지식·이해",
-          "page": 216,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "인쇄물: 책",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "신문",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "잡지",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "만화",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "광고",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "문서나 기록물",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "전단지나 안내 책자",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "대본 등",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "공연물: 라디오나 텔레비전 프로그램",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "뮤지컬",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "노래 등",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "인터넷 자료: 이메일",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "웹사이트",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "사회 관계망 서비스(SNS)",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "웹툰 등",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "세계 문화에 관한 다양한 주제(의식주",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "명절과 축제",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "종교",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "언어",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "문학",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "음악",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "예술",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 문화권의 관습",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "규범",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "가치",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "행동 양식",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
-        },
-        {
-          "name": "다양한 장르와 매체의 문화 정보와 문화적 산물",
-          "category": "지식·이해",
-          "page": 229,
-          "sourceId": "kr-nec-2024-3-annex14"
+          "page": 44,
+          "sourceId": "kr-nec-2024-3-annex12"
         }
       ]
     },
@@ -2770,408 +1677,6 @@
           "sourceId": "kr-moe-2022-33-annex10"
         },
         {
-          "name": "미래 식생활과 푸드 테크",
-          "category": "지식·이해",
-          "page": 50,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "스마트 의류와 메타패션",
-          "category": "지식·이해",
-          "page": 50,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "유비쿼터스 주거와 가상공간",
-          "category": "지식·이해",
-          "page": 50,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "소비자 안전과 소비자 시민성",
-          "category": "지식·이해",
-          "page": 51,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "생활복지와 빅데이터",
-          "category": "지식·이해",
-          "page": 51,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "맞춤형 스마트복지",
-          "category": "지식·이해",
-          "page": 51,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "중년기 부모와 청소년기 자녀",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "노년기 생활과 유니버설 디자인",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "디지털 시대의 관계 형성",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "회복탄력성과 성장",
-          "category": "지식·이해",
-          "page": 52,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "공학과 융합",
-          "category": "지식·이해",
-          "page": 53,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "공학 소양",
-          "category": "지식·이해",
-          "page": 53,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "다양한 공학 분야와 진로",
-          "category": "지식·이해",
-          "page": 53,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "친환경 에너지와 에너지 전환",
-          "category": "지식·이해",
-          "page": 54,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "첨단 수송수단과 항공우주",
-          "category": "지식·이해",
-          "page": 54,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "생명공학과 의공학",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "첨단 융합공학",
-          "category": "지식·이해",
-          "page": 55,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "생활 속의 로봇 종류와 활용",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "로봇 윤리",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "에너지⋅수송 분야 공학 세계의 이해",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "정보통신 및 인공지능 기술 분야 공학 세계의 이해",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "기타 공학 분야의 로봇 활용",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "로봇의 활용 분야에 따른 진로 이해",
-          "category": "지식·이해",
-          "page": 73,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "로봇을 제어하는 소프트웨어 및 인공지능 기술 이해",
-          "category": "지식·이해",
-          "page": 74,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "로봇공학 문제해결",
-          "category": "지식·이해",
-          "page": 74,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "정보 수집",
-          "category": "지식·이해",
-          "page": 74,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "가족복지",
-          "category": "지식·이해",
-          "page": 85,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "소비자와 소비 행동 심리",
-          "category": "지식·이해",
-          "page": 85,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "의류직물과 의복디자인",
-          "category": "지식·이해",
-          "page": 86,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "패션산업과 머천다이징",
-          "category": "지식·이해",
-          "page": 86,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "주거와 실내디자인",
-          "category": "지식·이해",
-          "page": 86,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "리빙 크리에이티브와 창업",
-          "category": "지식·이해",
-          "page": 87,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "지역사회에 기여하는 생활과학",
-          "category": "지식·이해",
-          "page": 87,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "공학과 창의성",
-          "category": "지식·이해",
-          "page": 99,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "공학과 팀워크",
-          "category": "지식·이해",
-          "page": 99,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "창의 공학 설계와 문제 해결 과정",
-          "category": "지식·이해",
-          "page": 99,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "최적의 대안 선정 및 평가 기법",
-          "category": "지식·이해",
-          "page": 100,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "제도의 기본 규칙",
-          "category": "지식·이해",
-          "page": 100,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "디지털 기반 공학 설계 도구",
-          "category": "지식·이해",
-          "page": 100,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "시제품 제작 방법",
-          "category": "지식·이해",
-          "page": 100,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "시제품 평가 방법",
-          "category": "지식·이해",
-          "page": 100,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "신지식재산권의 종류와 특징",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "산업재산권(특허권",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "상표권",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "디자인권)의 등록 요건",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "저작물의 분류와 성립요건",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "지식재산권의 사회",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "경제",
-          "category": "지식·이해",
-          "page": 110,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "기술 사업화와 지식재산권 가치 평가",
-          "category": "지식·이해",
-          "page": 111,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "기술 창업과 기업가 정신",
-          "category": "지식·이해",
-          "page": 111,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "직무 발명 제도",
-          "category": "지식·이해",
-          "page": 111,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "특허 명세서",
-          "category": "지식·이해",
-          "page": 112,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "특허 도면",
-          "category": "지식·이해",
-          "page": 112,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "특허 출원",
-          "category": "지식·이해",
-          "page": 112,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "부모됨의 의미",
-          "category": "지식·이해",
-          "page": 123,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "임신과 출산",
-          "category": "지식·이해",
-          "page": 123,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "부모와 개인으로서의 삶의 균형",
-          "category": "지식·이해",
-          "page": 123,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "아동의 발달 단계에 따른 돌봄",
-          "category": "지식·이해",
-          "page": 124,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "부모와 자녀 간의 긍정적 관계의 형성",
-          "category": "지식·이해",
-          "page": 124,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "아동의 안전한 돌봄 환경",
-          "category": "지식·이해",
-          "page": 124,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "사회적 부모와 지역사회 돌봄의 의미",
-          "category": "지식·이해",
-          "page": 124,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "만남과 이별",
-          "category": "지식·이해",
-          "page": 135,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "대인 관계와 관련된 이슈",
-          "category": "지식·이해",
-          "page": 135,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "협력적 소비",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "금융거래와 관련된 이슈",
-          "category": "지식·이해",
-          "page": 136,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "청년 주거복지와 정보",
-          "category": "지식·이해",
-          "page": 137,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "독립적 생활설계",
-          "category": "지식·이해",
-          "page": 137,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
           "name": "운영 체제의 기능",
           "category": "지식·이해",
           "page": 155,
@@ -3301,132 +1806,6 @@
           "name": "정보 보호와 보안",
           "category": "지식·이해",
           "page": 177,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "인공지능과 탐색",
-          "category": "지식·이해",
-          "page": 189,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "지식의 표현과 추론",
-          "category": "지식·이해",
-          "page": 189,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "기계학습 알고리즘",
-          "category": "지식·이해",
-          "page": 189,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "인공신경망과 딥러닝",
-          "category": "지식·이해",
-          "page": 189,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "인공지능과 진로",
-          "category": "지식·이해",
-          "page": 190,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "인공지능과 윤리",
-          "category": "지식·이해",
-          "page": 190,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "인공지능 문제 해결 절차",
-          "category": "지식·이해",
-          "page": 190,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "데이터의 형태와 속성",
-          "category": "지식·이해",
-          "page": 200,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "데이터셋과 데이터베이스",
-          "category": "지식·이해",
-          "page": 200,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "데이터 분석 방법",
-          "category": "지식·이해",
-          "page": 200,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "군집 분석",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "연관 분석",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "탐색적 데이터 분석",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "결과의 의미 해석",
-          "category": "지식·이해",
-          "page": 201,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "소프트웨어 융합과 문제 해결",
-          "category": "지식·이해",
-          "page": 213,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "미디어 아트",
-          "category": "지식·이해",
-          "page": 213,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "웨어러블 장치",
-          "category": "지식·이해",
-          "page": 213,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "데이터 시각화와 분석",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "시뮬레이션 활용 분야",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "시뮬레이션 모델",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-moe-2022-33-annex10"
-        },
-        {
-          "name": "소프트웨어 스타트업 프로젝트",
-          "category": "지식·이해",
-          "page": 215,
           "sourceId": "kr-moe-2022-33-annex10"
         }
       ]
@@ -3578,8 +1957,202 @@
       ]
     },
     {
-      "id": "kr.course.2022.high.f699e06d5f857844",
-      "name": "공통수학2",
+      "id": "kr.course.2022.high.4166f628015541ac",
+      "name": "공통국어1",
+      "level": "high",
+      "elements": [
+        {
+          "name": "대화",
+          "category": "지식·이해",
+          "page": 82,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "토론",
+          "category": "지식·이해",
+          "page": 82,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "다양한 설명 방법을 활용하여 주제를 제시한 글",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "다양한 논증 방법을 활용하여 주장을 제시한 글",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "생각과 감정이 함축적이고 복합적으로 제시된 글",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "사회적 쟁점에 대한 자신의 견해를 나타내는 글",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "개성이 드러나는 글",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "음운 변동",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "글과 담화에 나타난 문법 요소 및 어휘의 특성과 사용",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "작가 맥락",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "독자 맥락",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "사회⋅문화적 맥락",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "문학사적 맥락",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "문학 소통의 특성을 고려하며 읽기",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "다양한 유형의 매체 자료",
+          "category": "지식·이해",
+          "page": 85,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.08a52bc2723f8254",
+      "name": "공통국어2",
+      "level": "high",
+      "elements": [
+        {
+          "name": "발표",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "협상",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "다양한 설명 방법을 활용하여 주제를 제시한 글",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "다양한 논증 방법을 활용하여 주장을 제시한 글",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "생각과 감정이 함축적이고 복합적으로 제시된 글",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "복합양식으로 구성된 글이나 자료의 관점",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "의도",
+          "category": "지식·이해",
+          "page": 93,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "공동 보고서",
+          "category": "지식·이해",
+          "page": 94,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "논증이 효과적으로 나타나는 글",
+          "category": "지식·이해",
+          "page": 94,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "한글 맞춤법과 국어 문제",
+          "category": "지식·이해",
+          "page": 94,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "작가 맥락",
+          "category": "지식·이해",
+          "page": 95,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "독자 맥락",
+          "category": "지식·이해",
+          "page": 95,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "사회⋅문화적 맥락",
+          "category": "지식·이해",
+          "page": 95,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "문학사적 맥락",
+          "category": "지식·이해",
+          "page": 95,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "매체 비평 자료",
+          "category": "지식·이해",
+          "page": 95,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.c5134bb916edf899",
+      "name": "공통수학1",
       "level": "high",
       "elements": [
         {
@@ -3641,7 +2214,14 @@
           "category": "지식·이해",
           "page": 65,
           "sourceId": "kr-moe-2022-33-annex8"
-        },
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.f699e06d5f857844",
+      "name": "공통수학2",
+      "level": "high",
+      "elements": [
         {
           "name": "집합",
           "category": "지식·이해",
@@ -3685,6 +2265,12 @@
           "sourceId": "kr-moe-2022-33-annex8"
         },
         {
+          "name": "원리",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex8"
+        },
+        {
           "name": "식과 그래프",
           "category": "지식·이해",
           "page": 70,
@@ -3695,6 +2281,213 @@
           "category": "지식·이해",
           "page": 70,
           "sourceId": "kr-moe-2022-33-annex8"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.1aa7a52049208785",
+      "name": "공통영어1",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화와 타 문화의 생활 양식이나 문화 예술",
+          "category": "지식·이해",
+          "page": 46,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "일상생활 및 기본적인 지식이나 정보 등의 친숙한 일반적 주제",
+          "category": "지식·이해",
+          "page": 47,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실물",
+          "category": "지식·이해",
+          "page": 47,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 47,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 47,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.b500bfc2d692a67a",
+      "name": "공통영어2",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "일상생활 및 기본적 지식이나 정보 등의 친숙한 일반적 주제",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화와 타 문화의 생활 양식이나 문화 예술",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "일상생활 및 기본적인 지식이나 정보 등의 친숙한 일반적 주제",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실물",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.c57a4fefb53c582d",
+      "name": "과학의 역사와 문화",
+      "level": "high",
+      "elements": [
+        {
+          "name": "감염병과 백신",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "교통수단 속의 과학",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "산업혁명 이후 과학기술의 명암",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "과학기술 기반 문화 콘텐츠",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "미디어 속 과학의 언어",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "과학기술과 음악",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "인간과 사물의 대화",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "증강 현실과 가상 현실의 세계",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "과학기술과 시민 참여",
+          "category": "지식·이해",
+          "page": 263,
+          "sourceId": "kr-nec-2024-3-annex9"
         }
       ]
     },
@@ -3751,846 +2544,12 @@
           "category": "지식·이해",
           "page": 102,
           "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "전류의 자기 작용",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "전자기 유도",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "중첩과 간섭",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "굴절",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "빛과 물질의 이중성",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "에너지띠와 반도체",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "광속 불변",
-          "category": "지식·이해",
-          "page": 115,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "가역 반응과 동적 평형",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "평형 상수",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "평형의 이동",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "몰 농도",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "물의 자동 이온화와 pH",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "중화 반응의 양적 관계",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "변인을 조작적으로 정의하고",
-          "category": "지식·이해",
-          "page": 127,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "내분비계의 특성",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "항상성 유지 원리",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "선천적⋅후천적 면역",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "항원⋅항체 반응",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "백신의 작용 원리",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "염색체의 구조",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "DNA와 유전자",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생식 세포의 형성과 의의",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "진화의 원리",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생물 분류 체계",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "동물과 식물의 다양성과 계통수",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생명과학 탐구 설계",
-          "category": "지식·이해",
-          "page": 139,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "지사 해석 방법",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "상대연령과 절대연령",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "지질시대의 환경과 생물",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "국가지질공원",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "태양계 모형",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "행성의 겉보기 운동",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "일식과 월식",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "별의 물리량",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "별의 진화와 H-R도",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "은하의 구성과 분류",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "우주의 팽창",
-          "category": "지식·이해",
-          "page": 151,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "열의 이동",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "이상 기체 법칙",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "열역학 제1법칙",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "열기관",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "열역학 제2법칙",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "탄성파",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "투과와 반사",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "도플러 효과",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "간섭과 소음 제어",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "정상파",
-          "category": "지식·이해",
-          "page": 167,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "렌즈와 수차",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "간섭과 회절",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "편광",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "광전효과",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "레이저",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "입자-파동 이중성",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "확률 파동",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "중첩",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "터널 효과",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "불확정성 원리",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "핵융합",
-          "category": "지식·이해",
-          "page": 179,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "엔탈피와 열화학 반응식",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "헤스 법칙",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "엔트로피",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "반응 속도의 표현과 의미",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "반응 속도식",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "1차 반응의 반감기",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "활성화 에너지",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "반응 속도에 영향을 미치는 요인",
-          "category": "지식·이해",
-          "page": 191,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "표준 환원 전위",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "화학 전지",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "전기 분해",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "화학 전지의 유용성",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "작용기와 반응",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "고분자 물질",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "신물질 개발",
-          "category": "지식·이해",
-          "page": 203,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "효소의 작용",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "효소의 종류",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "효소의 이용",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "미토콘드리아의 구조와 기능",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "세포호흡 과정",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "발효",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "엽록체의 구조와 기능",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "명반응과 탄소 고정반응",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "전자전달계",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "광합성과 세포호흡의 관계",
-          "category": "지식·이해",
-          "page": 214,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "진핵생물의 유전자 발현 조절",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "발생과 세포 분화에서의 유전자 발현 조절",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생명공학기술의 발달",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생명공학기술 관련 분야",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "유전자 변형 생물체의 개발과 이용",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "생명공학기술의 활용과 생명윤리",
-          "category": "지식·이해",
-          "page": 226,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "쓰나미",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "폭풍 해일",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "조석과 기조력",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "태양복사",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "지구복사",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "열수지",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "온실효과",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "대기 안정도",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "강수과정",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "지균풍",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "경도풍",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "지상풍",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "편서풍 파동",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "제트류",
-          "category": "지식·이해",
-          "page": 237,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "쌍성계",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "질량-광도 관계",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "변광성",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "초신성",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "성간 티끌",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "성간 소광",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "세페이드 변광성",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "은하의 회전과 질량",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "암흑 물질",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "전천 탐사",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "우주 거대 구조",
-          "category": "지식·이해",
-          "page": 249,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "감염병과 백신",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "교통수단 속의 과학",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "산업혁명 이후 과학기술의 명암",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "과학기술 기반 문화 콘텐츠",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "미디어 속 과학의 언어",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "과학기술과 음악",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "인간과 사물의 대화",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "증강 현실과 가상 현실의 세계",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "과학기술과 시민 참여",
-          "category": "지식·이해",
-          "page": 263,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "육상생태계의 변화",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "수생태계의 변화",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "기후변화와 감염병",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "해양생태계의 변화와 복원",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "급격한 환경생태 변화와 대응 노력",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "탄소 저감 과학기술",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "환경생태 보전을 위한 국제적 노력과 시민참여",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "융합적 사고",
-          "category": "지식·이해",
-          "page": 274,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "디지털 탐구 도구와 데이터 수집",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "데이터의 시각화와 평가",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "결론 도출 및 과학적 의사소통",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "미래 사회와 융합과학기술",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "융합과학기술과 사회적 난제 해결",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "융합과학 탐구와 윤리",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "사회 문제와 시민참여",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
-        },
-        {
-          "name": "컴퓨터",
-          "category": "지식·이해",
-          "page": 284,
-          "sourceId": "kr-nec-2024-3-annex9"
         }
       ]
     },
     {
-      "id": "kr.course.2022.high.8fda79d3e68f95aa",
-      "name": "기본수학2",
+      "id": "kr.course.2022.high.f0d7204a23c5c159",
+      "name": "기본수학1",
       "level": "high",
       "elements": [
         {
@@ -4646,7 +2605,14 @@
           "category": "지식·이해",
           "page": 84,
           "sourceId": "kr-moe-2022-33-annex8"
-        },
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.8fda79d3e68f95aa",
+      "name": "기본수학2",
+      "level": "high",
+      "elements": [
         {
           "name": "집합",
           "category": "지식·이해",
@@ -4690,6 +2656,12 @@
           "sourceId": "kr-moe-2022-33-annex8"
         },
         {
+          "name": "원리",
+          "category": "지식·이해",
+          "page": 89,
+          "sourceId": "kr-moe-2022-33-annex8"
+        },
+        {
           "name": "식과 그래프",
           "category": "지식·이해",
           "page": 89,
@@ -4700,6 +2672,164 @@
           "category": "지식·이해",
           "page": 89,
           "sourceId": "kr-moe-2022-33-annex8"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.1a2a0f41692de8e3",
+      "name": "기본영어1",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실생활 관련 친숙한 주제",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화나 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실물",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.04c2bef80f49173a",
+      "name": "기본영어2",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실생활 관련 친숙한 주제",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화나 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실물",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-nec-2024-3-annex14"
         }
       ]
     },
@@ -4725,6 +2855,61 @@
           "category": "지식·이해",
           "page": 163,
           "sourceId": "kr-moe-2022-33-annex8"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.35811985f46abf91",
+      "name": "기후변화와 환경생태",
+      "level": "high",
+      "elements": [
+        {
+          "name": "육상생태계의 변화",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "수생태계의 변화",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "기후변화와 감염병",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "해양생태계의 변화와 복원",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "급격한 환경생태 변화와 대응 노력",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "탄소 저감 과학기술",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "환경생태 보전을 위한 국제적 노력과 시민참여",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "융합적 사고",
+          "category": "지식·이해",
+          "page": 274,
+          "sourceId": "kr-nec-2024-3-annex9"
         }
       ]
     },
@@ -4780,6 +2965,589 @@
           "category": "지식·이해",
           "page": 105,
           "sourceId": "kr-moe-2022-33-annex8"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.edf7d80da6f9abc7",
+      "name": "데이터 과학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "데이터의 형태와 속성",
+          "category": "지식·이해",
+          "page": 200,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "데이터셋과 데이터베이스",
+          "category": "지식·이해",
+          "page": 200,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "데이터 분석 방법",
+          "category": "지식·이해",
+          "page": 200,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "군집 분석",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "연관 분석",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "탐색적 데이터 분석",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "결과의 의미 해석",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.ad5028dbc3343f34",
+      "name": "독서 토론과 글쓰기",
+      "level": "high",
+      "elements": [
+        {
+          "name": "독서 토론과 글쓰기의 맥락",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "대화",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "토의",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.e25a4f5a23afbd53",
+      "name": "독서와 작문",
+      "level": "high",
+      "elements": [
+        {
+          "name": "문어 의사소통의 구성 요소",
+          "category": "지식·이해",
+          "page": 130,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "표현 전략을 고려한 표현과 작문 맥락을 고려한 고쳐쓰기",
+          "category": "지식·이해",
+          "page": 130,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.3f8e42a8e51cf11d",
+      "name": "로봇과 공학세계",
+      "level": "high",
+      "elements": [
+        {
+          "name": "생활 속의 로봇 종류와 활용",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "로봇 윤리",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "에너지⋅수송 분야 공학 세계의 이해",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "정보통신 및 인공지능 기술 분야 공학 세계의 이해",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "기타 공학 분야의 로봇 활용",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "로봇의 활용 분야에 따른 진로 이해",
+          "category": "지식·이해",
+          "page": 73,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "로봇을 제어하는 소프트웨어 및 인공지능 기술 이해",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "로봇공학 문제해결",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "정보 수집",
+          "category": "지식·이해",
+          "page": 74,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.b06396bb85a4ce88",
+      "name": "매체 의사소통",
+      "level": "high",
+      "elements": [
+        {
+          "name": "디지털 기술과 매체 환경 변화",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "매체 자료의 사회⋅문화적 구성과 재현",
+          "category": "지식·이해",
+          "page": 201,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.3d6576f4f53fd651",
+      "name": "문학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "한국 문학의 성격과 역사",
+          "category": "지식·이해",
+          "page": 142,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "한국 문학의 보편성과 특수성",
+          "category": "지식·이해",
+          "page": 142,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.52bd240fd81d7779",
+      "name": "문학과 영상",
+      "level": "high",
+      "elements": [
+        {
+          "name": "영상의 형상화 방법",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "문학과 영상 관련 문화적 소양",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.a3e0712414844bb3",
+      "name": "물리학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "전류의 자기 작용",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "전자기 유도",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "중첩과 간섭",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "굴절",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "빛과 물질의 이중성",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "에너지띠와 반도체",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "광속 불변",
+          "category": "지식·이해",
+          "page": 115,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.ccdce9a9cbfbe8be",
+      "name": "물질과 에너지",
+      "level": "high",
+      "elements": [
+        {
+          "name": "엔탈피와 열화학 반응식",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "헤스 법칙",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "엔트로피",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "반응 속도의 표현과 의미",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "반응 속도식",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "1차 반응의 반감기",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "활성화 에너지",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "반응 속도에 영향을 미치는 요인",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "변인을 조작적으로 정의하고",
+          "category": "지식·이해",
+          "page": 191,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.13e453c37845e746",
+      "name": "미디어 영어",
+      "level": "high",
+      "elements": [
+        {
+          "name": "방송",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "드라마",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "영화",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "팝송",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "인터넷",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "소셜 미디어",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "원격 플랫폼",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "동영상 플랫폼",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "게임과 웹툰",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "가상⋅증강⋅혼합 현실 미디어 등",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회 전반의 다양한 주제(정치",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "경제",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "과학",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "문화",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "예술 등)",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 유형의 미디어",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "영어 미디어 활용 방식(영어 이모티콘",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "글로벌 검색 엔진",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "워드 클라우드",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회 관계망",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "미디어상의 영어로 표현된 정보를 검색",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "선정",
+          "category": "지식·이해",
+          "page": 216,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.bd6954f123f77b19",
+      "name": "미술 감상과 비평",
+      "level": "high",
+      "elements": [
+        {
+          "name": "작가와 작품의 특징과 맥락적 이해",
+          "category": "지식·이해",
+          "page": 60,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "미술사적 관점을 활용한 작품의 역사",
+          "category": "지식·이해",
+          "page": 60,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "정치",
+          "category": "지식·이해",
+          "page": 60,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "경제",
+          "category": "지식·이해",
+          "page": 60,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "비평 방법과 관점",
+          "category": "지식·이해",
+          "page": 60,
+          "sourceId": "kr-moe-2022-33-annex13"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.684550635ae22e69",
+      "name": "미술 창작",
+      "level": "high",
+      "elements": [
+        {
+          "name": "아이디어를 발상하는 방법",
+          "category": "지식·이해",
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "표현 기법과 매체의 종류",
+          "category": "지식·이해",
+          "page": 52,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "작품 내용과 형식의 심화",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "전시 목적과 방법",
+          "category": "지식·이해",
+          "page": 53,
+          "sourceId": "kr-moe-2022-33-annex13"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.f813f71ccff347a5",
+      "name": "미술과 매체",
+      "level": "high",
+      "elements": [
+        {
+          "name": "시대별",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "지역별 매체의 변화",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "매체의 특성과 표현 원리",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "지역별 미술과 매체 관련짓기",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "디지털 매체",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
+        },
+        {
+          "name": "작품의 정교한 표현과 보존 방법",
+          "category": "지식·이해",
+          "page": 70,
+          "sourceId": "kr-moe-2022-33-annex13"
         }
       ]
     },
@@ -4972,6 +3740,547 @@
       ]
     },
     {
+      "id": "kr.course.2022.high.e4000a151f61fc2d",
+      "name": "생명과학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "내분비계의 특성",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "항상성 유지 원리",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "선천적⋅후천적 면역",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "항원⋅항체 반응",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "백신의 작용 원리",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "염색체의 구조",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "DNA와 유전자",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생식 세포의 형성과 의의",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "진화의 원리",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생물 분류 체계",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "동물과 식물의 다양성과 계통수",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명과학 탐구 설계",
+          "category": "지식·이해",
+          "page": 139,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.92ec69a3474b6737",
+      "name": "생물의 유전",
+      "level": "high",
+      "elements": [
+        {
+          "name": "진핵생물의 유전자 발현 조절",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "발생과 세포 분화에서의 유전자 발현 조절",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명공학기술의 발달",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명공학기술 관련 분야",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "유전자 변형 생물체의 개발과 이용",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명공학기술의 활용과 생명윤리",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명과학 탐구 설계",
+          "category": "지식·이해",
+          "page": 226,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.646724eed0ea6def",
+      "name": "생애 설계와 자립",
+      "level": "high",
+      "elements": [
+        {
+          "name": "만남과 이별",
+          "category": "지식·이해",
+          "page": 135,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "대인 관계와 관련된 이슈",
+          "category": "지식·이해",
+          "page": 135,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "협력적 소비",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "금융거래와 관련된 이슈",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "청년 주거복지와 정보",
+          "category": "지식·이해",
+          "page": 137,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "독립적 생활설계",
+          "category": "지식·이해",
+          "page": 137,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.64bc8da5e0581507",
+      "name": "생활과학 탐구",
+      "level": "high",
+      "elements": [
+        {
+          "name": "가족복지",
+          "category": "지식·이해",
+          "page": 85,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "소비자와 소비 행동 심리",
+          "category": "지식·이해",
+          "page": 85,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "의류직물과 의복디자인",
+          "category": "지식·이해",
+          "page": 86,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "패션산업과 머천다이징",
+          "category": "지식·이해",
+          "page": 86,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "주거와 실내디자인",
+          "category": "지식·이해",
+          "page": 86,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "리빙 크리에이티브와 창업",
+          "category": "지식·이해",
+          "page": 87,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "지역사회에 기여하는 생활과학",
+          "category": "지식·이해",
+          "page": 87,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.306b8ae8b21876da",
+      "name": "세계 문화와 영어",
+      "level": "high",
+      "elements": [
+        {
+          "name": "인쇄물: 책",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "신문",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "잡지",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "만화",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "광고",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "문서나 기록물",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "전단지나 안내 책자",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "대본 등",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "공연물: 라디오나 텔레비전 프로그램",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "영화",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "뮤지컬",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "노래 등",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "인터넷 자료: 이메일",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "웹사이트",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회 관계망 서비스(SNS)",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "동영상 플랫폼",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "웹툰 등",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "세계 문화에 관한 다양한 주제(의식주",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "명절과 축제",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "종교",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "언어",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "문학",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "음악",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "예술",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 문화권의 관습",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "규범",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "가치",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "행동 양식",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 장르와 매체의 문화 정보와 문화적 산물",
+          "category": "지식·이해",
+          "page": 229,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.9259e0722898177b",
+      "name": "세포와 물질대사",
+      "level": "high",
+      "elements": [
+        {
+          "name": "효소의 작용",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "효소의 종류",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "효소의 이용",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "미토콘드리아의 구조와 기능",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "세포호흡 과정",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "발효",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "엽록체의 구조와 기능",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "명반응과 탄소 고정반응",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "전자전달계",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "광합성과 세포호흡의 관계",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "생명과학 탐구 설계",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.85930938b272eea5",
+      "name": "소프트웨어와 생활",
+      "level": "high",
+      "elements": [
+        {
+          "name": "소프트웨어 융합과 문제 해결",
+          "category": "지식·이해",
+          "page": 213,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "미디어 아트",
+          "category": "지식·이해",
+          "page": 213,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "웨어러블 장치",
+          "category": "지식·이해",
+          "page": 213,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "데이터 시각화와 분석",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "시뮬레이션 활용 분야",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "시뮬레이션 모델",
+          "category": "지식·이해",
+          "page": 214,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "소프트웨어 스타트업 프로젝트",
+          "category": "지식·이해",
+          "page": 215,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
       "id": "kr.course.2022.high.d81ba5ecef1483f1",
       "name": "수학과 문화",
       "level": "high",
@@ -5094,6 +4403,67 @@
       ]
     },
     {
+      "id": "kr.course.2022.high.ac8aa2b7149e9d5d",
+      "name": "실생활 영어 회화",
+      "level": "high",
+      "elements": [
+        {
+          "name": "실생활 관련 이야기",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "대인 관계 유지 목적의 담화",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사실이나 정보 전달⋅교환 목적의 담화",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "실생활 관련 친숙한 주제",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "대인 관계와 사회생활에 관한 일반적 주제",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "언어 예절",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "상대방의 말을 듣고 주제",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "요지",
+          "category": "지식·이해",
+          "page": 204,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
       "id": "kr.course.2022.high.10206858fed637ba",
       "name": "실용 통계",
       "level": "high",
@@ -5137,249 +4507,1011 @@
       ]
     },
     {
-      "id": "kr.course.2022.high.fdd5dc79d2d5fcf8",
-      "name": "음악",
+      "id": "kr.course.2022.high.101e5211e2e07253",
+      "name": "심화 영어",
       "level": "high",
       "elements": [
         {
-          "name": "자세와 주법",
+          "name": "이야기나 서사 및 운문",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "주법과 표현 기법",
+          "name": "친교나 사회적 목적의 말이나 글",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "다양한 주법과 표현 기법",
+          "name": "정보 전달⋅교환 목적의 말이나 글",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "느낌",
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "여러 소리",
+          "name": "[별표 1] 소재",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "어울림",
+          "name": "다양한 주제 및 기초 학문 분야 주제",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "여러 악기",
+          "name": "우리 문화 및 타 문화의 생활 양식",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "소리의 상호작용",
+          "name": "사고방식",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "기초적인 음악 요소",
+          "name": "의사소통 방식",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "음악 요소",
+          "name": "심정",
           "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "음악적 특징",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "음악의 간단한 구성⋅음악적 특징",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "음악의 구성",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "분위기",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "쓰임",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "배경",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "활용",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "감성",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "다양성",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "역할",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "반응하며 듣기",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "감지하며 듣기",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "집중하여 듣기",
-          "category": "지식·이해",
-          "page": 14,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "기초적인 기보",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "기보법(오선보",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "정간보 등)",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "간단한 악보",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "상상",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
-        },
-        {
-          "name": "아이디어",
-          "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
           "name": "의도",
           "category": "지식·이해",
-          "page": 15,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 162,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "다양한 매체의 음악",
+          "name": "내용",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 163,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "연주 상황과 맥락",
+          "name": "그림",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 163,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "다양한 음악적 특징과 음악",
+          "name": "사진",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 163,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.b1d0acec220f3051",
+      "name": "심화 영어 독해와 작문",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "맥락",
+          "name": "정보 전달⋅교환 목적의 글",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "기능",
+          "name": "의견 전달⋅교환이나 주장 목적의 글",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "기여",
+          "name": "[별표 1] 소재",
           "category": "지식·이해",
-          "page": 43,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "다양한 형식의 음악",
+          "name": "다양한 분야의 기초 학문 주제",
           "category": "지식·이해",
-          "page": 44,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "다양한 기보법(오선보",
+          "name": "우리 문화 및 타 문화의 생활 양식",
           "category": "지식·이해",
-          "page": 44,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "정간보",
+          "name": "사고방식",
           "category": "지식·이해",
-          "page": 44,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
         },
         {
-          "name": "창작에서의 맥락",
+          "name": "의사소통 방식",
           "category": "지식·이해",
-          "page": 44,
-          "sourceId": "kr-nec-2024-3-annex12"
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "심정",
+          "category": "지식·이해",
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "어조",
+          "category": "지식·이해",
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "분위기",
+          "category": "지식·이해",
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의도",
+          "category": "지식·이해",
+          "page": 187,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "내용",
+          "category": "지식·이해",
+          "page": 188,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 188,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 188,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.ec9979c5e9dcdbba",
+      "name": "아동발달과 부모",
+      "level": "high",
+      "elements": [
+        {
+          "name": "부모됨의 의미",
+          "category": "지식·이해",
+          "page": 123,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "임신과 출산",
+          "category": "지식·이해",
+          "page": 123,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "부모와 개인으로서의 삶의 균형",
+          "category": "지식·이해",
+          "page": 123,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "아동의 발달 단계에 따른 돌봄",
+          "category": "지식·이해",
+          "page": 124,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "부모와 자녀 간의 긍정적 관계의 형성",
+          "category": "지식·이해",
+          "page": 124,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "아동의 안전한 돌봄 환경",
+          "category": "지식·이해",
+          "page": 124,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "사회적 부모와 지역사회 돌봄의 의미",
+          "category": "지식·이해",
+          "page": 124,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.ceb9dd2544d800f8",
+      "name": "언어생활 탐구",
+      "level": "high",
+      "elements": [
+        {
+          "name": "글과 담화의 맥락과 언어적 특성",
+          "category": "지식·이해",
+          "page": 213,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.4c5c974f5e3449db",
+      "name": "역학과 에너지",
+      "level": "high",
+      "elements": [
+        {
+          "name": "열의 이동",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "이상 기체 법칙",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "열역학 제1법칙",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "열기관",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "열역학 제2법칙",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "탄성파",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "투과와 반사",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "도플러 효과",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "간섭과 소음 제어",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "정상파",
+          "category": "지식·이해",
+          "page": 167,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.bec9f759cd83885f",
+      "name": "영미 문학 읽기",
+      "level": "high",
+      "elements": [
+        {
+          "name": "[별표 4] 고등학교 권장 언어 형식",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "시(동요",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "동시 등)",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "희곡(동극)",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "이야기(동화",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우화",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "신화 등)",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "소설",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "수필",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 문학 장르와 주제",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화 및 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 176,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.fc40e63c46a838a9",
+      "name": "영어 독해와 작문",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 글",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 글",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 글",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회생활이나 학업 관련 등 다양한 주제",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화 및 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 121,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 122,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 122,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "경험",
+          "category": "지식·이해",
+          "page": 122,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "계획",
+          "category": "지식·이해",
+          "page": 122,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.58c5c33e945d5350",
+      "name": "영어 발표와 토론",
+      "level": "high",
+      "elements": [
+        {
+          "name": "발표와 관련된 담화",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "기초 학문 분야 주제 및 사회적 이슈",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 문화권에 속한 사람들의 언어적⋅비언어적 의사소통 방식",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 수집",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "발표 개요 작성",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사물",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "개념",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "방법",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "절차",
+          "category": "지식·이해",
+          "page": 148,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "토론과 관련된 담화",
+          "category": "지식·이해",
+          "page": 149,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "토론 개요 작성",
+          "category": "지식·이해",
+          "page": 149,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "학술 자료",
+          "category": "지식·이해",
+          "page": 149,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "통계",
+          "category": "지식·이해",
+          "page": 149,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.5303ffa8a293a42a",
+      "name": "영어 I",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회생활이나 학업 관련 등 일반적 주제",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화 및 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 90,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 91,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 91,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.586e769f7ff7d976",
+      "name": "영어 Ⅱ",
+      "level": "high",
+      "elements": [
+        {
+          "name": "이야기나 서사 및 운문",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "친교나 사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "정보 전달⋅교환 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의견 전달⋅교환이나 주장 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사회생활이나 학업 및 지역⋅세계 공동체 관련 등 다양한 주제",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화 및 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 106,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "그림",
+          "category": "지식·이해",
+          "page": 107,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사진",
+          "category": "지식·이해",
+          "page": 107,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.f86f4fdd4d8bd850",
+      "name": "윤리문제 탐구",
+      "level": "high",
+      "elements": [
+        {
+          "name": "윤리문제 탐구의 의미와 중요성",
+          "category": "지식·이해",
+          "page": 82,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "윤리문제 탐구 방법",
+          "category": "지식·이해",
+          "page": 82,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "사회적 차별 표현을 바라보는 다양한 관점",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "사회적 차별 표현 문제의 해결 방안",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "배타적 민족주의의 확산과 난민 문제",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "난민 문제의 해결 방안",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "빅데이터와 알고리즘의 편향성 문제",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "사회적 책임과 공정성의 확보 방안",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "인공지능 활용의 윤리적 딜레마",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "인공지능의 바람직한 활용 방안",
+          "category": "지식·이해",
+          "page": 83,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "기후위기와 인류의 책임",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "에너지 전환과 탄소 중립을 둘러싼 논쟁과 실천",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "윤리문제 탐구 활동",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "탐구 결과의 정리와 발표",
+          "category": "지식·이해",
+          "page": 84,
+          "sourceId": "kr-moe-2022-33-annex6"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.a1b18270d3952c04",
+      "name": "윤리와 사상",
+      "level": "high",
+      "elements": [
+        {
+          "name": "다투지 않음과 자연 그대로의 삶",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "분별을 잊음과 자유롭게 노니는 삶",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "상호의존적인 세계와 실체가 없는 존재",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "깨달음을 향한 수행과 자비의 실천",
+          "category": "지식·이해",
+          "page": 54,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "순수한 도덕본성의 발현",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "일상적 감정의 도덕적 조절",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "내적 깨어있음과 외적 실천",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "마음의 생동성과 활동적 이치",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "본성의 확충과 마음의 주체성",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "그리스도교와 사랑의 윤리",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "자연법 윤리와 프로테스탄티즘 윤리",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "의무론과 선의지",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "결과론과 공리",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "주체적 결단과 문제 해결의 유용성",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "도덕의 기원과 판단에 대한 과학적 설명",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "책임⋅배려와 윤리적 삶",
+          "category": "지식·이해",
+          "page": 55,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "민주주의의 지향과 대의민주주의",
+          "category": "지식·이해",
+          "page": 56,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "참여와 심의를 통한 민주주의 구현",
+          "category": "지식·이해",
+          "page": 56,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "자본주의의 원리와 현실",
+          "category": "지식·이해",
+          "page": 56,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "자본주의의 윤리적 개선과 대안",
+          "category": "지식·이해",
+          "page": 56,
+          "sourceId": "kr-moe-2022-33-annex6"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.adc674b93d6653ed",
+      "name": "융합과학 탐구",
+      "level": "high",
+      "elements": [
+        {
+          "name": "디지털 탐구 도구와 데이터 수집",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "데이터의 시각화와 평가",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "결론 도출 및 과학적 의사소통",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "미래 사회와 융합과학기술",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "융합과학기술과 사회적 난제 해결",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "융합과학 탐구와 윤리",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "사회 문제와 시민참여",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "컴퓨터",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "융합적 사고",
+          "category": "지식·이해",
+          "page": 284,
+          "sourceId": "kr-nec-2024-3-annex9"
         }
       ]
     },
@@ -5591,6 +5723,55 @@
       ]
     },
     {
+      "id": "kr.course.2022.high.145152075acdd93e",
+      "name": "인공지능 기초",
+      "level": "high",
+      "elements": [
+        {
+          "name": "인공지능과 탐색",
+          "category": "지식·이해",
+          "page": 189,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "지식의 표현과 추론",
+          "category": "지식·이해",
+          "page": 189,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "기계학습 알고리즘",
+          "category": "지식·이해",
+          "page": 189,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "인공신경망과 딥러닝",
+          "category": "지식·이해",
+          "page": 189,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "인공지능과 진로",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "인공지능과 윤리",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "인공지능 문제 해결 절차",
+          "category": "지식·이해",
+          "page": 190,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
       "id": "kr.course.2022.high.626208622123727d",
       "name": "인공지능 수학",
       "level": "high",
@@ -5646,6 +5827,414 @@
       ]
     },
     {
+      "id": "kr.course.2022.high.1f3546a829ffdecb",
+      "name": "인문학과 윤리",
+      "level": "high",
+      "elements": [
+        {
+          "name": "삶의 주체로서의 나",
+          "category": "지식·이해",
+          "page": 66,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "고통과 쾌락을 대하는 자세",
+          "category": "지식·이해",
+          "page": 66,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "의미 있는 타자로서의 친구",
+          "category": "지식·이해",
+          "page": 66,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "사랑과 배려의 삶",
+          "category": "지식·이해",
+          "page": 66,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "능력에 따른 분배와 한계",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "자유롭고 평등한 삶을 위한 정의의 원칙",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "가상세계와 현실세계의 상호성",
+          "category": "지식·이해",
+          "page": 67,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "기후위기와 지속가능한 삶",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "상생을 위한 실천원칙",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "인생의 유한성 자각",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "삶의 의미를 찾는 과정과 방법",
+          "category": "지식·이해",
+          "page": 68,
+          "sourceId": "kr-moe-2022-33-annex6"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.47cd1defd30f5bd7",
+      "name": "전자기와 양자",
+      "level": "high",
+      "elements": [
+        {
+          "name": "렌즈와 수차",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "간섭과 회절",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "편광",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "광전효과",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "레이저",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "입자-파동 이중성",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "확률 파동",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "중첩",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "터널 효과",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "불확정성 원리",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "핵융합",
+          "category": "지식·이해",
+          "page": 179,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.eadd896d14e0e595",
+      "name": "주제 탐구 독서",
+      "level": "high",
+      "elements": [
+        {
+          "name": "분야에 따른 책과 자료의 특성",
+          "category": "지식·이해",
+          "page": 156,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.9587081f2a5eebb2",
+      "name": "지구과학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "지사 해석 방법",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "상대연령과 절대연령",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "지질시대의 환경과 생물",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "국가지질공원",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "태양계 모형",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "행성의 겉보기 운동",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "일식과 월식",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "별의 물리량",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "별의 진화와 H-R도",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "은하의 구성과 분류",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "우주의 팽창",
+          "category": "지식·이해",
+          "page": 151,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.8a1581742b2c86f6",
+      "name": "지구시스템과학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "쓰나미",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "폭풍 해일",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "조석과 기조력",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "태양복사",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "지구복사",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "열수지",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "온실효과",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "대기 안정도",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "강수과정",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "지균풍",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "경도풍",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "지상풍",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "편서풍 파동",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "제트류",
+          "category": "지식·이해",
+          "page": 237,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.231db579e1a3b213",
+      "name": "지식 재산 일반",
+      "level": "high",
+      "elements": [
+        {
+          "name": "신지식재산권의 종류와 특징",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "산업재산권(특허권",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "상표권",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "디자인권)의 등록 요건",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "저작물의 분류와 성립요건",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "지식재산권의 사회",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "경제",
+          "category": "지식·이해",
+          "page": 110,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "기술 사업화와 지식재산권 가치 평가",
+          "category": "지식·이해",
+          "page": 111,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "기술 창업과 기업가 정신",
+          "category": "지식·이해",
+          "page": 111,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "직무 발명 제도",
+          "category": "지식·이해",
+          "page": 111,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "특허 명세서",
+          "category": "지식·이해",
+          "page": 112,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "특허 도면",
+          "category": "지식·이해",
+          "page": 112,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "특허 출원",
+          "category": "지식·이해",
+          "page": 112,
+          "sourceId": "kr-moe-2022-33-annex10"
+        }
+      ]
+    },
+    {
       "id": "kr.course.2022.high.3c5f96a75054f7d6",
       "name": "직무 수학",
       "level": "high",
@@ -5697,6 +6286,147 @@
           "category": "지식·이해",
           "page": 206,
           "sourceId": "kr-moe-2022-33-annex8"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.ac8d5ed8f99fc56c",
+      "name": "직무 영어",
+      "level": "high",
+      "elements": [
+        {
+          "name": "사회적 목적의 말이나 글",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "진로 탐색과 관련된 말이나 글",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "직무 수행과 관련된 말이나 글",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "[별표 1] 소재",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "다양한 진로 및 직무 관련 주제",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "우리 문화 및 타 문화의 생활 양식",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "사고방식",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        },
+        {
+          "name": "의사소통 방식",
+          "category": "지식·이해",
+          "page": 136,
+          "sourceId": "kr-nec-2024-3-annex14"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.2d7e009bac947d08",
+      "name": "직무 의사소통",
+      "level": "high",
+      "elements": [
+        {
+          "name": "목적",
+          "category": "지식·이해",
+          "page": 178,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "맥락",
+          "category": "지식·이해",
+          "page": 178,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "참여자 특성에 적합한 소통",
+          "category": "지식·이해",
+          "page": 178,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "직무 의사소통과 매체",
+          "category": "지식·이해",
+          "page": 178,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.74610e8ebab5b4a1",
+      "name": "창의 공학 설계",
+      "level": "high",
+      "elements": [
+        {
+          "name": "공학과 창의성",
+          "category": "지식·이해",
+          "page": 99,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "공학과 팀워크",
+          "category": "지식·이해",
+          "page": 99,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "창의 공학 설계와 문제 해결 과정",
+          "category": "지식·이해",
+          "page": 99,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "최적의 대안 선정 및 평가 기법",
+          "category": "지식·이해",
+          "page": 100,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "제도의 기본 규칙",
+          "category": "지식·이해",
+          "page": 100,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "디지털 기반 공학 설계 도구",
+          "category": "지식·이해",
+          "page": 100,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "시제품 제작 방법",
+          "category": "지식·이해",
+          "page": 100,
+          "sourceId": "kr-moe-2022-33-annex10"
+        },
+        {
+          "name": "시제품 평가 방법",
+          "category": "지식·이해",
+          "page": 100,
+          "sourceId": "kr-moe-2022-33-annex10"
         }
       ]
     },
@@ -5848,6 +6578,347 @@
           "name": "과학기술과 윤리",
           "category": "지식·이해",
           "page": 88,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.e56e90f718cb34b9",
+      "name": "행성우주과학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "쌍성계",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "질량-광도 관계",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "변광성",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "초신성",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "성간 티끌",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "성간 소광",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "세페이드 변광성",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "은하의 회전과 질량",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "암흑 물질",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "전천 탐사",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "우주 거대 구조",
+          "category": "지식·이해",
+          "page": 249,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.c89123c129b62d34",
+      "name": "현대사회와 윤리",
+      "level": "high",
+      "elements": [
+        {
+          "name": "동양 윤리의 접근",
+          "category": "지식·이해",
+          "page": 38,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "서양 윤리의 접근",
+          "category": "지식·이해",
+          "page": 38,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "사랑과 성의 관계",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "결혼과 가족의 윤리",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "자연을 바라보는 동⋅서양의 관점",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "환경 문제에 대한 윤리적 쟁점",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "정보사회의 특징과 윤리적 쟁점들",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "뉴미디어 사회의 특징과 윤리적 쟁점들",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "인공지능과 인간의 관계",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "인공지능의 윤리적 쟁점",
+          "category": "지식·이해",
+          "page": 39,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "시민과 국가의 관계",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "시민의 참여와 시민불복종",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "분배 정의의 의미와 윤리적 쟁점들",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "교정적 정의의 의미와 윤리적 쟁점들",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "의식주 생활과 윤리",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "경제생활에서 발생하는 윤리적 갈등",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "문화 다양성과 존중",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "다문화 윤리의 실천과 노력",
+          "category": "지식·이해",
+          "page": 40,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "통일 문제를 둘러싼 쟁점",
+          "category": "지식·이해",
+          "page": 41,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "평화를 실현하기 위한 윤리적 가치",
+          "category": "지식·이해",
+          "page": 41,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "국제 분쟁의 해결과 방안",
+          "category": "지식·이해",
+          "page": 41,
+          "sourceId": "kr-moe-2022-33-annex6"
+        },
+        {
+          "name": "국제 사회에 대한 책임과 기여",
+          "category": "지식·이해",
+          "page": 41,
+          "sourceId": "kr-moe-2022-33-annex6"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.0c5b1f3120b2156f",
+      "name": "화법과 언어",
+      "level": "high",
+      "elements": [
+        {
+          "name": "기호를 활용한 사회적 행위로서의 의사소통",
+          "category": "지식·이해",
+          "page": 118,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "맥락에 따른 언어 선택과 담화 관습",
+          "category": "지식·이해",
+          "page": 118,
+          "sourceId": "kr-moe-2022-33-annex5"
+        },
+        {
+          "name": "품사",
+          "category": "지식·이해",
+          "page": 118,
+          "sourceId": "kr-moe-2022-33-annex5"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.a9a3a9a36115d467",
+      "name": "화학",
+      "level": "high",
+      "elements": [
+        {
+          "name": "가역 반응과 동적 평형",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "평형 상수",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "평형의 이동",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "몰 농도",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "물의 자동 이온화와 pH",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "중화 반응의 양적 관계",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "변인을 조작적으로 정의하고",
+          "category": "지식·이해",
+          "page": 127,
+          "sourceId": "kr-nec-2024-3-annex9"
+        }
+      ]
+    },
+    {
+      "id": "kr.course.2022.high.bbb3fc715f09a9f1",
+      "name": "화학 반응의 세계",
+      "level": "high",
+      "elements": [
+        {
+          "name": "표준 환원 전위",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "화학 전지",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "전기 분해",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "화학 전지의 유용성",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "작용기와 반응",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "고분자 물질",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "신물질 개발",
+          "category": "지식·이해",
+          "page": 203,
+          "sourceId": "kr-nec-2024-3-annex9"
+        },
+        {
+          "name": "변인을 조작적으로 정의하고",
+          "category": "지식·이해",
+          "page": 203,
           "sourceId": "kr-nec-2024-3-annex9"
         }
       ]

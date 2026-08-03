@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { conceptsFromContentElement } from "../scripts/concept-extraction.mjs";
 
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -31,6 +32,17 @@ test("server-renders the Topic Pick classroom tool", async () => {
   assert.match(html, /내용 요소 키워드/);
   assert.match(html, /공식 지식·이해/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+});
+
+test("splits official content elements into one-minute concept keywords", () => {
+  assert.deepEqual(
+    conceptsFromContentElement("광합성과 세포호흡의 전자 전달계"),
+    ["광합성", "세포호흡", "세포호흡의 전자 전달계"],
+  );
+  assert.deepEqual(
+    conceptsFromContentElement("미토콘드리아의 구조와 기능"),
+    ["미토콘드리아", "미토콘드리아의 구조", "미토콘드리아의 기능"],
+  );
 });
 
 test("keeps curriculum provenance and the generated course catalog", async () => {

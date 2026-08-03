@@ -107,6 +107,21 @@ def extract_pdf(pdf_path, source_id, candidate_ids, courses):
     with pdfplumber.open(pdf_path) as pdf:
         for page_number, page in enumerate(pdf.pages, start=1):
             layout = page.extract_text(layout=True) or ""
+            # Most high-school subject sections use a large centered title
+            # (for example "물리학") instead of an angle-bracket heading.
+            # Match short, standalone layout lines against the ontology course
+            # names so the following content-system table is assigned to the
+            # actual course rather than falling back to its broad domains.
+            for line in layout.splitlines():
+                heading = line.strip()
+                if not heading or len(heading) > 40:
+                    continue
+                heading_key = normalize(heading)
+                exact = [course_id for course_id in candidate_ids if normalize(courses[course_id]["name"]) == heading_key]
+                if exact:
+                    current_course = exact[0]
+                    knowledge_active = False
+
             for heading in re.findall(r"<\s*([^>\n]+?)\s*>", layout):
                 resolved = resolve_heading(heading, candidate_ids, courses)
                 if resolved:
@@ -139,6 +154,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--project-root", default=".")
     parser.add_argument("--ontology-root", required=True)
+    parser.add_argument("--only-source")
     args = parser.parse_args()
     project_root = Path(args.project_root).resolve()
     ontology_root = Path(args.ontology_root).resolve()
@@ -153,6 +169,8 @@ def main():
         if source.get("annex", 999) > 14:
             continue
         source_id = source["id"]
+        if args.only_source and source_id != args.only_source:
+            continue
         candidates = source_courses.get(source_id, set())
         if not candidates:
             continue

@@ -1,6 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { conceptsFromContentElement } from "./concept-extraction.mjs";
 
 const sourceRoot = process.argv[2] ? resolve(process.argv[2]) : null;
 
@@ -40,7 +41,7 @@ const usableContentElement = (name) => {
 const officialTopics = (courseId) => {
   const seen = new Set();
   return (officialByCourse.get(courseId) ?? [])
-    .flatMap((item) => item.name.split("⋅").map((name) => ({ ...item, name: name.trim() })))
+    .flatMap((item) => conceptsFromContentElement(item.name).map((name) => ({ ...item, name })))
     .filter((item) => usableContentElement(item.name))
     .filter((item) => {
       const key = item.name.replace(/\s+/g, "");
