@@ -33,6 +33,7 @@ test("server-renders the Topic Pick classroom tool", async () => {
   assert.match(html, /키워드 뽑기/);
   assert.match(html, /10분 조사 시작/);
   assert.match(html, /파트/);
+  assert.match(html, /내 키워드/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -115,4 +116,17 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.ok(!earthScienceKeywords.includes("천구 좌표계"));
   assert.ok(!earthScienceKeywords.includes("표준 우주 모형"));
   assert.ok(!earthScienceKeywords.includes("핵반응 메커니즘"));
+
+  const integratedSocial = curated.courses.find((course) => course.course === "통합사회1");
+  const integratedSocialKeywords = integratedSocial.sections.flatMap((section) => section.keywords);
+  assert.equal(integratedSocial.sections.length, 13);
+  assert.ok(integratedSocialKeywords.includes("역사적 배경과 시대적 맥락"));
+  assert.ok(integratedSocialKeywords.includes("인간 중심주의와 생태 중심주의의 차이"));
+  assert.ok(integratedSocialKeywords.includes("문화 상대주의와 보편윤리의 조화"));
+  assert.ok(integratedSocialKeywords.includes("정보화와 공간적 제약의 감소"));
+  assert.ok(integratedSocialKeywords.includes("지역의 지속가능성"));
+  assert.match(page, /topic-pick-custom-keywords-v1/);
+  assert.match(page, /window\.localStorage/);
+  assert.match(page, /교사 직접 추가 · 이 기기 저장/);
+  assert.match(page, /브라우저에만 저장/);
 });

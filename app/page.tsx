@@ -16,8 +16,12 @@ type Keyword = {
   sourceLabel: string;
 };
 
+type CustomKeywordMap = Record<string, string[]>;
+
 const RESEARCH_SECONDS = 600;
 const PRESENT_SECONDS = 60;
+const CUSTOM_CATEGORY = "직접 추가";
+const CUSTOM_KEYWORDS_STORAGE_KEY = "topic-pick-custom-keywords-v1";
 
 const formatTime = (seconds: number) => {
   const minutes = Math.floor(seconds / 60).toString().padStart(2, "0");
@@ -52,8 +56,34 @@ export default function Home() {
   const [endAt, setEndAt] = useState<number | null>(null);
   const [round, setRound] = useState(1);
   const [spinning, setSpinning] = useState(false);
+  const [customKeywords, setCustomKeywords] = useState<CustomKeywordMap>({});
+  const [customEditorOpen, setCustomEditorOpen] = useState(false);
+  const [customKeywordDraft, setCustomKeywordDraft] = useState("");
+  const [customKeywordNotice, setCustomKeywordNotice] = useState("");
   const previousName = useRef<string | null>(null);
   const spinTimers = useRef<number[]>([]);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(CUSTOM_KEYWORDS_STORAGE_KEY);
+      if (!saved) return;
+      const parsed = JSON.parse(saved) as CustomKeywordMap;
+      if (parsed && typeof parsed === "object") {
+        window.queueMicrotask(() => setCustomKeywords(parsed));
+      }
+    } catch {
+      // Invalid or unavailable browser storage should not block the activity.
+    }
+  }, []);
+
+  const saveCustomKeywords = useCallback((next: CustomKeywordMap) => {
+    setCustomKeywords(next);
+    try {
+      window.localStorage.setItem(CUSTOM_KEYWORDS_STORAGE_KEY, JSON.stringify(next));
+    } catch {
+      setCustomKeywordNotice("브라우저 저장소를 사용할 수 없어 이번 화면에서만 유지됩니다.");
+    }
+  }, []);
 
   const coursesAtLevel = useMemo(
     () => CURRICULUM_COURSES.filter((course) => course.level === level),
@@ -68,7 +98,18 @@ export default function Home() {
     [coursesAtLevel, subjectGroup],
   );
   const selectedCourse = CURRICULUM_COURSES.find((course) => course.id === courseId) ?? initialCourse;
-  const keywords = useMemo(() => keywordsForCourse(selectedCourse), [selectedCourse]);
+  const courseCustomKeywords = useMemo(
+    () => customKeywords[selectedCourse.id] ?? [],
+    [customKeywords, selectedCourse.id],
+  );
+  const keywords = useMemo(() => [
+    ...keywordsForCourse(selectedCourse),
+    ...courseCustomKeywords.map((name) => ({
+      name,
+      category: CUSTOM_CATEGORY,
+      sourceLabel: "교사 직접 추가 · 이 기기 저장",
+    })),
+  ], [courseCustomKeywords, selectedCourse]);
   const topicCategories = useMemo(
     () => Array.from(new Set(keywords.map((item) => item.category))),
     [keywords],
@@ -116,6 +157,46 @@ export default function Home() {
   const changeCourse = (nextCourseId: string) => {
     setCourseId(nextCourseId);
     resetActivity();
+  };
+
+  const addCustomKeywords = () => {
+    const candidates = customKeywordDraft
+      .split(/[\n,]/u)
+      .map((value) => value.replace(/\s+/g, " ").trim())
+      .filter((value) => value.length >= 2 && value.length <= 60);
+    const existingNames = new Set(keywords.map((item) => item.name.toLocaleLowerCase("ko")));
+    const additions = [...new Set(candidates)].filter((name) => !existingNames.has(name.toLocaleLowerCase("ko")));
+
+    if (additions.length === 0) {
+      setCustomKeywordNotice("새로 추가할 키워드가 없습니다. 중복 여부와 글자 수를 확인해 주세요.");
+      return;
+    }
+
+    const next = {
+      ...customKeywords,
+      [selectedCourse.id]: [...courseCustomKeywords, ...additions],
+    };
+    saveCustomKeywords(next);
+    setCustomKeywordDraft("");
+    setCustomKeywordNotice(`${additions.length}개 키워드를 ${selectedCourse.name}에 추가했습니다.`);
+  };
+
+  const removeCustomKeyword = (name: string) => {
+    const remaining = courseCustomKeywords.filter((item) => item !== name);
+    const next = { ...customKeywords };
+    if (remaining.length > 0) next[selectedCourse.id] = remaining;
+    else delete next[selectedCourse.id];
+    saveCustomKeywords(next);
+    setCustomKeywordNotice(`‘${name}’을 삭제했습니다.`);
+    if (keyword?.name === name) setKeyword(null);
+  };
+
+  const clearCourseCustomKeywords = () => {
+    const next = { ...customKeywords };
+    delete next[selectedCourse.id];
+    saveCustomKeywords(next);
+    setCustomKeywordNotice(`${selectedCourse.name}의 직접 추가 키워드를 모두 삭제했습니다.`);
+    if (keyword?.category === CUSTOM_CATEGORY) setKeyword(null);
   };
 
   const playCue = useCallback((frequency = 660) => {
@@ -173,7 +254,15 @@ export default function Home() {
   const drawFromAllCourses = useCallback(() => {
     if (spinning) return;
     const nextCourse = CURRICULUM_COURSES[Math.floor(Math.random() * CURRICULUM_COURSES.length)];
-    const nextKeyword = pickCandidate(keywordsForCourse(nextCourse));
+    const nextPool = [
+      ...keywordsForCourse(nextCourse),
+      ...(customKeywords[nextCourse.id] ?? []).map((name) => ({
+        name,
+        category: CUSTOM_CATEGORY,
+        sourceLabel: "교사 직접 추가 · 이 기기 저장",
+      })),
+    ];
+    const nextKeyword = pickCandidate(nextPool);
     setLevel(nextCourse.level);
     setSubjectGroup(nextCourse.subjectGroup);
     setCourseId(nextCourse.id);
@@ -183,7 +272,7 @@ export default function Home() {
     setPhase("ready");
     setSeconds(RESEARCH_SECONDS);
     playCue(760);
-  }, [pickCandidate, playCue, spinning]);
+  }, [customKeywords, pickCandidate, playCue, spinning]);
 
   const startResearch = useCallback(() => {
     if (!keyword || spinning) return;
@@ -354,6 +443,53 @@ export default function Home() {
             </select>
           </label>
         </div>
+
+        <section className="custom-keywords" aria-label="직접 추가 키워드">
+          <button
+            type="button"
+            className="custom-editor-toggle"
+            onClick={() => {
+              setCustomEditorOpen((value) => !value);
+              setCustomKeywordNotice("");
+            }}
+            aria-expanded={customEditorOpen}
+          >
+            <span><b>＋ 내 키워드</b><small>{selectedCourse.name} · {courseCustomKeywords.length}개 저장됨</small></span>
+            <span aria-hidden="true">{customEditorOpen ? "−" : "+"}</span>
+          </button>
+
+          {customEditorOpen && (
+            <div className="custom-editor-panel">
+              <div className="custom-editor-copy">
+                <strong>{selectedCourse.name}에 키워드 추가</strong>
+                <p>쉼표나 줄바꿈으로 여러 개를 한꺼번에 입력할 수 있어요. 추가한 키워드는 기본 목록과 함께 추첨됩니다.</p>
+              </div>
+              <textarea
+                value={customKeywordDraft}
+                onChange={(event) => setCustomKeywordDraft(event.target.value)}
+                placeholder={"예: 지역 브랜드\n젠트리피케이션\n도시 재생"}
+                maxLength={2000}
+                aria-label={`${selectedCourse.name}에 추가할 키워드`}
+              />
+              <button type="button" className="custom-add-button" onClick={addCustomKeywords}>입력한 키워드 추가</button>
+              {customKeywordNotice && <p className="custom-notice" role="status">{customKeywordNotice}</p>}
+              {courseCustomKeywords.length > 0 && (
+                <div className="custom-list">
+                  <div className="custom-list-heading">
+                    <strong>직접 추가한 키워드</strong>
+                    <button type="button" onClick={clearCourseCustomKeywords}>이 과목 전체 삭제</button>
+                  </div>
+                  <div className="custom-chips">
+                    {courseCustomKeywords.map((name) => (
+                      <span key={name}>{name}<button type="button" onClick={() => removeCustomKeyword(name)} aria-label={`${name} 삭제`}>×</button></span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <p className="storage-note">이 목록은 개인정보 없이 현재 기기의 브라우저에만 저장됩니다. 다른 기기나 브라우저와 자동으로 공유되지는 않습니다.</p>
+            </div>
+          )}
+        </section>
 
         <div className="topic-zone" aria-live="polite">
           {keyword ? (
