@@ -105,4 +105,14 @@ test("keeps curriculum provenance and the generated course catalog", async () =>
   assert.ok(!biologyKeywords.includes("역"));
   assert.ok(!biologyKeywords.includes("계"));
   assert.ok(!biologyKeywords.includes("문"));
+
+  const earthScience = curated.courses.find((course) => course.course === "지구과학");
+  const earthScienceKeywords = earthScience.sections.flatMap((section) => section.keywords);
+  assert.ok(earthScienceKeywords.includes("엘니뇨-남방진동"));
+  assert.ok(earthScienceKeywords.includes("동일과정의 원리"));
+  assert.ok(earthScienceKeywords.includes("H-R도"));
+  assert.ok(earthScienceKeywords.includes("허블-르메트르 법칙"));
+  assert.ok(!earthScienceKeywords.includes("천구 좌표계"));
+  assert.ok(!earthScienceKeywords.includes("표준 우주 모형"));
+  assert.ok(!earthScienceKeywords.includes("핵반응 메커니즘"));
 });
