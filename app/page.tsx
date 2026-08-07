@@ -2,11 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
-  CURRICULUM_COURSES,
+  PHYSICS_COURSES,
   CURRICULUM_SOURCE,
-  type CurriculumCourse,
-  type CurriculumLevel,
-} from "./curriculum-data";
+} from "./physics-curriculum-data";
+import type { CurriculumCourse, CurriculumLevel } from "./curriculum-data";
 
 type Phase = "ready" | "research" | "present" | "done";
 
@@ -37,11 +36,11 @@ const keywordsForCourse = (course: CurriculumCourse): Keyword[] =>
   }));
 
 const defaultCourse = (level: CurriculumLevel) =>
-  CURRICULUM_COURSES.find((course) =>
+  PHYSICS_COURSES.find((course) =>
     level === "high"
-      ? course.level === "high" && course.name === "통합과학1"
+      ? course.level === "high" && course.name === "물리학"
       : course.level === "middle" && course.name === "과학",
-  ) ?? CURRICULUM_COURSES.find((course) => course.level === level)!;
+  ) ?? PHYSICS_COURSES.find((course) => course.level === level)!;
 
 export default function Home() {
   const initialCourse = defaultCourse("high");
@@ -86,7 +85,7 @@ export default function Home() {
   }, []);
 
   const coursesAtLevel = useMemo(
-    () => CURRICULUM_COURSES.filter((course) => course.level === level),
+    () => PHYSICS_COURSES.filter((course) => course.level === level),
     [level],
   );
   const subjectGroups = useMemo(
@@ -97,7 +96,7 @@ export default function Home() {
     () => coursesAtLevel.filter((course) => course.subjectGroup === subjectGroup),
     [coursesAtLevel, subjectGroup],
   );
-  const selectedCourse = CURRICULUM_COURSES.find((course) => course.id === courseId) ?? initialCourse;
+  const selectedCourse = PHYSICS_COURSES.find((course) => course.id === courseId) ?? initialCourse;
   const courseCustomKeywords = useMemo(
     () => customKeywords[selectedCourse.id] ?? [],
     [customKeywords, selectedCourse.id],
@@ -253,7 +252,7 @@ export default function Home() {
 
   const drawFromAllCourses = useCallback(() => {
     if (spinning) return;
-    const nextCourse = CURRICULUM_COURSES[Math.floor(Math.random() * CURRICULUM_COURSES.length)];
+    const nextCourse = PHYSICS_COURSES[Math.floor(Math.random() * PHYSICS_COURSES.length)];
     const nextPool = [
       ...keywordsForCourse(nextCourse),
       ...(customKeywords[nextCourse.id] ?? []).map((name) => ({
@@ -406,15 +405,15 @@ export default function Home() {
     <main className="picker-screen" id="top">
       <div className="ambient-glow" aria-hidden="true" />
       <header className="picker-header">
-        <a href="#top" className="wordmark">TOPIC PICK</a>
+        <a href="#top" className="wordmark">PHYSICS PICK</a>
         <span>ROUND {round.toString().padStart(2, "0")}</span>
       </header>
 
       <section className="picker-content">
         <div className="intro">
-          <p className="eyebrow">2022 개정 교육과정</p>
-          <h1>배운 개념을<br />설명해보세요</h1>
-          <p>과학·사회·수학의 키워드를 뽑아<br />10분 조사하고, 1분 동안 말해보세요.</p>
+          <p className="eyebrow">2022 개정 물리학 교육과정</p>
+          <h1>물리 개념을<br />내 말로 설명해보세요</h1>
+          <p>물리학 관련 과목의 핵심 개념을 뽑아<br />10분 조사하고, 1분 동안 말해보세요.</p>
         </div>
 
         <div className="level-toggle" aria-label="학교급 선택">
@@ -511,7 +510,7 @@ export default function Home() {
           <button type="button" className="secondary-button" onClick={startResearch} disabled={!keyword || spinning}>10분 조사 시작</button>
         </div>
 
-        <button type="button" className="random-link" onClick={drawFromAllCourses} disabled={spinning}>🎲 전체 과목에서 무작위로 뽑기</button>
+        <button type="button" className="random-link" onClick={drawFromAllCourses} disabled={spinning}>🎲 물리학 관련 전체 과목에서 뽑기</button>
 
         <div className="flow-note" aria-label="활동 흐름">
           <span><b>01</b> 키워드 뽑기</span><i />
@@ -521,7 +520,7 @@ export default function Home() {
       </section>
 
       <footer className="picker-footer">
-        <p>과학·사회·수학 {CURRICULUM_COURSES.length}개 과목 · 확정 키워드 우선</p>
+        <p>물리학 관련 {PHYSICS_COURSES.length}개 과정 · 공식 내용 요소와 검수 키워드</p>
         <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">교육과정 데이터 출처 ↗</a>
       </footer>
     </main>

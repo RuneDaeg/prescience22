@@ -15,20 +15,22 @@ async function render() {
   );
 }
 
-test("server-renders the Topic Pick classroom tool", async () => {
+test("server-renders the Physics Pick classroom tool", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Topic Pick \| 과학·사회·수학 10분 탐구, 1분 설명<\/title>/i);
-  assert.match(html, /TOPIC PICK/);
-  assert.match(html, /배운 개념을/);
-  assert.match(html, /전체 과목에서 무작위로 뽑기/);
+  assert.match(html, /<title>Physics Pick \| 물리학 10분 탐구, 1분 설명<\/title>/i);
+  assert.match(html, /PHYSICS PICK/);
+  assert.match(html, /물리 개념을/);
+  assert.match(html, /물리학 관련 전체 과목에서 뽑기/);
   assert.match(html, /중학교/);
   assert.match(html, /고등학교/);
   assert.match(html, /통합과학1/);
-  assert.match(html, /과학·사회·수학/);
+  assert.match(html, /물리학 관련[\s\S]*8[\s\S]*개 과정/);
+  assert.match(html, /역학과 에너지/);
+  assert.match(html, /전자기와 양자/);
   assert.doesNotMatch(html, /공통국어1/);
   assert.match(html, /키워드 뽑기/);
   assert.match(html, /10분 조사 시작/);
@@ -48,17 +50,42 @@ test("splits official content elements into one-minute concept keywords", () => 
   );
 });
 
-test("keeps curriculum provenance and the generated course catalog", async () => {
-  const [page, data, curatedText, notice, packageJson] = await Promise.all([
+test("keeps curriculum provenance and the physics-only course catalog", async () => {
+  const [page, physicsData, data, curatedText, notice, packageJson] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/physics-curriculum-data.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/curriculum-data.ts", import.meta.url), "utf8"),
     readFile(new URL("../sources/curated-keywords.json", import.meta.url), "utf8"),
     readFile(new URL("../THIRD_PARTY_NOTICES.md", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
 
-  assert.match(page, /CURRICULUM_COURSES/);
+  assert.match(page, /PHYSICS_COURSES/);
   assert.match(page, /topic\.name/);
+  assert.match(physicsData, /중력에 의한 운동/);
+  assert.match(physicsData, /에너지 효율과 신재생에너지/);
+  assert.match(physicsData, /고급 물리학/);
+  assert.match(physicsData, /물리학 실험/);
+  assert.match(physicsData, /전지의 병렬연결/);
+  assert.match(physicsData, /저항의 직렬연결/);
+  assert.match(physicsData, /물체를 보는 원리/);
+  assert.match(physicsData, /물체의 색이 다른 이유/);
+  assert.doesNotMatch(physicsData, /자석의 극/);
+  assert.match(physicsData, /SI 단위계/);
+  assert.match(physicsData, /물질량\(몰\)/);
+  assert.match(physicsData, /아날로그 정보/);
+  assert.match(physicsData, /반도체의 성질을 이용한 소재/);
+  assert.match(physicsData, /충격 완화장치/);
+  assert.match(physicsData, /충격량과 스포츠/);
+  assert.doesNotMatch(physicsData, /몰질량/);
+  assert.match(physicsData, /수소 핵융합/);
+  assert.match(physicsData, /질량-에너지 동등성/);
+  assert.match(physicsData, /운동 에너지의 전기 에너지 전환/);
+  assert.match(physicsData, /신재생에너지 기술/);
+  assert.doesNotMatch(physicsData, /지구의 에너지 흐름/);
+  assert.doesNotMatch(physicsData, /에너지 효율의 중요성/);
+  assert.doesNotMatch(physicsData, /투입 에너지/);
+  assert.doesNotMatch(physicsData, /유용한 에너지/);
   assert.match(data, /DECK6\/korean-secondary-learning-map/);
   assert.match(data, /68e62283cfc337e2de643a3cd1b0334e411acf54/);
   assert.match(data, /kr-2022-middle-v0\.5\.0-candidate/);
