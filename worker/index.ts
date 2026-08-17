@@ -14,6 +14,61 @@ interface Env {
   };
 }
 
+type TributeRow = { id: string; name: string | null; message: string | null; created_at: number };
+
+async function ensureTributeSchema(db: D1Database) {
+  await db.batch([
+    db.prepare(`CREATE TABLE IF NOT EXISTS tributes (
+      id TEXT PRIMARY KEY NOT NULL,
+      name TEXT,
+      message TEXT,
+      created_at INTEGER NOT NULL
+    )`),
+    db.prepare("CREATE INDEX IF NOT EXISTS idx_tributes_created_at ON tributes (created_at)"),
+  ]);
+}
+
+async function tributeSnapshot(db: D1Database) {
+  const [countResult, messageResult] = await db.batch([
+    db.prepare("SELECT COUNT(*) AS count FROM tributes"),
+    db.prepare("SELECT id, name, message, created_at FROM tributes WHERE message IS NOT NULL ORDER BY created_at DESC LIMIT 12"),
+  ]);
+  const count = (countResult.results?.[0] as { count?: number } | undefined)?.count ?? 0;
+  const rows = (messageResult.results ?? []) as unknown as TributeRow[];
+  return {
+    flowerCount: count,
+    messages: rows.map((row) => ({ id: row.id, name: row.name ?? "익명의 조문객", message: row.message ?? "", createdAt: row.created_at })),
+  };
+}
+
+async function handleTributes(request: Request, db: D1Database) {
+  await ensureTributeSchema(db);
+
+  if (request.method === "GET") {
+    return Response.json(await tributeSnapshot(db), { headers: { "cache-control": "no-store" } });
+  }
+
+  if (request.method !== "POST") {
+    return Response.json({ error: "Method not allowed" }, { status: 405, headers: { allow: "GET, POST" } });
+  }
+
+  let body: { name?: unknown; message?: unknown };
+  try {
+    body = await request.json() as { name?: unknown; message?: unknown };
+  } catch {
+    return Response.json({ error: "Invalid request" }, { status: 400 });
+  }
+
+  const name = typeof body.name === "string" ? body.name.trim().slice(0, 20) : null;
+  const message = typeof body.message === "string" ? body.message.trim().slice(0, 100) : null;
+  if (body.message !== undefined && !message) return Response.json({ error: "Message is required" }, { status: 400 });
+
+  await db.prepare("INSERT INTO tributes (id, name, message, created_at) VALUES (?, ?, ?, ?)")
+    .bind(crypto.randomUUID(), name || null, message || null, Date.now())
+    .run();
+  return Response.json(await tributeSnapshot(db), { status: 201, headers: { "cache-control": "no-store" } });
+}
+
 interface ExecutionContext {
   waitUntil(promise: Promise<unknown>): void;
   passThroughOnException(): void;
@@ -28,6 +83,10 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/tributes") {
+      return handleTributes(request, env.DB);
+    }
 
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];

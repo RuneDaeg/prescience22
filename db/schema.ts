@@ -1,4 +1,8 @@
-// Intentionally empty by default.
-// Add Drizzle tables here when the site actually needs a database.
-// See examples/d1/db/schema.ts for an opt-in example.
-export {};
+import { index, integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+export const tributes = sqliteTable("tributes", {
+  id: text("id").primaryKey(),
+  name: text("name"),
+  message: text("message"),
+  createdAt: integer("created_at").notNull(),
+}, (table) => [index("idx_tributes_created_at").on(table.createdAt)]);
