@@ -28,16 +28,25 @@ async function ensureTributeSchema(db: D1Database) {
   ]);
 }
 
-async function tributeSnapshot(db: D1Database) {
+async function tributeSnapshot(db: D1Database, cursor?: { createdAt: number; id: string } | null) {
+  const messageQuery = cursor
+    ? db.prepare(`SELECT id, name, message, created_at FROM tributes
+        WHERE message IS NOT NULL AND (created_at < ? OR (created_at = ? AND id < ?))
+        ORDER BY created_at DESC, id DESC LIMIT 13`).bind(cursor.createdAt, cursor.createdAt, cursor.id)
+    : db.prepare(`SELECT id, name, message, created_at FROM tributes
+        WHERE message IS NOT NULL ORDER BY created_at DESC, id DESC LIMIT 13`);
   const [countResult, messageResult] = await db.batch([
     db.prepare("SELECT COUNT(*) AS count FROM tributes"),
-    db.prepare("SELECT id, name, message, created_at FROM tributes WHERE message IS NOT NULL ORDER BY created_at DESC LIMIT 12"),
+    messageQuery,
   ]);
   const count = (countResult.results?.[0] as { count?: number } | undefined)?.count ?? 0;
   const rows = (messageResult.results ?? []) as unknown as TributeRow[];
+  const pageRows = rows.slice(0, 12);
+  const lastRow = pageRows.at(-1);
   return {
     flowerCount: count,
-    messages: rows.map((row) => ({ id: row.id, name: row.name ?? "익명의 조문객", message: row.message ?? "", createdAt: row.created_at })),
+    messages: pageRows.map((row) => ({ id: row.id, name: row.name ?? "익명의 조문객", message: row.message ?? "", createdAt: row.created_at })),
+    nextCursor: rows.length > 12 && lastRow ? `${lastRow.created_at}:${lastRow.id}` : null,
   };
 }
 
@@ -45,7 +54,18 @@ async function handleTributes(request: Request, db: D1Database) {
   await ensureTributeSchema(db);
 
   if (request.method === "GET") {
-    return Response.json(await tributeSnapshot(db), { headers: { "cache-control": "no-store" } });
+    const rawCursor = new URL(request.url).searchParams.get("cursor");
+    let cursor: { createdAt: number; id: string } | null = null;
+    if (rawCursor) {
+      const separator = rawCursor.indexOf(":");
+      const createdAt = Number(rawCursor.slice(0, separator));
+      const id = rawCursor.slice(separator + 1);
+      if (separator < 1 || !Number.isSafeInteger(createdAt) || !id) {
+        return Response.json({ error: "Invalid cursor" }, { status: 400 });
+      }
+      cursor = { createdAt, id };
+    }
+    return Response.json(await tributeSnapshot(db, cursor), { headers: { "cache-control": "no-store" } });
   }
 
   if (request.method !== "POST") {
