@@ -1,528 +1,173 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  PHYSICS_COURSES,
-  CURRICULUM_SOURCE,
-} from "./physics-curriculum-data";
-import type { CurriculumCourse, CurriculumLevel } from "./curriculum-data";
+import { FormEvent, useEffect, useMemo, useState } from "react";
+import { QUESTIONS } from "./questions";
 
-type Phase = "ready" | "research" | "present" | "done";
+type ClassInfo = { code: string; name: string };
+type Phase = "join" | "intro" | "test" | "submitting" | "done";
 
-type Keyword = {
-  name: string;
-  category: string;
-  sourceLabel: string;
-};
+export default function StudentPage() {
+  const [classCode, setClassCode] = useState("");
+  const [classInfo, setClassInfo] = useState<ClassInfo | null>(null);
+  const [phase, setPhase] = useState<Phase>("join");
+  const [studentName, setStudentName] = useState("");
+  const [studentNumber, setStudentNumber] = useState("");
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [error, setError] = useState("");
 
-type CustomKeywordMap = Record<string, string[]>;
-
-const RESEARCH_SECONDS = 600;
-const PRESENT_SECONDS = 60;
-const CUSTOM_CATEGORY = "직접 추가";
-const CUSTOM_KEYWORDS_STORAGE_KEY = "topic-pick-custom-keywords-v1";
-
-const formatTime = (seconds: number) => {
-  const minutes = Math.floor(seconds / 60).toString().padStart(2, "0");
-  const secs = (seconds % 60).toString().padStart(2, "0");
-  return `${minutes}:${secs}`;
-};
-
-const keywordsForCourse = (course: CurriculumCourse): Keyword[] =>
-  course.topics.map((topic) => ({
-    name: topic.name,
-    category: topic.domain,
-    sourceLabel: topic.sourceLabel,
-  }));
-
-const defaultCourse = (level: CurriculumLevel) =>
-  PHYSICS_COURSES.find((course) =>
-    level === "high"
-      ? course.level === "high" && course.name === "물리학"
-      : course.level === "middle" && course.name === "과학",
-  ) ?? PHYSICS_COURSES.find((course) => course.level === level)!;
-
-export default function Home() {
-  const initialCourse = defaultCourse("high");
-  const [level, setLevel] = useState<CurriculumLevel>("high");
-  const [subjectGroup, setSubjectGroup] = useState(initialCourse.subjectGroup);
-  const [courseId, setCourseId] = useState(initialCourse.id);
-  const [topicCategory, setTopicCategory] = useState("전체");
-  const [keyword, setKeyword] = useState<Keyword | null>(null);
-  const [phase, setPhase] = useState<Phase>("ready");
-  const [seconds, setSeconds] = useState(RESEARCH_SECONDS);
-  const [running, setRunning] = useState(false);
-  const [endAt, setEndAt] = useState<number | null>(null);
-  const [round, setRound] = useState(1);
-  const [spinning, setSpinning] = useState(false);
-  const [customKeywords, setCustomKeywords] = useState<CustomKeywordMap>({});
-  const [customEditorOpen, setCustomEditorOpen] = useState(false);
-  const [customKeywordDraft, setCustomKeywordDraft] = useState("");
-  const [customKeywordNotice, setCustomKeywordNotice] = useState("");
-  const previousName = useRef<string | null>(null);
-  const spinTimers = useRef<number[]>([]);
+  const current = QUESTIONS[questionIndex];
+  const answeredCount = Object.keys(answers).length;
+  const progress = Math.round((answeredCount / QUESTIONS.length) * 100);
 
   useEffect(() => {
-    try {
-      const saved = window.localStorage.getItem(CUSTOM_KEYWORDS_STORAGE_KEY);
-      if (!saved) return;
-      const parsed = JSON.parse(saved) as CustomKeywordMap;
-      if (parsed && typeof parsed === "object") {
-        window.queueMicrotask(() => setCustomKeywords(parsed));
-      }
-    } catch {
-      // Invalid or unavailable browser storage should not block the activity.
+    const code = new URLSearchParams(window.location.search).get("class")?.trim().toUpperCase();
+    if (code) {
+      setClassCode(code);
+      void loadClass(code);
     }
   }, []);
 
-  const saveCustomKeywords = useCallback((next: CustomKeywordMap) => {
-    setCustomKeywords(next);
+  async function loadClass(code: string) {
+    setError("");
     try {
-      window.localStorage.setItem(CUSTOM_KEYWORDS_STORAGE_KEY, JSON.stringify(next));
-    } catch {
-      setCustomKeywordNotice("브라우저 저장소를 사용할 수 없어 이번 화면에서만 유지됩니다.");
+      const response = await fetch(`/api/classes/${encodeURIComponent(code)}`);
+      if (!response.ok) throw new Error("학급을 찾을 수 없습니다.");
+      const data = (await response.json()) as ClassInfo;
+      setClassInfo(data);
+      setPhase("intro");
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : "학급 정보를 불러오지 못했습니다.");
+      setPhase("join");
     }
-  }, []);
+  }
 
-  const coursesAtLevel = useMemo(
-    () => PHYSICS_COURSES.filter((course) => course.level === level),
-    [level],
-  );
-  const subjectGroups = useMemo(
-    () => Array.from(new Set(coursesAtLevel.map((course) => course.subjectGroup))).sort((a, b) => a.localeCompare(b, "ko")),
-    [coursesAtLevel],
-  );
-  const coursesInGroup = useMemo(
-    () => coursesAtLevel.filter((course) => course.subjectGroup === subjectGroup),
-    [coursesAtLevel, subjectGroup],
-  );
-  const selectedCourse = PHYSICS_COURSES.find((course) => course.id === courseId) ?? initialCourse;
-  const courseCustomKeywords = useMemo(
-    () => customKeywords[selectedCourse.id] ?? [],
-    [customKeywords, selectedCourse.id],
-  );
-  const keywords = useMemo(() => [
-    ...keywordsForCourse(selectedCourse),
-    ...courseCustomKeywords.map((name) => ({
-      name,
-      category: CUSTOM_CATEGORY,
-      sourceLabel: "교사 직접 추가 · 이 기기 저장",
-    })),
-  ], [courseCustomKeywords, selectedCourse]);
-  const topicCategories = useMemo(
-    () => Array.from(new Set(keywords.map((item) => item.category))),
-    [keywords],
-  );
-  const filtered = useMemo(
-    () => topicCategory === "전체" ? keywords : keywords.filter((item) => item.category === topicCategory),
-    [keywords, topicCategory],
-  );
+  function joinClass(event: FormEvent) {
+    event.preventDefault();
+    const code = classCode.trim().toUpperCase();
+    if (code.length < 4) return setError("학급 코드를 확인해 주세요.");
+    void loadClass(code);
+  }
 
-  const clearSpinTimers = useCallback(() => {
-    spinTimers.current.forEach((timer) => window.clearTimeout(timer));
-    spinTimers.current = [];
-  }, []);
+  function beginTest(event: FormEvent) {
+    event.preventDefault();
+    if (studentName.trim().length < 2) return setError("이름을 두 글자 이상 입력해 주세요.");
+    if (!studentNumber.trim()) return setError("학번을 입력해 주세요.");
+    setError("");
+    setPhase("test");
+  }
 
-  useEffect(() => clearSpinTimers, [clearSpinTimers]);
+  function choose(optionId: string) {
+    setAnswers((previous) => ({ ...previous, [current.id]: optionId }));
+  }
 
-  const resetActivity = useCallback(() => {
-    clearSpinTimers();
-    previousName.current = null;
-    setTopicCategory("전체");
-    setKeyword(null);
-    setPhase("ready");
-    setSeconds(RESEARCH_SECONDS);
-    setRunning(false);
-    setEndAt(null);
-    setSpinning(false);
-  }, [clearSpinTimers]);
-
-  const changeLevel = (nextLevel: CurriculumLevel) => {
-    const next = defaultCourse(nextLevel);
-    setLevel(nextLevel);
-    setSubjectGroup(next.subjectGroup);
-    setCourseId(next.id);
-    resetActivity();
-  };
-
-  const changeSubjectGroup = (nextGroup: string) => {
-    const next = coursesAtLevel.find((course) => course.subjectGroup === nextGroup);
-    if (!next) return;
-    setSubjectGroup(nextGroup);
-    setCourseId(next.id);
-    resetActivity();
-  };
-
-  const changeCourse = (nextCourseId: string) => {
-    setCourseId(nextCourseId);
-    resetActivity();
-  };
-
-  const addCustomKeywords = () => {
-    const candidates = customKeywordDraft
-      .split(/[\n,]/u)
-      .map((value) => value.replace(/\s+/g, " ").trim())
-      .filter((value) => value.length >= 2 && value.length <= 60);
-    const existingNames = new Set(keywords.map((item) => item.name.toLocaleLowerCase("ko")));
-    const additions = [...new Set(candidates)].filter((name) => !existingNames.has(name.toLocaleLowerCase("ko")));
-
-    if (additions.length === 0) {
-      setCustomKeywordNotice("새로 추가할 키워드가 없습니다. 중복 여부와 글자 수를 확인해 주세요.");
+  async function nextQuestion() {
+    if (!answers[current.id]) return setError("가장 가깝게 생각하는 답을 하나 골라 주세요.");
+    setError("");
+    if (questionIndex < QUESTIONS.length - 1) {
+      setQuestionIndex((value) => value + 1);
       return;
     }
-
-    const next = {
-      ...customKeywords,
-      [selectedCourse.id]: [...courseCustomKeywords, ...additions],
-    };
-    saveCustomKeywords(next);
-    setCustomKeywordDraft("");
-    setCustomKeywordNotice(`${additions.length}개 키워드를 ${selectedCourse.name}에 추가했습니다.`);
-  };
-
-  const removeCustomKeyword = (name: string) => {
-    const remaining = courseCustomKeywords.filter((item) => item !== name);
-    const next = { ...customKeywords };
-    if (remaining.length > 0) next[selectedCourse.id] = remaining;
-    else delete next[selectedCourse.id];
-    saveCustomKeywords(next);
-    setCustomKeywordNotice(`‘${name}’을 삭제했습니다.`);
-    if (keyword?.name === name) setKeyword(null);
-  };
-
-  const clearCourseCustomKeywords = () => {
-    const next = { ...customKeywords };
-    delete next[selectedCourse.id];
-    saveCustomKeywords(next);
-    setCustomKeywordNotice(`${selectedCourse.name}의 직접 추가 키워드를 모두 삭제했습니다.`);
-    if (keyword?.category === CUSTOM_CATEGORY) setKeyword(null);
-  };
-
-  const playCue = useCallback((frequency = 660) => {
+    setPhase("submitting");
     try {
-      const AudioCtx = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-      if (!AudioCtx) return;
-      const context = new AudioCtx();
-      const oscillator = context.createOscillator();
-      const gain = context.createGain();
-      oscillator.frequency.value = frequency;
-      gain.gain.setValueAtTime(0.07, context.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + 0.32);
-      oscillator.connect(gain).connect(context.destination);
-      oscillator.start();
-      oscillator.stop(context.currentTime + 0.32);
-    } catch {
-      // Timers continue when browser audio is unavailable.
-    }
-  }, []);
-
-  const pickCandidate = useCallback((pool: Keyword[]) => {
-    const candidates = pool.length > 1
-      ? pool.filter((item) => item.name !== previousName.current)
-      : pool;
-    return candidates[Math.floor(Math.random() * candidates.length)];
-  }, []);
-
-  const drawKeyword = useCallback(() => {
-    if (filtered.length === 0 || spinning) return;
-    clearSpinTimers();
-    setPhase("ready");
-    setSeconds(RESEARCH_SECONDS);
-    setRunning(false);
-    setEndAt(null);
-    setSpinning(true);
-
-    const finalKeyword = pickCandidate(filtered);
-    const steps = 13;
-    for (let step = 0; step < steps; step += 1) {
-      const delay = step * 58 + step * step * 4;
-      const timer = window.setTimeout(() => {
-        if (step === steps - 1) {
-          previousName.current = finalKeyword.name;
-          setKeyword(finalKeyword);
-          setSpinning(false);
-          playCue(760);
-          return;
-        }
-        setKeyword(filtered[Math.floor(Math.random() * filtered.length)]);
-      }, delay);
-      spinTimers.current.push(timer);
-    }
-  }, [clearSpinTimers, filtered, pickCandidate, playCue, spinning]);
-
-  const drawFromAllCourses = useCallback(() => {
-    if (spinning) return;
-    const nextCourse = PHYSICS_COURSES[Math.floor(Math.random() * PHYSICS_COURSES.length)];
-    const nextPool = [
-      ...keywordsForCourse(nextCourse),
-      ...(customKeywords[nextCourse.id] ?? []).map((name) => ({
-        name,
-        category: CUSTOM_CATEGORY,
-        sourceLabel: "교사 직접 추가 · 이 기기 저장",
-      })),
-    ];
-    const nextKeyword = pickCandidate(nextPool);
-    setLevel(nextCourse.level);
-    setSubjectGroup(nextCourse.subjectGroup);
-    setCourseId(nextCourse.id);
-    setTopicCategory("전체");
-    previousName.current = nextKeyword.name;
-    setKeyword(nextKeyword);
-    setPhase("ready");
-    setSeconds(RESEARCH_SECONDS);
-    playCue(760);
-  }, [customKeywords, pickCandidate, playCue, spinning]);
-
-  const startResearch = useCallback(() => {
-    if (!keyword || spinning) return;
-    setPhase("research");
-    setSeconds(RESEARCH_SECONDS);
-    setEndAt(Date.now() + RESEARCH_SECONDS * 1000);
-    setRunning(true);
-  }, [keyword, spinning]);
-
-  const startPresentation = useCallback(() => {
-    setPhase("present");
-    setSeconds(PRESENT_SECONDS);
-    setEndAt(Date.now() + PRESENT_SECONDS * 1000);
-    setRunning(true);
-    playCue(740);
-  }, [playCue]);
-
-  useEffect(() => {
-    if (!running || endAt === null) return;
-    const tick = () => {
-      const next = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
-      setSeconds(next);
-      if (next === 0) {
-        setRunning(false);
-        setEndAt(null);
-        if (phase === "research") startPresentation();
-        if (phase === "present") {
-          setPhase("done");
-          playCue(520);
-        }
+      const response = await fetch(`/api/classes/${classInfo?.code}/submissions`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ studentName, studentNumber, answers }),
+      });
+      if (!response.ok) {
+        const body = (await response.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(body?.error ?? "응답을 저장하지 못했습니다.");
       }
-    };
-    tick();
-    const timer = window.setInterval(tick, 250);
-    return () => window.clearInterval(timer);
-  }, [endAt, phase, playCue, running, startPresentation]);
-
-  const toggleTimer = useCallback(() => {
-    if (phase !== "research" && phase !== "present") return;
-    if (running) {
-      setSeconds(Math.max(0, Math.ceil(((endAt ?? Date.now()) - Date.now()) / 1000)));
-      setRunning(false);
-      setEndAt(null);
-    } else {
-      setEndAt(Date.now() + seconds * 1000);
-      setRunning(true);
+      setPhase("done");
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : "응답을 저장하지 못했습니다.");
+      setPhase("test");
     }
-  }, [endAt, phase, running, seconds]);
-
-  const returnToPicker = useCallback((nextRound = false) => {
-    if (nextRound) setRound((value) => value + 1);
-    setPhase("ready");
-    setSeconds(RESEARCH_SECONDS);
-    setRunning(false);
-    setEndAt(null);
-  }, []);
-
-  const nextKeyword = useCallback(() => {
-    setRound((value) => value + 1);
-    setPhase("ready");
-    setKeyword(null);
-    setSeconds(RESEARCH_SECONDS);
-    setRunning(false);
-    setEndAt(null);
-  }, []);
-
-  useEffect(() => {
-    const handleKey = (event: KeyboardEvent) => {
-      if (event.code === "Space" && (phase === "research" || phase === "present")) {
-        event.preventDefault();
-        toggleTimer();
-      }
-      if (event.key.toLowerCase() === "r" && phase === "ready") drawKeyword();
-    };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [drawKeyword, phase, toggleTimer]);
-
-  if (phase === "research" || phase === "present") {
-    const isResearch = phase === "research";
-    return (
-      <main className={`focus-screen ${isResearch ? "focus-research" : "focus-present"}`}>
-        <div className="ambient-glow" aria-hidden="true" />
-        <header className="focus-header">
-          <button type="button" className="text-button" onClick={() => returnToPicker()}>← 주제 선택</button>
-          <span>ROUND {round.toString().padStart(2, "0")}</span>
-        </header>
-
-        <section className="focus-content" aria-live="polite">
-          <p className="eyebrow">{isResearch ? "RESEARCH · 자료 조사 중" : "SPEAK · 설명하는 시간"}</p>
-          <p className="focus-course">{selectedCourse.name} · {keyword?.category}</p>
-          <h1 className="focus-topic">{keyword?.name}</h1>
-          <div className="timer-center">
-            <strong className="big-timer">{formatTime(seconds)}</strong>
-          </div>
-          <p className="focus-hint">
-            {running
-              ? isResearch ? "뜻 · 원리 · 예시를 찾아 나만의 말로 정리하세요." : "친구에게 가르치듯 또박또박 설명해 보세요."
-              : "잠시 멈췄습니다. 준비되면 계속하세요."}
-          </p>
-          <div className="focus-actions">
-            <button type="button" className="primary-button" onClick={toggleTimer}>{running ? "Ⅱ  일시정지" : "▶  계속하기"}</button>
-            {isResearch && <button type="button" className="secondary-button" onClick={startPresentation}>조사 끝, 1분 설명 시작</button>}
-          </div>
-          <p className="shortcut"><kbd>SPACE</kbd> 시작 · 일시정지</p>
-        </section>
-      </main>
-    );
   }
 
-  if (phase === "done") {
-    return (
-      <main className="focus-screen focus-done">
-        <div className="ambient-glow" aria-hidden="true" />
-        <section className="done-content">
-          <p className="eyebrow">ROUND COMPLETE</p>
-          <span className="done-mark" aria-hidden="true">✓</span>
-          <p className="focus-course">{selectedCourse.name}</p>
-          <h1 className="focus-topic">{keyword?.name}</h1>
-          <p className="done-copy">1분 설명을 마쳤어요.<br />방금 설명에서 가장 중요한 문장 하나를 떠올려 보세요.</p>
-          <div className="focus-actions">
-            <button type="button" className="primary-button" onClick={nextKeyword}>다음 키워드</button>
-            <button type="button" className="secondary-button" onClick={() => returnToPicker(true)}>같은 키워드 다시 도전</button>
-          </div>
-        </section>
-      </main>
-    );
-  }
+  const testStatus = useMemo(() => `${questionIndex + 1} / ${QUESTIONS.length}`, [questionIndex]);
 
   return (
-    <main className="picker-screen" id="top">
-      <div className="ambient-glow" aria-hidden="true" />
-      <header className="picker-header">
-        <a href="#top" className="wordmark">PHYSICS PICK</a>
-        <span>ROUND {round.toString().padStart(2, "0")}</span>
+    <main className="app-shell student-shell">
+      <header className="topbar">
+        <a className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></a>
+        <a className="teacher-link" href="/teacher">교사용</a>
       </header>
 
-      <section className="picker-content">
-        <div className="intro">
-          <p className="eyebrow">2022 개정 물리학 교육과정</p>
-          <h1>물리 개념을<br />내 말로 설명해보세요</h1>
-          <p>물리학 관련 과목의 핵심 개념을 뽑아<br />10분 조사하고, 1분 동안 말해보세요.</p>
-        </div>
-
-        <div className="level-toggle" aria-label="학교급 선택">
-          <button type="button" className={level === "middle" ? "active" : ""} onClick={() => changeLevel("middle")} aria-pressed={level === "middle"}>중학교</button>
-          <button type="button" className={level === "high" ? "active" : ""} onClick={() => changeLevel("high")} aria-pressed={level === "high"}>고등학교</button>
-        </div>
-
-        <div className="curriculum-selectors">
-          <label>
-            <span>교과군</span>
-            <select value={subjectGroup} onChange={(event) => changeSubjectGroup(event.target.value)} disabled={spinning}>
-              {subjectGroups.map((group) => <option key={group} value={group}>{group}</option>)}
-            </select>
-          </label>
-          <label>
-            <span>과목</span>
-            <select value={courseId} onChange={(event) => changeCourse(event.target.value)} disabled={spinning}>
-              {coursesInGroup.map((course) => <option key={course.id} value={course.id}>{course.name}</option>)}
-            </select>
-          </label>
-          <label className="wide-selector">
-            <span>파트</span>
-            <select value={topicCategory} onChange={(event) => { setTopicCategory(event.target.value); setKeyword(null); }} disabled={spinning}>
-              <option value="전체">전체 파트 · {keywords.length}개 키워드</option>
-              {topicCategories.map((category) => <option key={category} value={category}>{category}</option>)}
-            </select>
-          </label>
-        </div>
-
-        <section className="custom-keywords" aria-label="직접 추가 키워드">
-          <button
-            type="button"
-            className="custom-editor-toggle"
-            onClick={() => {
-              setCustomEditorOpen((value) => !value);
-              setCustomKeywordNotice("");
-            }}
-            aria-expanded={customEditorOpen}
-          >
-            <span><b>＋ 내 키워드</b><small>{selectedCourse.name} · {courseCustomKeywords.length}개 저장됨</small></span>
-            <span aria-hidden="true">{customEditorOpen ? "−" : "+"}</span>
-          </button>
-
-          {customEditorOpen && (
-            <div className="custom-editor-panel">
-              <div className="custom-editor-copy">
-                <strong>{selectedCourse.name}에 키워드 추가</strong>
-                <p>쉼표나 줄바꿈으로 여러 개를 한꺼번에 입력할 수 있어요. 추가한 키워드는 기본 목록과 함께 추첨됩니다.</p>
-              </div>
-              <textarea
-                value={customKeywordDraft}
-                onChange={(event) => setCustomKeywordDraft(event.target.value)}
-                placeholder={"예: 지역 브랜드\n젠트리피케이션\n도시 재생"}
-                maxLength={2000}
-                aria-label={`${selectedCourse.name}에 추가할 키워드`}
-              />
-              <button type="button" className="custom-add-button" onClick={addCustomKeywords}>입력한 키워드 추가</button>
-              {customKeywordNotice && <p className="custom-notice" role="status">{customKeywordNotice}</p>}
-              {courseCustomKeywords.length > 0 && (
-                <div className="custom-list">
-                  <div className="custom-list-heading">
-                    <strong>직접 추가한 키워드</strong>
-                    <button type="button" onClick={clearCourseCustomKeywords}>이 과목 전체 삭제</button>
-                  </div>
-                  <div className="custom-chips">
-                    {courseCustomKeywords.map((name) => (
-                      <span key={name}>{name}<button type="button" onClick={() => removeCustomKeyword(name)} aria-label={`${name} 삭제`}>×</button></span>
-                    ))}
-                  </div>
-                </div>
-              )}
-              <p className="storage-note">이 목록은 개인정보 없이 현재 기기의 브라우저에만 저장됩니다. 다른 기기나 브라우저와 자동으로 공유되지는 않습니다.</p>
+      {phase === "join" && (
+        <section className="hero split-hero">
+          <div className="hero-copy">
+            <p className="eyebrow">통합과학2 선개념 진단</p>
+            <h1>수업 전,<br /><em>생각의 출발점</em>을 발견해요.</h1>
+            <p>정답을 맞히는 시험이 아니에요. 지금 알고 있는 대로 편안하게 답해 주세요.</p>
+            <div className="topic-strip" aria-label="진단 영역">
+              <span>변화와 다양성</span><span>환경과 에너지</span><span>과학과 미래 사회</span>
             </div>
-          )}
+          </div>
+          <form className="entry-card" onSubmit={joinClass}>
+            <span className="card-step">STUDENT ENTRY</span>
+            <h2>학급에 들어가기</h2>
+            <label><span>학급 코드</span><input value={classCode} onChange={(event) => setClassCode(event.target.value.toUpperCase())} placeholder="예: SCI2A7" maxLength={10} autoComplete="off" /></label>
+            {error && <p className="form-error" role="alert">{error}</p>}
+            <button className="primary-action" type="submit">계속하기 <span>→</span></button>
+            <p className="privacy-note">교사가 안내한 코드로만 입장할 수 있어요.</p>
+          </form>
         </section>
+      )}
 
-        <div className="topic-zone" aria-live="polite">
-          {keyword ? (
-            <>
-              <p className="topic-meta">{selectedCourse.name} · {keyword.category}</p>
-              <h2 className={spinning ? "topic-display spinning" : "topic-display landed"}>{keyword.name}</h2>
-              {!spinning && <p className="topic-guide">뜻 · 핵심 원리 · 구체적인 예시 하나</p>}
-            </>
-          ) : (
-            <>
-              <p className="topic-meta">{selectedCourse.category} · {filtered.length}개 키워드</p>
-              <h2 className="topic-placeholder">과목을 고르고<br />키워드를 뽑아보세요</h2>
-            </>
-          )}
-        </div>
+      {phase === "intro" && classInfo && (
+        <section className="center-stage">
+          <form className="entry-card identity-card" onSubmit={beginTest}>
+            <span className="class-pill">{classInfo.name}</span>
+            <h1>반가워요.<br />먼저 누구인지 알려 주세요.</h1>
+            <div className="field-row">
+              <label><span>이름</span><input value={studentName} onChange={(event) => setStudentName(event.target.value)} placeholder="홍길동" maxLength={20} autoComplete="name" /></label>
+              <label><span>학번</span><input value={studentNumber} onChange={(event) => setStudentNumber(event.target.value)} placeholder="예: 20315" maxLength={12} inputMode="numeric" /></label>
+            </div>
+            <div className="test-facts"><span><b>15</b>개 문항</span><span><b>약 8</b>분</span><span><b>점수 공개 없음</b></span></div>
+            {error && <p className="form-error" role="alert">{error}</p>}
+            <button className="primary-action" type="submit">진단 시작하기 <span>→</span></button>
+            <p className="privacy-note">입력한 정보와 응답은 담당 교사의 수업 설계에만 사용됩니다.</p>
+          </form>
+        </section>
+      )}
 
-        <div className="picker-actions">
-          <button type="button" className="primary-button" onClick={drawKeyword} disabled={spinning}>{spinning ? "고르는 중…" : keyword ? "다시 뽑기" : "키워드 뽑기"}</button>
-          <button type="button" className="secondary-button" onClick={startResearch} disabled={!keyword || spinning}>10분 조사 시작</button>
-        </div>
+      {(phase === "test" || phase === "submitting") && current && (
+        <section className="test-stage">
+          <div className="test-head">
+            <div><span className="domain-badge">{current.domain}</span><strong>{testStatus}</strong></div>
+            <div className="progress-track" aria-label={`진행률 ${progress}%`}><i style={{ width: `${progress}%` }} /></div>
+          </div>
+          <article className="question-card">
+            <p className="standard-code">{current.standard}</p>
+            <h1>{current.prompt}</h1>
+            {current.context && <p className="question-context">{current.context}</p>}
+            <div className="option-list">
+              {current.options.map((option, index) => (
+                <button key={option.id} type="button" className={answers[current.id] === option.id ? "option selected" : "option"} onClick={() => choose(option.id)}>
+                  <span>{String.fromCharCode(65 + index)}</span><b>{option.text}</b><i>{answers[current.id] === option.id ? "✓" : ""}</i>
+                </button>
+              ))}
+            </div>
+            {error && <p className="form-error" role="alert">{error}</p>}
+            <div className="question-actions">
+              <button type="button" className="back-action" disabled={questionIndex === 0 || phase === "submitting"} onClick={() => setQuestionIndex((value) => value - 1)}>← 이전</button>
+              <button type="button" className="primary-action compact" disabled={phase === "submitting" || !answers[current.id]} onClick={nextQuestion}>{phase === "submitting" ? "저장 중…" : questionIndex === QUESTIONS.length - 1 ? "응답 제출하기" : "다음 문항 →"}</button>
+            </div>
+          </article>
+        </section>
+      )}
 
-        <button type="button" className="random-link" onClick={drawFromAllCourses} disabled={spinning}>🎲 물리학 관련 전체 과목에서 뽑기</button>
-
-        <div className="flow-note" aria-label="활동 흐름">
-          <span><b>01</b> 키워드 뽑기</span><i />
-          <span><b>02</b> 10분 조사</span><i />
-          <span><b>03</b> 1분 설명</span>
-        </div>
-      </section>
-
-      <footer className="picker-footer">
-        <p>물리학 관련 {PHYSICS_COURSES.length}개 과정 · 공식 내용 요소와 검수 키워드</p>
-        <a href={CURRICULUM_SOURCE.repository} target="_blank" rel="noreferrer">교육과정 데이터 출처 ↗</a>
-      </footer>
+      {phase === "done" && (
+        <section className="center-stage done-stage">
+          <div className="done-symbol">✓</div>
+          <p className="eyebrow">RESPONSE SAVED</p>
+          <h1>{studentName} 학생,<br />응답을 잘 저장했어요.</h1>
+          <p>여러분의 생각은 더 좋은 통합과학 수업을 만드는 출발점이 됩니다.</p>
+          <div className="done-card"><span>완료한 문항</span><b>{QUESTIONS.length} / {QUESTIONS.length}</b><small>{classInfo?.name}</small></div>
+        </section>
+      )}
     </main>
   );
 }

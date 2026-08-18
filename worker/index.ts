@@ -1,6 +1,7 @@
 /** Cloudflare Worker entry point for the vinext-starter template. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
+import { QUESTIONS } from "../app/questions";
 
 interface Env {
   ASSETS: Fetcher;
@@ -89,6 +90,141 @@ async function handleTributes(request: Request, db: D1Database) {
   return Response.json(await tributeSnapshot(db), { status: 201, headers: { "cache-control": "no-store" } });
 }
 
+type DiagnosticClassRow = { id: string; code: string; name: string; teacher_token_hash: string; created_at: number };
+type DiagnosticSubmissionRow = { id: string; student_name: string; student_number: string; answers_json: string; completed_at: number };
+
+async function ensureDiagnosticSchema(db: D1Database) {
+  await db.batch([
+    db.prepare(`CREATE TABLE IF NOT EXISTS diagnostic_classes (
+      id TEXT PRIMARY KEY NOT NULL,
+      code TEXT NOT NULL,
+      name TEXT NOT NULL,
+      teacher_token_hash TEXT NOT NULL,
+      created_at INTEGER NOT NULL
+    )`),
+    db.prepare("CREATE UNIQUE INDEX IF NOT EXISTS idx_diagnostic_classes_code ON diagnostic_classes (code)"),
+    db.prepare(`CREATE TABLE IF NOT EXISTS diagnostic_submissions (
+      id TEXT PRIMARY KEY NOT NULL,
+      class_id TEXT NOT NULL REFERENCES diagnostic_classes(id) ON DELETE CASCADE,
+      student_name TEXT NOT NULL,
+      student_number TEXT NOT NULL,
+      answers_json TEXT NOT NULL,
+      completed_at INTEGER NOT NULL
+    )`),
+    db.prepare("CREATE UNIQUE INDEX IF NOT EXISTS idx_diagnostic_submissions_class_student ON diagnostic_submissions (class_id, student_number)"),
+    db.prepare("CREATE INDEX IF NOT EXISTS idx_diagnostic_submissions_class_completed ON diagnostic_submissions (class_id, completed_at)"),
+  ]);
+}
+
+function normalizeClassCode(value: string) {
+  return value.trim().toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 10);
+}
+
+function makeClassCode() {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const bytes = crypto.getRandomValues(new Uint8Array(6));
+  return Array.from(bytes, (value) => alphabet[value % alphabet.length]).join("");
+}
+
+function makeTeacherToken() {
+  const bytes = crypto.getRandomValues(new Uint8Array(18));
+  return Array.from(bytes, (value) => value.toString(16).padStart(2, "0")).join("");
+}
+
+async function hashToken(token: string) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(token));
+  return Array.from(new Uint8Array(digest), (value) => value.toString(16).padStart(2, "0")).join("");
+}
+
+async function readClass(db: D1Database, code: string) {
+  return db.prepare("SELECT id, code, name, teacher_token_hash, created_at FROM diagnostic_classes WHERE code = ?")
+    .bind(normalizeClassCode(code)).first<DiagnosticClassRow>();
+}
+
+async function handleCreateClass(request: Request, db: D1Database) {
+  let body: { name?: unknown };
+  try { body = await request.json() as { name?: unknown }; }
+  catch { return Response.json({ error: "요청 형식이 올바르지 않습니다." }, { status: 400 }); }
+  const name = typeof body.name === "string" ? body.name.replace(/\s+/g, " ").trim().slice(0, 40) : "";
+  if (name.length < 2) return Response.json({ error: "학급 이름을 확인해 주세요." }, { status: 400 });
+
+  const teacherToken = makeTeacherToken();
+  const teacherTokenHash = await hashToken(teacherToken);
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const code = makeClassCode();
+    try {
+      await db.prepare("INSERT INTO diagnostic_classes (id, code, name, teacher_token_hash, created_at) VALUES (?, ?, ?, ?, ?)")
+        .bind(crypto.randomUUID(), code, name, teacherTokenHash, Date.now()).run();
+      return Response.json({ code, name, teacherToken }, { status: 201, headers: { "cache-control": "no-store" } });
+    } catch (error) {
+      if (attempt === 4) throw error;
+    }
+  }
+  return Response.json({ error: "학급을 만들지 못했습니다." }, { status: 500 });
+}
+
+function validateAnswers(value: unknown): value is Record<string, string> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const answers = value as Record<string, unknown>;
+  return QUESTIONS.every((question) => typeof answers[question.id] === "string" && question.options.some((option) => option.id === answers[question.id]));
+}
+
+async function handleStudentSubmission(request: Request, db: D1Database, diagnosticClass: DiagnosticClassRow) {
+  let body: { studentName?: unknown; studentNumber?: unknown; answers?: unknown };
+  try { body = await request.json() as typeof body; }
+  catch { return Response.json({ error: "요청 형식이 올바르지 않습니다." }, { status: 400 }); }
+  const studentName = typeof body.studentName === "string" ? body.studentName.replace(/\s+/g, " ").trim().slice(0, 20) : "";
+  const studentNumber = typeof body.studentNumber === "string" ? body.studentNumber.replace(/\s+/g, "").trim().slice(0, 12) : "";
+  if (studentName.length < 2 || !studentNumber || !validateAnswers(body.answers)) {
+    return Response.json({ error: "이름, 학번과 모든 문항의 응답을 확인해 주세요." }, { status: 400 });
+  }
+  const completedAt = Date.now();
+  await db.prepare(`INSERT INTO diagnostic_submissions (id, class_id, student_name, student_number, answers_json, completed_at)
+    VALUES (?, ?, ?, ?, ?, ?)
+    ON CONFLICT(class_id, student_number) DO UPDATE SET student_name = excluded.student_name, answers_json = excluded.answers_json, completed_at = excluded.completed_at`)
+    .bind(crypto.randomUUID(), diagnosticClass.id, studentName, studentNumber, JSON.stringify(body.answers), completedAt).run();
+  return Response.json({ ok: true, completedAt }, { status: 201, headers: { "cache-control": "no-store" } });
+}
+
+async function handleTeacherDashboard(request: Request, db: D1Database, diagnosticClass: DiagnosticClassRow) {
+  const token = new URL(request.url).searchParams.get("token") ?? "";
+  if (!token || await hashToken(token) !== diagnosticClass.teacher_token_hash) {
+    return Response.json({ error: "교사용 키가 올바르지 않습니다." }, { status: 403 });
+  }
+  const result = await db.prepare(`SELECT id, student_name, student_number, answers_json, completed_at
+    FROM diagnostic_submissions WHERE class_id = ? ORDER BY student_number ASC, completed_at DESC`).bind(diagnosticClass.id).all<DiagnosticSubmissionRow>();
+  return Response.json({
+    code: diagnosticClass.code,
+    name: diagnosticClass.name,
+    createdAt: diagnosticClass.created_at,
+    submissions: (result.results ?? []).map((row) => ({
+      id: row.id,
+      studentName: row.student_name,
+      studentNumber: row.student_number,
+      answers: JSON.parse(row.answers_json) as Record<string, string>,
+      completedAt: row.completed_at,
+    })),
+  }, { headers: { "cache-control": "no-store" } });
+}
+
+async function handleDiagnosticApi(request: Request, db: D1Database, url: URL) {
+  await ensureDiagnosticSchema(db);
+  if (url.pathname === "/api/classes") {
+    if (request.method === "POST") return handleCreateClass(request, db);
+    return Response.json({ error: "허용되지 않은 요청입니다." }, { status: 405, headers: { allow: "POST" } });
+  }
+  const match = url.pathname.match(/^\/api\/classes\/([A-Za-z0-9]+)(\/submissions)?$/);
+  if (!match) return Response.json({ error: "경로를 찾을 수 없습니다." }, { status: 404 });
+  const diagnosticClass = await readClass(db, match[1]);
+  if (!diagnosticClass) return Response.json({ error: "학급을 찾을 수 없습니다." }, { status: 404 });
+  if (!match[2] && request.method === "GET") {
+    return Response.json({ code: diagnosticClass.code, name: diagnosticClass.name }, { headers: { "cache-control": "no-store" } });
+  }
+  if (match[2] && request.method === "POST") return handleStudentSubmission(request, db, diagnosticClass);
+  if (match[2] && request.method === "GET") return handleTeacherDashboard(request, db, diagnosticClass);
+  return Response.json({ error: "허용되지 않은 요청입니다." }, { status: 405 });
+}
+
 interface ExecutionContext {
   waitUntil(promise: Promise<unknown>): void;
   passThroughOnException(): void;
@@ -103,6 +239,10 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/classes" || url.pathname.startsWith("/api/classes/")) {
+      return handleDiagnosticApi(request, env.DB, url);
+    }
 
     if (url.pathname === "/api/tributes") {
       return handleTributes(request, env.DB);

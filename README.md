@@ -1,65 +1,49 @@
-# Topic Pick
+# PRE:SCIENCE
 
-2022 개정 교육과정의 중학교·고등학교 과학·사회·수학 과목을 선택하고 공식 내용 체계의 `지식·이해` 요소를 무작위로 뽑아,
-학생이 10분 동안 조사한 뒤 1분 동안 설명하도록 돕는 수업용 웹사이트입니다.
+2022 개정 교육과정 「통합과학2」 수업 전에 학생의 선개념을 진단하고, 교사가 학급의 응답 경향을 확인하는 웹앱입니다.
 
-- 운영 사이트: <https://physics-pick-korea.kmo4102.chatgpt.site>
-- 기본 브랜치: `main`
-- 현재 공개 범위: 소유자 전용 비공개
+## 주요 흐름
 
-## 주요 기능
+- 교사가 학급을 만들면 학생용 링크와 교사용 비밀 링크가 생성됩니다.
+- 학생은 학생용 링크에서 이름과 학번만 입력하고 15개 진단 문항에 응답합니다.
+- 15개 문항은 `[10통과2-01-01]`부터 `[10통과2-03-04]`까지 모든 성취기준과 연결됩니다.
+- 교사 대시보드에서 제출 인원, 과학적 개념 응답률, 자주 나타난 선개념, 문항별 선택지 분포를 확인할 수 있습니다.
+- 같은 학번으로 다시 제출하면 기존 응답이 최신 응답으로 갱신됩니다.
 
-- 중학교·고등학교 과학과, 사회과(역사 포함), 수학과 72과목 지원
-- 과학·사회·수학 과목에서 과목과 개념을 한 번에 무작위로 뽑는 기능
-- 학교급 → 교과군 → 과목 선택
-- 선택한 과목의 공식 `지식·이해` 내용 요소에서 짧은 명사형 키워드를 무작위로 추첨
-- `중첩과 간섭`, `광합성과 세포호흡의 관계` 같은 복합 요소는 설명 가능한 개념 단위로 분리
-- 공식 내용 요소가 아직 연결되지 않은 과목은 교육과정 영역명을 안전하게 사용
-- 키워드와 NCIC 원문 문서·페이지 출처를 함께 표시
-- 사용자 검수를 거쳐 확정된 과목은 `sources/curated-keywords.json`의 승인 목록을 자동 추출보다 우선 적용
-- 10분 자료 조사 → 1분 설명 자동 전환 타이머
-- 일시정지, 발표 단계 건너뛰기, 다음 라운드
-- 모바일·태블릿·교실 화면 대응
-- 키보드 단축키: `R` 다시 뽑기, `Space` 타이머 시작·일시정지
+## 데이터와 접근
 
-## 교육과정 데이터
+현재 배포판은 프로젝트에 연결된 D1 데이터베이스에 학급과 응답을 저장합니다. 교사용 키는 원문이 아니라 SHA-256 해시로 저장되며, 교사용 링크를 가진 사람만 해당 학급의 응답을 조회할 수 있습니다.
 
-과목 및 영역 구조는 MIT 라이선스의
-[DECK6/korean-secondary-learning-map](https://github.com/DECK6/korean-secondary-learning-map)에서
-가져온 후보 데이터입니다. 공식 승인 제품이 아니며 과목 개설, 선수 관계 또는 진로 적합성을
-판단하는 용도로 사용하지 않습니다. 키워드는 NCIC에서 수집한 2022 개정 교과별 교육과정 PDF의
-학년(군)별 내용 요소 중 `지식·이해` 항목을 사용합니다. 자세한 수집 기록은
-[`sources/ncic/README.md`](./sources/ncic/README.md), 라이선스 고지는 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)를 참고하세요.
+Firebase/Firestore로 전환할 때는 화면 코드를 그대로 두고 `worker/index.ts`의 저장 계층만 교체할 수 있습니다. Vercel에서 Firebase Admin SDK를 사용하려면 다음 값을 환경변수로 설정합니다.
 
-## 빠른 실행
+```text
+FIREBASE_PROJECT_ID=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
+```
 
-필요 환경: Node.js `22.13.0` 이상
+서비스 계정의 비공개 키는 저장소에 커밋하지 않습니다.
+
+## 로컬 실행
+
+Node.js 22.13 이상이 필요합니다.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-배포 전 확인:
+검증:
 
 ```bash
-npm run build
+npm test
 ```
-
-Windows PowerShell에서 환경 변수 형식 때문에 명령이 실행되지 않으면
-[개발 문서](./DEVELOPMENT.md)의 Windows 명령을 사용하세요.
 
 ## 주요 파일
 
-- `app/page.tsx`: 과목 선택, 추첨, 타이머, 전체 화면
-- `app/curriculum-data.ts`: 생성된 과목·영역 데이터
-- `scripts/sync-curriculum.mjs`: 원본 저장소에서 데이터를 갱신하는 스크립트
-- `scripts/extract-ncic-content-elements.py`: 공식 PDF에서 `지식·이해` 내용 요소 추출
-- `sources/ncic/content-elements.json`: 검증 후 사이트에 반영하는 공식 내용 요소
-- `app/globals.css`: 색상, 레이아웃, 반응형 디자인
-- `app/layout.tsx`: 제목, 설명, 공유 미리보기 메타데이터
-- `public/og.png`: 링크 공유용 이미지
-- `.openai/hosting.json`: Sites 프로젝트 연결 정보
-
-다른 컴퓨터에서 이어서 작업하는 방법과 개발 과정은
-[DEVELOPMENT.md](./DEVELOPMENT.md)에 정리되어 있습니다.
+- `app/page.tsx`: 학생 입장 및 진단 화면
+- `app/teacher/page.tsx`: 학급 생성 및 교사 대시보드
+- `app/questions.ts`: 15개 진단 문항과 선개념 분류
+- `worker/index.ts`: 학급·응답 API와 교사용 키 검증
+- `db/schema.ts`: 데이터베이스 스키마
+- `drizzle/0001_add_diagnostic_classes.sql`: 배포용 마이그레이션
