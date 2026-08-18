@@ -12,9 +12,9 @@
 
 ## 데이터와 접근
 
-현재 배포판은 프로젝트에 연결된 D1 데이터베이스에 학급과 응답을 저장합니다. 교사용 키는 원문이 아니라 SHA-256 해시로 저장되며, 교사용 링크를 가진 사람만 해당 학급의 응답을 조회할 수 있습니다.
+Vercel 배포에서는 서버 전용 Firebase Admin SDK를 통해 Firestore에 학급과 응답을 저장합니다. Sites 배포에서는 연결된 D1을 사용합니다. 두 환경 모두 교사용 키는 원문이 아니라 SHA-256 해시로 저장되며, 교사용 링크를 가진 사람만 해당 학급의 응답을 조회할 수 있습니다.
 
-Firebase/Firestore로 전환할 때는 화면 코드를 그대로 두고 `worker/index.ts`의 저장 계층만 교체할 수 있습니다. Vercel에서 Firebase Admin SDK를 사용하려면 다음 값을 환경변수로 설정합니다.
+Vercel과 로컬 Next.js 실행에는 다음 값을 환경변수로 설정합니다.
 
 ```text
 FIREBASE_PROJECT_ID=
@@ -22,7 +22,7 @@ FIREBASE_CLIENT_EMAIL=
 FIREBASE_PRIVATE_KEY=
 ```
 
-서비스 계정의 비공개 키는 저장소에 커밋하지 않습니다.
+각 줄은 `KEY=value` 형식이어야 합니다. `FIREBASE_CLIENT_EMAIL`은 Firebase 서비스 계정 이메일, `FIREBASE_PRIVATE_KEY`는 서비스 계정 JSON에 포함된 PEM 비공개 키를 사용합니다. 비공개 키는 저장소에 커밋하지 않습니다.
 
 ## 로컬 실행
 

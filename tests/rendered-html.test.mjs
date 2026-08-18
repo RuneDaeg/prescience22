@@ -58,3 +58,20 @@ test("stores classroom submissions with protected teacher access", async () => {
   assert.match(schema, /diagnosticSubmissions/);
   assert.match(migration, /idx_diagnostic_submissions_class_student/);
 });
+
+test("provides Firebase-backed Next.js routes for Vercel", async () => {
+  const [firebaseAdmin, diagnosticApi, classRoute, submissionRoute, vercel] = await Promise.all([
+    readFile(new URL("../lib/firebase-admin.ts", import.meta.url), "utf8"),
+    readFile(new URL("../lib/diagnostic-api.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/api/classes/route.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/api/classes/[code]/submissions/route.ts", import.meta.url), "utf8"),
+    readFile(new URL("../vercel.json", import.meta.url), "utf8"),
+  ]);
+  assert.match(firebaseAdmin, /FIREBASE_PROJECT_ID/);
+  assert.match(firebaseAdmin, /firebase-admin\/firestore/);
+  assert.match(diagnosticApi, /diagnosticClasses/);
+  assert.match(diagnosticApi, /teacherTokenHash/);
+  assert.match(classRoute, /createDiagnosticClass/);
+  assert.match(submissionRoute, /validateAnswers/);
+  assert.match(vercel, /build:vercel/);
+});
