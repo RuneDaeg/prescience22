@@ -171,7 +171,7 @@ export default function TeacherPage() {
     <main className="app-shell teacher-entry-shell">
       <header className="topbar"><a className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></a><a className="teacher-link" href="/">학생용</a></header>
       <section className="teacher-entry">
-        <div className="teacher-intro"><p className="eyebrow">TEACHER STUDIO</p><h1>학생들의 답보다<br /><em>생각의 이유</em>를 먼저 봅니다.</h1><p>학급을 만들고 학생 링크를 공유하세요. 제출과 동시에 자주 나타나는 선개념이 자동으로 모입니다.</p><div className="feature-stack"><span><b>01</b>15개 성취기준별 진단</span><span><b>02</b>선개념 유형 자동 집계</span><span><b>03</b>문항별 반응 분포</span></div></div>
+        <div className="teacher-intro"><p className="eyebrow">TEACHER STUDIO</p><h1>학생들의 답보다<br /><em>생각의 이유</em>를 먼저 봅니다.</h1><p>학급을 만들고 학생 링크를 공유하세요. 제출과 동시에 자주 나타나는 선개념이 자동으로 모입니다.</p><div className="feature-stack"><span><b>01</b>15개 성취기준·30문항 진단</span><span><b>02</b>선개념 유형 자동 집계</span><span><b>03</b>문항별 반응 분포</span></div></div>
         <div className="teacher-cards">
           {!created ? (
             <form className="entry-card" onSubmit={createClass}><span className="card-step">NEW CLASS</span><h2>새 학급 만들기</h2><label><span>학급 이름</span><input value={className} onChange={(event) => setClassName(event.target.value)} placeholder="예: 2학년 3반 통합과학" maxLength={40} /></label>{error && <p className="form-error">{error}</p>}<button className="primary-action" disabled={loading}>{loading ? "만드는 중…" : "학급 만들기 →"}</button></form>

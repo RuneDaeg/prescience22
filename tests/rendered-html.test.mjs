@@ -35,10 +35,14 @@ test("server-renders the teacher studio", async () => {
   assert.match(html, /기존 학급 열기/);
 });
 
-test("covers all 15 Integrated Science 2 achievement standards", async () => {
+test("covers all 15 Integrated Science 2 achievement standards with two questions each", async () => {
   const questions = await readFile(new URL("../app/questions.ts", import.meta.url), "utf8");
   const standards = questions.match(/10통과2-\d{2}-\d{2}/g) ?? [];
+  assert.equal(standards.length, 30);
   assert.equal(new Set(standards).size, 15);
+  for (const standard of new Set(standards)) {
+    assert.equal(standards.filter((value) => value === standard).length, 2, `${standard} should have exactly two questions`);
+  }
   assert.match(questions, /필요에 의해 변이가 발생함/);
   assert.match(questions, /오존층 파괴를 지구온난화의 직접 원인/);
   assert.match(questions, /빅데이터는 항상 객관적이고 정확함/);

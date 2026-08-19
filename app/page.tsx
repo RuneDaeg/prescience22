@@ -125,7 +125,7 @@ export default function StudentPage() {
               <label><span>이름</span><input value={studentName} onChange={(event) => setStudentName(event.target.value)} placeholder="홍길동" maxLength={20} autoComplete="name" /></label>
               <label><span>학번</span><input value={studentNumber} onChange={(event) => setStudentNumber(event.target.value)} placeholder="예: 20315" maxLength={12} inputMode="numeric" /></label>
             </div>
-            <div className="test-facts"><span><b>15</b>개 문항</span><span><b>약 8</b>분</span><span><b>점수 공개 없음</b></span></div>
+            <div className="test-facts"><span><b>{QUESTIONS.length}</b>개 문항</span><span><b>약 15</b>분</span><span><b>점수 공개 없음</b></span></div>
             {error && <p className="form-error" role="alert">{error}</p>}
             <button className="primary-action" type="submit">진단 시작하기 <span>→</span></button>
             <p className="privacy-note">입력한 정보와 응답은 담당 교사의 수업 설계에만 사용됩니다.</p>
