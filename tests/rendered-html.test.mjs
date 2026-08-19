@@ -49,6 +49,22 @@ test("covers all 15 Integrated Science 2 achievement standards with two question
   assert.match(questions, /SSI와 과학 윤리/);
 });
 
+test("balances scientific answer positions across the diagnostic", async () => {
+  const questions = await readFile(new URL("../app/questions.ts", import.meta.url), "utf8");
+  const questionBlocks = [...questions.matchAll(/id: "[^"]+", standard: "10통과2-[^"]+", domain: "[^"]+",[\s\S]*?options: \[\s*([\s\S]*?)\s*\],\s*\},/g)];
+  const answers = questionBlocks.map((block) => {
+    const options = [...block[1].matchAll(/\{ id: "([a-d])", text: .*kind: "(scientific|misconception|partial)" \}/g)];
+    assert.equal(options.length, 4);
+    assert.equal(new Set(options.map((option) => option[1])).size, 4);
+    return "abcd"[options.findIndex((option) => option[2] === "scientific")];
+  });
+  const counts = Object.fromEntries(["a", "b", "c", "d"].map((id) => [id, answers.filter((answer) => answer === id).length]));
+
+  assert.equal(answers.length, 30);
+  assert.deepEqual(counts, { a: 8, b: 8, c: 7, d: 7 });
+  assert.doesNotMatch(answers.join(""), /(a{3}|b{3}|c{3}|d{3})/);
+});
+
 test("stores classroom submissions with protected teacher access", async () => {
   const [worker, schema, migration] = await Promise.all([
     readFile(new URL("../worker/index.ts", import.meta.url), "utf8"),

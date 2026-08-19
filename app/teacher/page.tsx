@@ -151,10 +151,10 @@ export default function TeacherPage() {
                   <article key={question.id}>
                     <div className="item-copy"><span>{index + 1}</span><div><small>{question.standard} · {question.domain}</small><h3>{question.prompt}</h3></div></div>
                     <div className="distribution">
-                      {question.options.map((option) => {
+                      {question.options.map((option, optionIndex) => {
                         const count = counts[option.id];
                         const percent = dashboard.submissions.length ? Math.round((count / dashboard.submissions.length) * 100) : 0;
-                        return <div key={option.id} className={option.kind === "scientific" ? "scientific" : ""}><span>{option.id.toUpperCase()}</span><div><i style={{ width: `${percent}%` }} /></div><b>{count}명</b><small>{option.conception}</small></div>;
+                        return <div key={option.id} className={option.kind === "scientific" ? "scientific" : ""}><span>{String.fromCharCode(65 + optionIndex)}</span><div><i style={{ width: `${percent}%` }} /></div><b>{count}명</b><small>{option.conception}</small></div>;
                       })}
                     </div>
                   </article>
