@@ -17,6 +17,13 @@ export function hashValue(value: string) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+export function logDiagnosticError(scope: string, error: unknown) {
+  const details = error instanceof Error
+    ? { name: error.name, message: error.message, code: "code" in error ? String(error.code) : undefined }
+    : { type: typeof error };
+  console.error(`[diagnostic] ${scope}`, details);
+}
+
 export function validateAnswers(value: unknown): value is Record<string, string> {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const answers = value as Record<string, unknown>;

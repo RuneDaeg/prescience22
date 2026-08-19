@@ -1,4 +1,4 @@
-import { getDiagnosticClass, getDiagnosticSubmissions, hashValue, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
+import { getDiagnosticClass, getDiagnosticSubmissions, hashValue, logDiagnosticError, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
 
 export const runtime = "nodejs";
 
@@ -18,7 +18,8 @@ export async function GET(request: Request, { params }: RouteContext) {
       createdAt: diagnosticClass.createdAt,
       submissions: await getDiagnosticSubmissions(diagnosticClass),
     }, { headers: { "cache-control": "no-store" } });
-  } catch {
+  } catch (error) {
+    logDiagnosticError("read-submissions", error);
     return Response.json({ error: "학급 응답을 불러오지 못했습니다." }, { status: 500 });
   }
 }
@@ -35,7 +36,8 @@ export async function POST(request: Request, { params }: RouteContext) {
     }
     const completedAt = await saveDiagnosticSubmission(diagnosticClass, { studentName, studentNumber, answers: body.answers });
     return Response.json({ ok: true, completedAt }, { status: 201, headers: { "cache-control": "no-store" } });
-  } catch {
+  } catch (error) {
+    logDiagnosticError("save-submission", error);
     return Response.json({ error: "응답을 저장하지 못했습니다." }, { status: 500 });
   }
 }

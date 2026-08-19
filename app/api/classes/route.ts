@@ -1,4 +1,4 @@
-import { createDiagnosticClass } from "../../../lib/diagnostic-api";
+import { createDiagnosticClass, logDiagnosticError } from "../../../lib/diagnostic-api";
 
 export const runtime = "nodejs";
 
@@ -10,7 +10,8 @@ export async function POST(request: Request) {
   if (name.length < 2) return Response.json({ error: "학급 이름을 확인해 주세요." }, { status: 400 });
   try {
     return Response.json(await createDiagnosticClass(name), { status: 201, headers: { "cache-control": "no-store" } });
-  } catch {
+  } catch (error) {
+    logDiagnosticError("create-class", error);
     return Response.json({ error: "학급을 만들지 못했습니다. Firebase 설정을 확인해 주세요." }, { status: 500 });
   }
 }
