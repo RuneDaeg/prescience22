@@ -1,4 +1,4 @@
-import { getDiagnosticClass, getDiagnosticSubmissions, hashValue, logDiagnosticError, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
+import { getDiagnosticClass, getDiagnosticSubmissions, getFirstGradeCohortAnalytics, hashValue, logDiagnosticError, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
 
 export const runtime = "nodejs";
 
@@ -12,11 +12,16 @@ export async function GET(request: Request, { params }: RouteContext) {
     if (!token || hashValue(token) !== diagnosticClass.teacherTokenHash) {
       return Response.json({ error: "교사용 키가 올바르지 않습니다." }, { status: 403 });
     }
+    const [submissions, cohort] = await Promise.all([
+      getDiagnosticSubmissions(diagnosticClass),
+      getFirstGradeCohortAnalytics(),
+    ]);
     return Response.json({
       code: diagnosticClass.code,
       name: diagnosticClass.name,
       createdAt: diagnosticClass.createdAt,
-      submissions: await getDiagnosticSubmissions(diagnosticClass),
+      submissions,
+      cohort,
     }, { headers: { "cache-control": "no-store" } });
   } catch (error) {
     logDiagnosticError("read-submissions", error);

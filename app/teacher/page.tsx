@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { QUESTIONS } from "../questions";
+import type { CohortAnalytics } from "../../lib/diagnostic-analytics";
 
 type Submission = {
   id: string;
@@ -11,7 +12,7 @@ type Submission = {
   completedAt: number;
 };
 
-type DashboardData = { code: string; name: string; createdAt: number; submissions: Submission[] };
+type DashboardData = { code: string; name: string; createdAt: number; submissions: Submission[]; cohort: CohortAnalytics };
 type CreatedClass = { code: string; name: string; teacherToken: string };
 
 export default function TeacherPage() {
@@ -93,7 +94,10 @@ export default function TeacherPage() {
       });
       const scientific = question.options.find((option) => option.kind === "scientific")?.id;
       const misconceptionCount = dashboard.submissions.length - (scientific ? counts[scientific] : 0);
-      return { question, counts, misconceptionCount };
+      const scientificRate = dashboard.submissions.length && scientific
+        ? Math.round((counts[scientific] / dashboard.submissions.length) * 100)
+        : 0;
+      return { question, counts, misconceptionCount, scientificRate };
     });
     const conceptionCounts = new Map<string, { count: number; standard: string }>();
     itemRows.forEach(({ question }) => dashboard.submissions.forEach((submission) => {
@@ -122,7 +126,8 @@ export default function TeacherPage() {
         </section>
         <section className="stat-grid">
           <article><span>제출 완료</span><b>{dashboard.submissions.length}</b><small>명</small></article>
-          <article><span>과학적 개념 응답</span><b>{analytics.scientificRate}</b><small>%</small></article>
+          <article><span>우리 반 과학적 개념 응답</span><b>{analytics.scientificRate}</b><small>%</small></article>
+          <article className="cohort-stat"><span>1학년 전체 평균</span><b>{dashboard.cohort.scientificRate}</b><small>%</small><em>{dashboard.cohort.classCount}개 학급 · {dashboard.cohort.submissionCount}명</em></article>
           <article><span>진단 문항</span><b>{QUESTIONS.length}</b><small>개</small></article>
           <article><span>학급 코드</span><strong>{dashboard.code}</strong><small>학생용</small></article>
         </section>
@@ -147,9 +152,9 @@ export default function TeacherPage() {
             <section className="panel response-panel">
               <div className="panel-title"><div><span>문항별 분석</span><h2>선택지 반응 분포</h2></div><small>과학적 개념 응답은 초록색</small></div>
               <div className="item-analysis">
-                {analytics.itemRows.map(({ question, counts }, index) => (
+                {analytics.itemRows.map(({ question, counts, scientificRate }, index) => (
                   <article key={question.id}>
-                    <div className="item-copy"><span>{index + 1}</span><div><small>{question.standard} · {question.domain}</small><h3>{question.prompt}</h3></div></div>
+                    <div className="item-copy"><span>{index + 1}</span><div><small>{question.standard} · {question.domain}</small><h3>{question.prompt}</h3><p className="item-comparison"><span>우리 반 {scientificRate}%</span><span>1학년 전체 {dashboard.cohort.questionRates[question.id] ?? 0}%</span></p></div></div>
                     <div className="distribution">
                       {question.options.map((option, optionIndex) => {
                         const count = counts[option.id];

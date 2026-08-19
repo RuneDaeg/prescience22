@@ -1,6 +1,7 @@
 import { createHash, randomBytes, randomUUID } from "node:crypto";
 import { QUESTIONS } from "../app/questions";
 import { getFirebaseDb } from "./firebase-admin";
+import { calculateCohortAnalytics, isFirstGradeClassName } from "./diagnostic-analytics";
 
 export type DiagnosticClass = {
   code: string;
@@ -85,4 +86,23 @@ export async function getDiagnosticSubmissions(diagnosticClass: DiagnosticClass)
     answers: Record<string, string>;
     completedAt: number;
   }).sort((a, b) => a.studentNumber.localeCompare(b.studentNumber, "ko", { numeric: true }));
+}
+
+export async function getFirstGradeCohortAnalytics() {
+  const db = await getFirebaseDb();
+  const classSnapshot = await db.collection("diagnosticClasses").get();
+  const firstGradeClasses = classSnapshot.docs
+    .map((document) => document.data() as DiagnosticClass)
+    .filter((diagnosticClass) => isFirstGradeClassName(diagnosticClass.name));
+
+  const submissionSnapshots = await Promise.all(
+    firstGradeClasses.map((diagnosticClass) =>
+      db.collection("diagnosticClasses").doc(diagnosticClass.code).collection("submissions").get(),
+    ),
+  );
+  const submissions = submissionSnapshots.flatMap((snapshot) =>
+    snapshot.docs.map((document) => document.data() as { answers: Record<string, string> }),
+  );
+
+  return calculateCohortAnalytics(submissions, firstGradeClasses.length);
 }

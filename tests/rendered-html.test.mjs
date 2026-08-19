@@ -93,5 +93,19 @@ test("provides Firebase-backed Next.js routes for Vercel", async () => {
   assert.match(diagnosticApi, /teacherTokenHash/);
   assert.match(classRoute, /createDiagnosticClass/);
   assert.match(submissionRoute, /validateAnswers/);
+  assert.match(submissionRoute, /getFirstGradeCohortAnalytics/);
   assert.match(vercel, /build:vercel/);
+});
+
+test("shows anonymized first-grade averages on teacher dashboards", async () => {
+  const [analytics, teacherPage, worker] = await Promise.all([
+    readFile(new URL("../lib/diagnostic-analytics.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../worker/index.ts", import.meta.url), "utf8"),
+  ]);
+  assert.match(analytics, /isFirstGradeClassName/);
+  assert.match(analytics, /questionRates/);
+  assert.match(teacherPage, /1학년 전체 평균/);
+  assert.match(teacherPage, /1학년 전체/);
+  assert.match(worker, /calculateCohortAnalytics/);
 });

@@ -2,6 +2,7 @@
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 import { QUESTIONS } from "../app/questions";
+import { calculateCohortAnalytics, isFirstGradeClassName } from "../lib/diagnostic-analytics";
 
 interface Env {
   ASSETS: Fetcher;
@@ -191,19 +192,32 @@ async function handleTeacherDashboard(request: Request, db: D1Database, diagnost
   if (!token || await hashToken(token) !== diagnosticClass.teacher_token_hash) {
     return Response.json({ error: "교사용 키가 올바르지 않습니다." }, { status: 403 });
   }
-  const result = await db.prepare(`SELECT id, student_name, student_number, answers_json, completed_at
-    FROM diagnostic_submissions WHERE class_id = ? ORDER BY student_number ASC, completed_at DESC`).bind(diagnosticClass.id).all<DiagnosticSubmissionRow>();
+  const [result, classResult, cohortSubmissionResult] = await db.batch([
+    db.prepare(`SELECT id, student_name, student_number, answers_json, completed_at
+      FROM diagnostic_submissions WHERE class_id = ? ORDER BY student_number ASC, completed_at DESC`).bind(diagnosticClass.id),
+    db.prepare("SELECT id, name FROM diagnostic_classes"),
+    db.prepare("SELECT class_id, answers_json FROM diagnostic_submissions"),
+  ]);
+  const firstGradeClassIds = new Set(
+    (classResult.results as Array<{ id: string; name: string }> ?? [])
+      .filter((row) => isFirstGradeClassName(row.name))
+      .map((row) => row.id),
+  );
+  const cohortSubmissions = (cohortSubmissionResult.results as Array<{ class_id: string; answers_json: string }> ?? [])
+    .filter((row) => firstGradeClassIds.has(row.class_id))
+    .map((row) => ({ answers: JSON.parse(row.answers_json) as Record<string, string> }));
   return Response.json({
     code: diagnosticClass.code,
     name: diagnosticClass.name,
     createdAt: diagnosticClass.created_at,
-    submissions: (result.results ?? []).map((row) => ({
+    submissions: (result.results as unknown as DiagnosticSubmissionRow[] ?? []).map((row) => ({
       id: row.id,
       studentName: row.student_name,
       studentNumber: row.student_number,
       answers: JSON.parse(row.answers_json) as Record<string, string>,
       completedAt: row.completed_at,
     })),
+    cohort: calculateCohortAnalytics(cohortSubmissions, firstGradeClassIds.size),
   }, { headers: { "cache-control": "no-store" } });
 }
 
