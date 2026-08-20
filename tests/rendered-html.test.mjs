@@ -166,3 +166,34 @@ test("teacher dashboards provide student-by-student answer details", async () =>
   assert.match(styles, /\.student-answer-row/);
   assert.match(styles, /\.student-answer-row\.scientific/);
 });
+
+test("top classroom preconceptions include pre-instruction teaching guidance", async () => {
+  const [questions, teacherPage, guidance, styles] = await Promise.all([
+    readFile(new URL("../app/questions.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/preinstruction-guidance.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
+  ]);
+  const questionIds = [...questions.matchAll(/id: "([^"]+)", standard:/g)].map((match) => match[1]);
+
+  assert.equal(questionIds.length, 30);
+  assert.equal((guidance.match(/^    shift:/gm) ?? []).length, 30);
+  assert.equal((guidance.match(/^    activity:/gm) ?? []).length, 30);
+  assert.equal((guidance.match(/^    prompt:/gm) ?? []).length, 30);
+  assert.equal((guidance.match(/^    check:/gm) ?? []).length, 30);
+  for (const id of questionIds) {
+    assert.ok(
+      guidance.includes(`  "${id}": {`) || guidance.includes(`  ${id}: {`),
+      `${id} should have pre-instruction teaching guidance`,
+    );
+  }
+  assert.match(teacherPage, /PREINSTRUCTION_GUIDANCE/);
+  assert.match(teacherPage, /통합과학2 수업 전/);
+  assert.match(teacherPage, /수업 전 지도 방안/);
+  assert.match(teacherPage, /사고 전환/);
+  assert.match(teacherPage, /첫 활동/);
+  assert.match(teacherPage, /학생에게 던질 질문/);
+  assert.match(teacherPage, /빠른 확인/);
+  assert.match(styles, /\.teaching-guidance/);
+  assert.match(styles, /\.guidance-grid/);
+});

@@ -6,6 +6,7 @@ import { QUESTIONS } from "../questions";
 import type { CohortAnalytics } from "../../lib/diagnostic-analytics";
 import type { DiagnosticQuestion } from "../questions";
 import { QuestionDetailModal } from "../components/question-detail-modal";
+import { PREINSTRUCTION_GUIDANCE } from "../preinstruction-guidance";
 
 type Submission = {
   id: string;
@@ -110,11 +111,11 @@ export default function TeacherPage() {
         : 0;
       return { question, counts, misconceptionCount, scientificRate };
     });
-    const conceptionCounts = new Map<string, { count: number; standard: string }>();
+    const conceptionCounts = new Map<string, { count: number; standard: string; questionId: string }>();
     itemRows.forEach(({ question }) => dashboard.submissions.forEach((submission) => {
       const option = question.options.find((item) => item.id === submission.answers[question.id]);
       if (option && option.kind !== "scientific") {
-        const current = conceptionCounts.get(option.conception) ?? { count: 0, standard: question.standard };
+        const current = conceptionCounts.get(option.conception) ?? { count: 0, standard: question.standard, questionId: question.id };
         conceptionCounts.set(option.conception, { ...current, count: current.count + 1 });
       }
     }));
@@ -162,10 +163,31 @@ export default function TeacherPage() {
           <div className="dashboard-grid">
             <section className="panel misconception-panel">
               <div className="panel-title"><div><span>우선 확인할 선개념</span><h2>학급에서 자주 나타난 생각</h2></div><small>상위 5개</small></div>
+              <p className="preinstruction-note">통합과학2 수업 전 학생들이 현재 가진 설명 모형입니다. 정답을 먼저 알려 주기보다 학생의 예측을 확인하고, 관찰이나 자료를 근거로 스스로 설명을 수정하도록 지도해 보세요.</p>
               <div className="conception-list">
-                {analytics.topConceptions.map((item, index) => (
-                  <article key={item.name}><b>{String(index + 1).padStart(2, "0")}</b><div><strong>{item.name}</strong><span>{item.standard}</span></div><em>{item.count}명</em></article>
-                ))}
+                {analytics.topConceptions.map((item, index) => {
+                  const guidance = PREINSTRUCTION_GUIDANCE[item.questionId];
+                  return (
+                    <article key={item.name}>
+                      <div className="conception-summary">
+                        <b>{String(index + 1).padStart(2, "0")}</b>
+                        <div><strong>{item.name}</strong><span>{item.standard}</span></div>
+                        <em>{item.count}명</em>
+                      </div>
+                      {guidance && (
+                        <details className="teaching-guidance">
+                          <summary>수업 전 지도 방안 <span>예측 → 확인 → 수정</span></summary>
+                          <div className="guidance-grid">
+                            <section><b>사고 전환</b><p>{guidance.shift}</p></section>
+                            <section><b>첫 활동</b><p>{guidance.activity}</p></section>
+                            <section><b>학생에게 던질 질문</b><p>{guidance.prompt}</p></section>
+                            <section><b>빠른 확인</b><p>{guidance.check}</p></section>
+                          </div>
+                        </details>
+                      )}
+                    </article>
+                  );
+                })}
               </div>
             </section>
             <section className="panel roster-panel">
