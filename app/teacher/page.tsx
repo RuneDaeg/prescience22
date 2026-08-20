@@ -210,15 +210,18 @@ export default function TeacherPage() {
               </div>
             </section>
             {selectedSubmission && selectedStudentAnalysis && (
-              <section className="panel student-response-panel">
-                <div className="panel-title student-response-heading">
-                  <div><span>학생별 상세 응답</span><h2>{selectedSubmission.studentNumber} {selectedSubmission.studentName}</h2></div>
-                  <div className="student-answer-summary">
-                    <strong>{selectedStudentAnalysis.scientificCount}<small> / {QUESTIONS.length}</small></strong>
-                    <span>과학적 개념 응답</span>
-                    {selectedStudentAnalysis.partialCount > 0 && <em>부분 개념 {selectedStudentAnalysis.partialCount}개</em>}
-                  </div>
-                </div>
+              <details className="panel student-response-panel">
+                <summary className="panel-title student-response-heading student-response-toggle">
+                  <span className="student-response-identity"><small>학생별 상세 응답</small><strong>{selectedSubmission.studentNumber} {selectedSubmission.studentName}</strong></span>
+                  <span className="student-response-summary-actions">
+                    <span className="student-answer-summary">
+                      <b>{selectedStudentAnalysis.scientificCount}<small> / {QUESTIONS.length}</small></b>
+                      <span>과학적 개념 응답</span>
+                      {selectedStudentAnalysis.partialCount > 0 && <em>부분 개념 {selectedStudentAnalysis.partialCount}개</em>}
+                    </span>
+                    <span className="student-response-toggle-label">30문항 펼치기·접기</span>
+                  </span>
+                </summary>
                 <p className="student-response-guide">각 문항에서 학생이 고른 선택지와 그 선택이 나타내는 개념입니다. 문항을 누르면 상세 해설을 볼 수 있습니다.</p>
                 <div className="student-answer-list">
                   {selectedStudentAnalysis.rows.map(({ question, index, option, optionIndex }) => (
@@ -241,7 +244,7 @@ export default function TeacherPage() {
                     </button>
                   ))}
                 </div>
-              </section>
+              </details>
             )}
             <section className="panel response-panel">
               <div className="panel-title"><div><span>문항별 분석</span><h2>선택지 반응 분포</h2></div><small>과학적 개념 응답은 초록색</small></div>

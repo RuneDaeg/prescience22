@@ -163,8 +163,14 @@ test("teacher dashboards provide student-by-student answer details", async () =>
   assert.match(teacherPage, /학생 선택/);
   assert.match(teacherPage, /selectedSubmission\.answers\[question\.id\]/);
   assert.match(teacherPage, /setSelectedQuestion\(question\)/);
+  assert.match(teacherPage, /<details className="panel student-response-panel">/);
+  assert.match(teacherPage, /<summary className="panel-title student-response-heading student-response-toggle">/);
+  assert.match(teacherPage, /30문항 펼치기·접기/);
+  assert.doesNotMatch(teacherPage, /<details className="panel student-response-panel" open/);
   assert.match(styles, /\.student-answer-row/);
   assert.match(styles, /\.student-answer-row\.scientific/);
+  assert.match(styles, /\.student-response-panel\[open\] \.student-response-toggle/);
+  assert.match(styles, /\.student-response-toggle-label/);
 });
 
 test("top classroom preconceptions include pre-instruction teaching guidance", async () => {
