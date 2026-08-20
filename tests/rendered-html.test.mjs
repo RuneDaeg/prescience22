@@ -33,6 +33,16 @@ test("server-renders the teacher studio", async () => {
   assert.match(html, /TEACHER STUDIO/);
   assert.match(html, /새 학급 만들기/);
   assert.match(html, /기존 학급 열기/);
+  assert.match(html, /학교 대표 교사/);
+});
+
+test("server-renders the school representative studio", async () => {
+  const response = await render("/school");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /SCHOOL STUDIO/);
+  assert.match(html, /학교 그룹 만들기/);
+  assert.match(html, /반별 상세 응답/);
 });
 
 test("covers all 15 Integrated Science 2 achievement standards with two questions each", async () => {
@@ -66,10 +76,11 @@ test("balances scientific answer positions across the diagnostic", async () => {
 });
 
 test("stores classroom submissions with protected teacher access", async () => {
-  const [worker, schema, migration] = await Promise.all([
+  const [worker, schema, migration, schoolMigration] = await Promise.all([
     readFile(new URL("../worker/index.ts", import.meta.url), "utf8"),
     readFile(new URL("../db/schema.ts", import.meta.url), "utf8"),
     readFile(new URL("../drizzle/0001_add_diagnostic_classes.sql", import.meta.url), "utf8"),
+    readFile(new URL("../drizzle/0002_add_school_groups.sql", import.meta.url), "utf8"),
   ]);
   assert.match(worker, /hashToken/);
   assert.match(worker, /ON CONFLICT\(class_id, student_number\)/);
@@ -77,6 +88,9 @@ test("stores classroom submissions with protected teacher access", async () => {
   assert.match(schema, /diagnosticClasses/);
   assert.match(schema, /diagnosticSubmissions/);
   assert.match(migration, /idx_diagnostic_submissions_class_student/);
+  assert.match(schema, /schoolGroups/);
+  assert.match(schoolMigration, /school_groups/);
+  assert.match(worker, /handleSchoolDashboard/);
 });
 
 test("provides Firebase-backed Next.js routes for Vercel", async () => {
@@ -93,11 +107,11 @@ test("provides Firebase-backed Next.js routes for Vercel", async () => {
   assert.match(diagnosticApi, /teacherTokenHash/);
   assert.match(classRoute, /createDiagnosticClass/);
   assert.match(submissionRoute, /validateAnswers/);
-  assert.match(submissionRoute, /getFirstGradeCohortAnalytics/);
+  assert.match(submissionRoute, /getClassCohortAnalytics/);
   assert.match(vercel, /build:vercel/);
 });
 
-test("shows anonymized first-grade averages on teacher dashboards", async () => {
+test("shows anonymized school-grade averages on teacher dashboards", async () => {
   const [analytics, teacherPage, worker] = await Promise.all([
     readFile(new URL("../lib/diagnostic-analytics.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
@@ -105,7 +119,20 @@ test("shows anonymized first-grade averages on teacher dashboards", async () => 
   ]);
   assert.match(analytics, /isFirstGradeClassName/);
   assert.match(analytics, /questionRates/);
-  assert.match(teacherPage, /1학년 전체 평균/);
-  assert.match(teacherPage, /1학년 전체/);
+  assert.match(teacherPage, /같은 학교·학년 평균/);
+  assert.match(teacherPage, /같은 학교·학년/);
   assert.match(worker, /calculateCohortAnalytics/);
+});
+
+test("teacher dashboards expose question choices and explanations", async () => {
+  const [teacherPage, schoolPage, modal] = await Promise.all([
+    readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/school/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/question-detail-modal.tsx", import.meta.url), "utf8"),
+  ]);
+  assert.match(teacherPage, /QuestionDetailModal/);
+  assert.match(schoolPage, /QuestionDetailModal/);
+  assert.match(modal, /question-option-details/);
+  assert.match(modal, /과학적 개념 선택지는/);
+  assert.match(modal, /aria-modal="true"/);
 });

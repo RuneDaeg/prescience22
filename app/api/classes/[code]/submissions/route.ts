@@ -1,4 +1,4 @@
-import { getDiagnosticClass, getDiagnosticSubmissions, getFirstGradeCohortAnalytics, hashValue, logDiagnosticError, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
+import { getClassCohortAnalytics, getDiagnosticClass, getDiagnosticSubmissions, hashValue, logDiagnosticError, saveDiagnosticSubmission, validateAnswers } from "../../../../../lib/diagnostic-api";
 
 export const runtime = "nodejs";
 
@@ -14,7 +14,7 @@ export async function GET(request: Request, { params }: RouteContext) {
     }
     const [submissions, cohort] = await Promise.all([
       getDiagnosticSubmissions(diagnosticClass),
-      getFirstGradeCohortAnalytics(),
+      getClassCohortAnalytics(diagnosticClass),
     ]);
     return Response.json({
       code: diagnosticClass.code,

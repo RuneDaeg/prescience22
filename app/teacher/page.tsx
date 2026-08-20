@@ -1,8 +1,11 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { QUESTIONS } from "../questions";
 import type { CohortAnalytics } from "../../lib/diagnostic-analytics";
+import type { DiagnosticQuestion } from "../questions";
+import { QuestionDetailModal } from "../components/question-detail-modal";
 
 type Submission = {
   id: string;
@@ -24,16 +27,17 @@ export default function TeacherPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState("");
+  const [selectedQuestion, setSelectedQuestion] = useState<DiagnosticQuestion | null>(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlCode = params.get("class")?.toUpperCase() ?? "";
     const urlToken = params.get("key") ?? "";
     if (urlCode && urlToken) {
-      setCode(urlCode);
-      setToken(urlToken);
       void loadDashboard(urlCode, urlToken);
     }
+    // URL 자격 증명은 최초 진입 때만 읽습니다.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function createClass(event: FormEvent) {
@@ -66,6 +70,8 @@ export default function TeacherPage() {
     try {
       const response = await fetch(`/api/classes/${encodeURIComponent(classCode.trim().toUpperCase())}/submissions?token=${encodeURIComponent(teacherToken.trim())}`, { cache: "no-store" });
       if (!response.ok) throw new Error(response.status === 403 ? "교사용 키가 올바르지 않습니다." : "학급 응답을 불러오지 못했습니다.");
+      setCode(classCode.trim().toUpperCase());
+      setToken(teacherToken.trim());
       setDashboard((await response.json()) as DashboardData);
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : "학급 응답을 불러오지 못했습니다.");
@@ -117,7 +123,7 @@ export default function TeacherPage() {
     return (
       <main className="teacher-shell">
         <header className="dashboard-topbar">
-          <a className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></a>
+          <Link className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></Link>
           <div><span className="live-dot" />응답 데이터</div>
         </header>
         <section className="dashboard-heading">
@@ -127,7 +133,7 @@ export default function TeacherPage() {
         <section className="stat-grid">
           <article><span>제출 완료</span><b>{dashboard.submissions.length}</b><small>명</small></article>
           <article><span>우리 반 과학적 개념 응답</span><b>{analytics.scientificRate}</b><small>%</small></article>
-          <article className="cohort-stat"><span>1학년 전체 평균</span><b>{dashboard.cohort.scientificRate}</b><small>%</small><em>{dashboard.cohort.classCount}개 학급 · {dashboard.cohort.submissionCount}명</em></article>
+          <article className="cohort-stat"><span>같은 학교·학년 평균</span><b>{dashboard.cohort.scientificRate}</b><small>%</small><em>{dashboard.cohort.classCount}개 학급 · {dashboard.cohort.submissionCount}명</em></article>
           <article><span>진단 문항</span><b>{QUESTIONS.length}</b><small>개</small></article>
           <article><span>학급 코드</span><strong>{dashboard.code}</strong><small>학생용</small></article>
         </section>
@@ -154,7 +160,7 @@ export default function TeacherPage() {
               <div className="item-analysis">
                 {analytics.itemRows.map(({ question, counts, scientificRate }, index) => (
                   <article key={question.id}>
-                    <div className="item-copy"><span>{index + 1}</span><div><small>{question.standard} · {question.domain}</small><h3>{question.prompt}</h3><p className="item-comparison"><span>우리 반 {scientificRate}%</span><span>1학년 전체 {dashboard.cohort.questionRates[question.id] ?? 0}%</span></p></div></div>
+                    <button className="item-copy question-open" type="button" onClick={() => setSelectedQuestion(question)}><span>{index + 1}</span><div><small>{question.standard} · {question.domain}</small><h3>{question.prompt}</h3><p className="item-comparison"><span>우리 반 {scientificRate}%</span><span>같은 학교·학년 {dashboard.cohort.questionRates[question.id] ?? 0}%</span></p><em>선택지·해설 보기 →</em></div></button>
                     <div className="distribution">
                       {question.options.map((option, optionIndex) => {
                         const count = counts[option.id];
@@ -168,13 +174,14 @@ export default function TeacherPage() {
             </section>
           </div>
         )}
+        <QuestionDetailModal question={selectedQuestion} onClose={() => setSelectedQuestion(null)} />
       </main>
     );
   }
 
   return (
     <main className="app-shell teacher-entry-shell">
-      <header className="topbar"><a className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></a><a className="teacher-link" href="/">학생용</a></header>
+      <header className="topbar"><Link className="brand" href="/"><span className="brand-mark">P</span><span>PRE:SCIENCE</span></Link><div className="topbar-links"><Link className="teacher-link" href="/school">학교 대표 교사</Link><Link className="teacher-link" href="/">학생용</Link></div></header>
       <section className="teacher-entry">
         <div className="teacher-intro"><p className="eyebrow">TEACHER STUDIO</p><h1>학생들의 답보다<br /><em>생각의 이유</em>를 먼저 봅니다.</h1><p>학급을 만들고 학생 링크를 공유하세요. 제출과 동시에 자주 나타나는 선개념이 자동으로 모입니다.</p><div className="feature-stack"><span><b>01</b>15개 성취기준·30문항 진단</span><span><b>02</b>선개념 유형 자동 집계</span><span><b>03</b>문항별 반응 분포</span></div></div>
         <div className="teacher-cards">

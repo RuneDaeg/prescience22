@@ -7,13 +7,27 @@ export const tributes = sqliteTable("tributes", {
   createdAt: integer("created_at").notNull(),
 }, (table) => [index("idx_tributes_created_at").on(table.createdAt)]);
 
+export const schoolGroups = sqliteTable("school_groups", {
+  code: text("code").primaryKey(),
+  name: text("name").notNull(),
+  adminTokenHash: text("admin_token_hash").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
+
 export const diagnosticClasses = sqliteTable("diagnostic_classes", {
   id: text("id").primaryKey(),
   code: text("code").notNull(),
   name: text("name").notNull(),
   teacherTokenHash: text("teacher_token_hash").notNull(),
   createdAt: integer("created_at").notNull(),
-}, (table) => [uniqueIndex("idx_diagnostic_classes_code").on(table.code)]);
+  schoolCode: text("school_code").references(() => schoolGroups.code, { onDelete: "set null" }),
+  academicYear: integer("academic_year"),
+  grade: integer("grade"),
+  classNumber: integer("class_number"),
+}, (table) => [
+  uniqueIndex("idx_diagnostic_classes_code").on(table.code),
+  index("idx_diagnostic_classes_school_cohort").on(table.schoolCode, table.academicYear, table.grade, table.classNumber),
+]);
 
 export const diagnosticSubmissions = sqliteTable("diagnostic_submissions", {
   id: text("id").primaryKey(),

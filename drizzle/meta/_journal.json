@@ -15,6 +15,13 @@
       "when": 1787072400000,
       "tag": "0001_add_diagnostic_classes",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1787259461103,
+      "tag": "0002_add_school_groups",
+      "breakpoints": true
     }
   ]
 }

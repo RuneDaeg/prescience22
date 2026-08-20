@@ -108,6 +108,7 @@ button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid rgb
 .dashboard-heading>div>p:last-child { margin:9px 0 0; color:var(--muted); font-size:13px; }
 .dashboard-actions { display:flex; gap:8px; }
 .dashboard-actions button { padding:10px 14px; border:1px solid var(--line); border-radius:10px; background:white; font-size:11px; font-weight:800; }
+.topbar-links { display:flex; gap:8px; }
 .stat-grid { padding:0 clamp(24px,6vw,88px) 24px; display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
 .stat-grid article { min-height:116px; padding:20px; border:1px solid var(--line); border-radius:16px; background:white; position:relative; }
 .stat-grid span { display:block; color:var(--muted); font-size:10px; font-weight:800; }
@@ -137,6 +138,9 @@ button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid rgb
 .item-analysis { display:grid; gap:12px; }
 .item-analysis>article { padding:20px; display:grid; grid-template-columns:1.1fr 1.9fr; gap:24px; border:1px solid #e5e8e3; border-radius:14px; }
 .item-copy { display:flex; gap:13px; }
+.question-open { width:100%; padding:0; border:0; background:transparent; color:inherit; text-align:left; cursor:pointer; }
+.question-open:hover h3,.question-open:focus-visible h3 { color:var(--green); text-decoration:underline; text-underline-offset:3px; }
+.question-open em { display:inline-block; margin-top:9px; color:var(--green); font-size:8px; font-style:normal; font-weight:850; }
 .item-copy>span { width:29px; height:29px; display:grid; place-items:center; flex:0 0 auto; border-radius:8px; background:var(--green-dark); color:white; font-size:10px; font-weight:850; }
 .item-copy small { color:var(--green); font-size:8px; font-weight:850; }
 .item-copy h3 { margin:6px 0 0; font-size:12px; line-height:1.55; }
@@ -156,7 +160,61 @@ button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid rgb
 .empty-dashboard h2 { margin:16px 0 4px; }
 .empty-dashboard p { margin:0; color:var(--muted); font-size:12px; }
 
+.question-modal-backdrop { position:fixed; inset:0; z-index:50; padding:24px; display:grid; place-items:center; background:rgba(10,27,22,.72); backdrop-filter:blur(6px); }
+.question-modal { width:min(760px,100%); max-height:min(860px,calc(100vh - 48px)); padding:30px; overflow:auto; border-radius:22px; background:#fbfcf8; box-shadow:0 24px 80px rgba(0,0,0,.28); position:relative; }
+.question-modal-close { position:absolute; top:17px; right:17px; width:35px; height:35px; border:1px solid var(--line); border-radius:50%; background:white; font-size:20px; }
+.question-modal h2 { margin:8px 42px 20px 0; font:650 clamp(22px,3vw,31px)/1.35 Georgia,"Noto Serif KR",serif; letter-spacing:-.035em; }
+.question-context { padding:12px 14px; border-left:3px solid var(--lime); background:#f0f4e8; color:var(--muted); font-size:11px; line-height:1.65; }
+.question-option-details { display:grid; gap:8px; }
+.question-option-details article { padding:12px; display:grid; grid-template-columns:34px 1fr auto; align-items:center; gap:11px; border:1px solid #e2e6df; border-radius:12px; background:white; }
+.question-option-details article>span { width:30px; height:30px; display:grid; place-items:center; border-radius:9px; background:#edf0eb; font-size:10px; font-weight:900; }
+.question-option-details article>div { display:grid; gap:4px; }
+.question-option-details b { font-size:11px; line-height:1.5; }
+.question-option-details small { color:var(--muted); font-size:8px; }
+.question-option-details em { padding:5px 7px; border-radius:7px; background:#f8eae3; color:#a45135; font-size:8px; font-style:normal; font-weight:850; }
+.question-option-details article.scientific { border-color:#8ac5a8; background:#f0f8f3; }
+.question-option-details article.scientific>span,.question-option-details article.scientific em { background:#d9eee2; color:var(--green); }
+.question-explanation { margin-top:18px; padding:18px; border-radius:14px; background:var(--green-dark); color:white; }
+.question-explanation>span { color:var(--lime); font-size:8px; font-weight:900; letter-spacing:.08em; }
+.question-explanation h3 { margin:6px 0 7px; font-size:14px; }
+.question-explanation p { margin:0; color:#d7e5df; font-size:10px; line-height:1.7; }
+.question-explanation strong { color:white; }
+
+.school-shell { padding-bottom:70px; }
+.school-entry { grid-template-columns:1fr .95fr; }
+.school-stats { grid-template-columns:repeat(4,1fr); }
+.school-management-grid { padding:0 clamp(24px,6vw,88px) 18px; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.school-form { display:grid; align-content:start; gap:15px; }
+.compact-fields { display:grid; grid-template-columns:1.3fr .8fr .8fr; gap:8px; }
+.compact-fields label { display:grid; gap:6px; color:var(--muted); font-size:9px; font-weight:800; }
+.compact-fields input,.rename-school input { width:100%; padding:10px; border:1px solid var(--line); border-radius:9px; background:#fafbf8; font-size:11px; }
+.link-fields { grid-template-columns:1fr 1.4fr .55fr; }
+.rename-school { grid-column:1/-1; padding:13px 18px; grid-template-columns:1fr auto; align-items:end; }
+.rename-school>div { display:grid; gap:5px; }
+.rename-school span { color:var(--green); font-size:8px; font-weight:900; }
+.rename-school button,.generated-classes button { padding:9px 12px; border:1px solid var(--line); border-radius:9px; background:white; font-size:9px; font-weight:800; }
+.school-error { margin:0 clamp(24px,6vw,88px) 16px; padding:10px 13px; border-radius:10px; background:#fff0e8; color:#a94d2f; font-size:10px; font-weight:750; }
+.generated-classes,.school-class-panel { margin:0 clamp(24px,6vw,88px) 18px; }
+.credential-table { display:grid; gap:6px; }
+.credential-table>div { padding:10px; display:grid; grid-template-columns:1fr 90px minmax(210px,1.4fr); gap:10px; align-items:center; border-radius:9px; background:#f4f6f1; font-size:9px; }
+.credential-table code { overflow:hidden; text-overflow:ellipsis; }
+.school-class-list { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.school-class-list button { min-width:0; padding:13px; display:grid; gap:5px; border:1px solid #e1e5df; border-radius:11px; background:#f7f8f5; text-align:left; }
+.school-class-list button.active { border-color:var(--green); background:#edf6ef; box-shadow:0 0 0 2px rgba(31,107,80,.08); }
+.school-class-list span { color:var(--green); font-size:8px; font-weight:850; }
+.school-class-list b { font-size:12px; }
+.school-class-list em { color:var(--muted); font-size:9px; font-style:normal; }
+.school-class-list code { color:#7a827d; font-size:8px; }
+.school-detail { margin-top:28px; }
+.school-detail>.panel-title { padding:0 clamp(24px,6vw,88px); }
+.school-detail-grid { grid-template-columns:1fr; }
+.school-detail-grid .roster-panel { max-height:360px; overflow:auto; }
+.muted-copy { color:var(--muted); font-size:10px; }
+.school-login>div { grid-template-columns:1fr 1.5fr auto; }
+
 @media (max-width:1100px) { .stat-grid { grid-template-columns:repeat(3,1fr); } }
-@media (max-width:900px) { .split-hero,.teacher-entry { grid-template-columns:1fr; padding-top:45px; } .split-hero .entry-card,.teacher-cards,.teacher-cards>* { max-width:620px; width:100%; } .teacher-entry { align-items:start; } .stat-grid { grid-template-columns:1fr 1fr; } .dashboard-grid { grid-template-columns:1fr; } .response-panel { grid-column:auto; } .item-analysis>article { grid-template-columns:1fr; } }
+@media (max-width:900px) { .split-hero,.teacher-entry { grid-template-columns:1fr; padding-top:45px; } .split-hero .entry-card,.teacher-cards,.teacher-cards>* { max-width:620px; width:100%; } .teacher-entry { align-items:start; } .stat-grid { grid-template-columns:1fr 1fr; } .dashboard-grid { grid-template-columns:1fr; } .response-panel { grid-column:auto; } .item-analysis>article { grid-template-columns:1fr; } .school-management-grid { grid-template-columns:1fr; } .rename-school { grid-column:auto; } .school-class-list { grid-template-columns:1fr 1fr; } }
 @media (max-width:600px) { .topbar,.dashboard-topbar { height:64px; padding:0 18px; } .split-hero,.teacher-entry { min-height:calc(100vh - 64px); padding:36px 18px 55px; } .hero-copy h1,.teacher-intro h1 { font-size:43px; } .entry-card,.identity-card { padding:29px 23px; border-radius:22px; box-shadow:8px 10px 0 rgba(31,107,80,.08); } .field-row { grid-template-columns:1fr; } .test-facts { gap:9px; flex-wrap:wrap; } .test-stage { width:min(100% - 24px,900px); padding-top:30px; } .question-card { padding:26px 18px; } .question-card h1 { font-size:24px; } .option { grid-template-columns:34px 1fr 18px; padding:11px; } .option>b { font-size:12px; } .question-actions .primary-action { min-width:150px; } .existing-class>div { grid-template-columns:1fr; } .existing-class button { min-height:42px; } .dashboard-heading { padding:32px 18px 25px; align-items:flex-start; flex-direction:column; } .stat-grid { padding:0 18px 18px; gap:8px; } .stat-grid article { min-height:102px; padding:15px; } .dashboard-grid { padding:0 18px 45px; } .panel { padding:18px; } .distribution>div { grid-template-columns:15px 1fr 28px; } .distribution small { grid-column:2/-1; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition-duration:.01ms!important; } }
+
+@media (max-width:600px) { .question-modal-backdrop { padding:10px; } .question-modal { max-height:calc(100vh - 20px); padding:23px 17px; border-radius:17px; } .question-option-details article { grid-template-columns:30px 1fr; } .question-option-details em { grid-column:2; justify-self:start; } .school-management-grid { padding:0 18px 14px; } .compact-fields,.link-fields { grid-template-columns:1fr; } .generated-classes,.school-class-panel { margin-left:18px; margin-right:18px; } .credential-table>div { grid-template-columns:1fr; } .school-class-list { grid-template-columns:1fr; } .school-login>div { grid-template-columns:1fr; } }
