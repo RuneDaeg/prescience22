@@ -28,6 +28,7 @@ export default function TeacherPage() {
   const [error, setError] = useState("");
   const [copied, setCopied] = useState("");
   const [selectedQuestion, setSelectedQuestion] = useState<DiagnosticQuestion | null>(null);
+  const [selectedSubmissionId, setSelectedSubmissionId] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -72,7 +73,11 @@ export default function TeacherPage() {
       if (!response.ok) throw new Error(response.status === 403 ? "교사용 키가 올바르지 않습니다." : "학급 응답을 불러오지 못했습니다.");
       setCode(classCode.trim().toUpperCase());
       setToken(teacherToken.trim());
-      setDashboard((await response.json()) as DashboardData);
+      const data = (await response.json()) as DashboardData;
+      setDashboard(data);
+      setSelectedSubmissionId((current) => current && data.submissions.some((submission) => submission.id === current)
+        ? current
+        : data.submissions[0]?.id ?? "");
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : "학급 응답을 불러오지 못했습니다.");
     } finally {
@@ -119,6 +124,20 @@ export default function TeacherPage() {
     return { itemRows, topConceptions, scientificRate: totalAnswers ? Math.round((scientificAnswers / totalAnswers) * 100) : 0 };
   }, [dashboard]);
 
+  const selectedSubmission = dashboard?.submissions.find((submission) => submission.id === selectedSubmissionId) ?? null;
+  const selectedStudentAnalysis = useMemo(() => {
+    if (!selectedSubmission) return null;
+    const rows = QUESTIONS.map((question, index) => {
+      const answerId = selectedSubmission.answers[question.id];
+      const optionIndex = question.options.findIndex((option) => option.id === answerId);
+      const option = optionIndex >= 0 ? question.options[optionIndex] : null;
+      return { question, index, option, optionIndex };
+    });
+    const scientificCount = rows.filter((row) => row.option?.kind === "scientific").length;
+    const partialCount = rows.filter((row) => row.option?.kind === "partial").length;
+    return { rows, scientificCount, partialCount };
+  }, [selectedSubmission]);
+
   if (dashboard && analytics) {
     return (
       <main className="teacher-shell">
@@ -150,11 +169,58 @@ export default function TeacherPage() {
               </div>
             </section>
             <section className="panel roster-panel">
-              <div className="panel-title"><div><span>제출 현황</span><h2>학생 응답</h2></div><small>{dashboard.submissions.length}명</small></div>
+              <div className="panel-title"><div><span>제출 현황</span><h2>학생별 응답</h2></div><small>{dashboard.submissions.length}명 · 학생을 선택하세요</small></div>
               <div className="roster-list">
-                {dashboard.submissions.slice(0, 8).map((submission) => <div key={submission.id}><span>{submission.studentNumber}</span><b>{submission.studentName}</b><time>{new Date(submission.completedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</time></div>)}
+                {dashboard.submissions.map((submission) => (
+                  <button
+                    type="button"
+                    key={submission.id}
+                    className={selectedSubmissionId === submission.id ? "active" : ""}
+                    aria-pressed={selectedSubmissionId === submission.id}
+                    onClick={() => setSelectedSubmissionId(submission.id)}
+                  >
+                    <span>{submission.studentNumber}</span>
+                    <b>{submission.studentName}</b>
+                    <time>{new Date(submission.completedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</time>
+                    <em>응답 보기 →</em>
+                  </button>
+                ))}
               </div>
             </section>
+            {selectedSubmission && selectedStudentAnalysis && (
+              <section className="panel student-response-panel">
+                <div className="panel-title student-response-heading">
+                  <div><span>학생별 상세 응답</span><h2>{selectedSubmission.studentNumber} {selectedSubmission.studentName}</h2></div>
+                  <div className="student-answer-summary">
+                    <strong>{selectedStudentAnalysis.scientificCount}<small> / {QUESTIONS.length}</small></strong>
+                    <span>과학적 개념 응답</span>
+                    {selectedStudentAnalysis.partialCount > 0 && <em>부분 개념 {selectedStudentAnalysis.partialCount}개</em>}
+                  </div>
+                </div>
+                <p className="student-response-guide">각 문항에서 학생이 고른 선택지와 그 선택이 나타내는 개념입니다. 문항을 누르면 상세 해설을 볼 수 있습니다.</p>
+                <div className="student-answer-list">
+                  {selectedStudentAnalysis.rows.map(({ question, index, option, optionIndex }) => (
+                    <button
+                      type="button"
+                      key={question.id}
+                      className={`student-answer-row ${option?.kind ?? "unanswered"}`}
+                      onClick={() => setSelectedQuestion(question)}
+                    >
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <div>
+                        <small>{question.standard} · {question.domain}</small>
+                        <h3>{question.prompt}</h3>
+                        {option ? (
+                          <p><b>학생 선택 {String.fromCharCode(65 + optionIndex)}</b><span>{option.text}</span></p>
+                        ) : <p><b>미응답</b></p>}
+                        {option && <em>{option.conception}</em>}
+                      </div>
+                      <strong>{option?.kind === "scientific" ? "과학적 개념" : option?.kind === "partial" ? "부분 개념" : option ? "선개념" : "미응답"}</strong>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
             <section className="panel response-panel">
               <div className="panel-title"><div><span>문항별 분석</span><h2>선택지 반응 분포</h2></div><small>과학적 개념 응답은 초록색</small></div>
               <div className="item-analysis">

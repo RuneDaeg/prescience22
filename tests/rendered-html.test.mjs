@@ -152,3 +152,17 @@ test("teacher dashboards expose question choices and explanations", async () => 
     );
   }
 });
+
+test("teacher dashboards provide student-by-student answer details", async () => {
+  const [teacherPage, styles] = await Promise.all([
+    readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
+  ]);
+  assert.match(teacherPage, /selectedSubmissionId/);
+  assert.match(teacherPage, /학생별 상세 응답/);
+  assert.match(teacherPage, /학생 선택/);
+  assert.match(teacherPage, /selectedSubmission\.answers\[question\.id\]/);
+  assert.match(teacherPage, /setSelectedQuestion\(question\)/);
+  assert.match(styles, /\.student-answer-row/);
+  assert.match(styles, /\.student-answer-row\.scientific/);
+});
