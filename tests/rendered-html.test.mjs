@@ -196,4 +196,6 @@ test("top classroom preconceptions include pre-instruction teaching guidance", a
   assert.match(teacherPage, /빠른 확인/);
   assert.match(styles, /\.teaching-guidance/);
   assert.match(styles, /\.guidance-grid/);
+  assert.match(styles, /\.dashboard-grid>\* \{ min-width:0; \}/);
+  assert.match(styles, /grid-template-columns:minmax\(0,1fr\)/);
 });
