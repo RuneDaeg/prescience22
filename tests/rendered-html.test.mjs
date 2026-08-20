@@ -125,14 +125,30 @@ test("shows anonymized school-grade averages on teacher dashboards", async () =>
 });
 
 test("teacher dashboards expose question choices and explanations", async () => {
-  const [teacherPage, schoolPage, modal] = await Promise.all([
+  const [teacherPage, schoolPage, modal, questions, explanations] = await Promise.all([
     readFile(new URL("../app/teacher/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/school/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/components/question-detail-modal.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/questions.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/question-explanations.ts", import.meta.url), "utf8"),
   ]);
   assert.match(teacherPage, /QuestionDetailModal/);
   assert.match(schoolPage, /QuestionDetailModal/);
   assert.match(modal, /question-option-details/);
   assert.match(modal, /과학적 개념 선택지는/);
+  assert.match(modal, /핵심 원리/);
+  assert.match(modal, /정답 근거/);
+  assert.match(modal, /optionNotes/);
   assert.match(modal, /aria-modal="true"/);
+
+  const questionIds = [...questions.matchAll(/id: "([^"]+)", standard:/g)].map((match) => match[1]);
+  assert.equal(questionIds.length, 30);
+  assert.equal((explanations.match(/^    whyCorrect:/gm) ?? []).length, 30);
+  assert.equal((explanations.match(/^    optionNotes:/gm) ?? []).length, 30);
+  for (const id of questionIds) {
+    assert.ok(
+      explanations.includes(`  "${id}": {`) || explanations.includes(`  ${id}: {`),
+      `${id} should have a detailed explanation`,
+    );
+  }
 });
