@@ -5,6 +5,7 @@
 - 운영 사이트: [https://prescience22-seven.vercel.app](https://prescience22-seven.vercel.app)
 - 교사 화면: [https://prescience22-seven.vercel.app/teacher](https://prescience22-seven.vercel.app/teacher)
 - 학교 대표 교사 화면: [https://prescience22-seven.vercel.app/school](https://prescience22-seven.vercel.app/school)
+- 커뮤니티 게시용 소개 글: [COMMUNITY_POST.md](./COMMUNITY_POST.md)
 
 이 진단은 시험 점수를 산출하기 위한 도구가 아닙니다. 학생이 현재 가진 설명 모형을 확인하고, 이후 수업에서 `예측 → 증거 확인 → 설명 수정`의 흐름을 설계하기 위한 수업 전 진단 도구입니다.
 
